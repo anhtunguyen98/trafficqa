@@ -1,0 +1,9 @@
+Jaro Winkler.txt 0
+Levenshtein.txt 0
+Mahattan.txt 0
+Euclide.txt 0
+Cosin.txt 0
+NGram.txt 0
+Matching.txt 0
+Dice.txt 0
+Jaccard.txt 0

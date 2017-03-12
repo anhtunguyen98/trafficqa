@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test>
+        <question>Điều khiển xe mô tô dưới 16 tuổi</question>
+        <base>khoản 1, Điều 21</base>
+        <answer>Phạt cảnh cáo</answer>
+    </test>
+    <test>
+        <question>Từ 16 tuổi đến dưới 18 tuổi điều khiển xe mô tô từ 50cm3 trở lên</question>
+        <base>điểm a, khoản 4, Điều 21</base>
+        <answer>400.000 - 600.000đ</answer>
+    </test>
+    <test>
+        <question>Điều khiển dưới 175cm3 không có GPLX, sử dụng GPLX không do cơ quan có thẩm quyền cấp, GPLX hoặc bị tẩy xóa
+        </question>
+        <base>khoản 5, Điều 21</base>
+        <answer>800.000 - 1,2 triệu đồng; tịch thu GPLX không hợp lệ</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe từ 175cm3 trở lên không có GPLX, sử dụng GPLX không do cơ quan có thẩm quyền cấp hoặc bị tẩy xóa
+        </question>
+        <base>điểm b khoản 7 Điều21</base>
+        <answer>4 - 6 triệu đồng; tịch thu GPLX không hợp lệ</answer>
+    </test>
+    <test>
+        <question>Điều khiển từ 175cm3 trở lên có GPLX nhưng không phù hợp với loại xe đang điều khiển hoặc hết hạn sử dụng 6 tháng trở lên
+        </question>
+        <base>điểm a khoản 7 Điều21</base>
+        <answer>4 - 6 triệu đồng</answer>
+    </test>
+    <test>
+        <question>Không mang theo Giấy phép lái xe</question>
+        <base>điểm c, khoản 2, Điều 21</base>
+        <answer>80.000đ - 120.000đ</answer>
+    </test>
+    <test>
+        <question>Không mang theo Giấy đăng ký xe</question>
+        <base>điểm b, khoản 2, Điều 21</base>
+        <answer>80.000đ - 120.000đ</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe không có Giấy đăng ký xe</question>
+        <base>điểm a, khoản 3, Điều 17</base>
+        <answer>300.000đ - 400.000đ</answer>
+    </test>
+    <test>
+        <question>Sử dụng Giấy đăng ký xe bị tẩy xóa; không đúng số khung, số máy hoặc không do cơ quan có thẩm quyền cấp
+        </question>
+        <base>điểm b, khoản 3, Điều 17</base>
+        <answer>300.000đ - 400.000đ, tịch thu Giấy đăng ký không hợp lệ</answer>
+    </test>
+    <test>
+        <question>Không có hoặc không mang theo Giấy chứng nhận bảo hiểm TNDS của chủ xe cơ giới
+        </question>
+        <base>điểm a, khoản 2, Điều 21</base>
+        <answer>80.000đ - 120.000đ</answer>
+    </test>
+    <test>
+        <question>Chuyển làn đường không đúng nơi được phép hoặc không có tín hiệu báo trước
+        </question>
+        <base>điểm a, khoản 2, Điều 6</base>
+        <answer>80.000 - 100.000đ</answer>
+    </test>
+    <test>
+        <question>Dừng xe, đỗ xe trên phần đường xe chạy ở đoạn đường ngoài đô thị nơi có lề đường
+        </question>
+        <base>điểm a, khoản 3, Điều 6</base>
+        <answer>100.000 - 200.000đ (giữ GPLX 2 tháng nếu gây TNGT)</answer>
+    </test>
+    <test>
+        <question>Dừng xe, đỗ xe ở lòng đường đô thị gây cản trở giao thông; đỗ, để xe ở lòng đường đô thị, hè phố trái quy định
+        </question>
+        <base>điểm đ, khoản 3, Điều 6</base>
+        <answer>100.000 - 200.000đ (giữ GPLX 2 tháng nếu gây TNGT)</answer>
+    </test>
+    <test>
+        <question>Chuyển hướng không giảm tốc độ hoặc không có tín hiệu báo hướng rẽ</question>
+        <base>điểm a, khoản 4, Điều 6</base>
+        <answer>200.000 - 400.000đ</answer>
+    </test>
+    <test>
+        <question>Không đi bên phải theo chiều đi của mình; đi không đúng phần đường, làn đường quy định
+        </question>
+        <base>điểm g, khoản 4, Điều 6</base>
+        <answer>200.000 - 400.000đ (giữ GPLX 2 tháng nếu gây TNGT)</answer>
+    </test>
+    <test>
+        <question>Đi vào đường cấm, khu vực cấm; đi ngược chiều của đường một chiều, đường có biển “Cấm đi ngược chiều”
+        </question>
+        <base>điểm i, khoản 4, Điều 6</base>
+        <answer>200.000 - 400.000đ; giữ GPLX 1 tháng(giữ GPLX 2 tháng nếu gây TNGT)</answer>
+    </test>
+    <test>
+        <question>Không nhường đường cho xe đi trên đường ưu tiên, đường chính từ bất kỳ hướng nào tới tại nơi đường giao nhau
+        </question>
+        <base>điểm d, khoản 2, Điều 6</base>
+        <answer>80.000 - 100.000đ;(giữ GPLX 2 tháng nếu gây TNGT)</answer>
+    </test>
+    <test>
+        <question>Không nhường đường khi điều khiển xe chạy từ trong ngõ, đường nhánh ra đường chính
+        </question>
+        <base>điểm b, khoản 3, Điều 6</base>
+        <answer>100.000 - 200.000đ</answer>
+    </test>
+    <test>
+        <question>Không nhường đường hoặc gây cản trở xe ưu tiên</question>
+        <base>điểm đ, khoản 5, Điều 6</base>
+        <answer>200.000 - 400.000đ; giữ GPLX 2 tháng</answer>
+    </test>
+    <test>
+        <question>Vượt bên phải trong các trường hợp không được phép</question>
+        <base>điểm h, khoản 4, Điều 6</base>
+        <answer>200.000 - 400.000đ</answer>
+    </test>
+    <test>
+        <question>Vượt xe hoặc chuyển làn đường trái quy định gây tai nạn giao thông</question>
+        <base>điểm c, khoản 6, Điều 6</base>
+        <answer>2 - 3 triệu đồng; giữ GPLX 2 tháng</answer>
+    </test>
+    <test>
+        <question>Người điều khiển, người ngồi trên xe không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội không cài quai đúng quy cách
+        </question>
+        <base>điểm i, khoản 3, Điều 6</base>
+        <answer>100.000 - 200.000đ</answer>
+    </test>
+    <test>
+        <question>Chở người ngồi trên xe không đội mũ bảo hiểm hoặc đội mũ không cài quai đúng quy cách
+        </question>
+        <base>điểm k, khoản 3, Điều 6</base>
+        <answer>100.000 - 200.000đ</answer>
+    </test>
+    <test>
+        <question>Không chấp hành hiệu lệnh, chỉ dẫn của biển báo hiệu, vạch kẻ đường</question>
+        <base>điểm a, khoản 1, Điều 6</base>
+        <answer>60.000 - 80.000đ</answer>
+    </test>
+    <test>
+        <question>Không chấp hành hiệu lệnh của đèn tín hiệu giao thông (trừ trường hợp quy định bên dưới)
+        </question>
+        <base>điểm o, khoản 3, Điều 6</base>
+        <answer>100.000 - 200.000đ; (giữ GPLX 2 tháng nếu gây TNGT)</answer>
+    </test>
+    <test>
+        <question>Khi tín hiệu đèn giao thông đã chuyển sang màu đỏ nhưng không dừng lại trước vạch dừng mà vẫn tiếp tục đi
+        </question>
+        <base>điểm c, khoản 4, Điều 6</base>
+        <answer>200.000 - 400.000đ;(giữ GPLX 2 tháng nếu gây TNGT)</answer>
+    </test>
+    <test>
+        <question>Chở theo 02 người trên xe, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 14 tuổi
+        </question>
+        <base>điểm l, khoản 3, Điều 6</base>
+        <answer>100.000 - 200.000đ</answer>
+    </test>
+    <test>
+        <question>Người điều khiển xe sử dụng điện thoại di động, thiết bị âm thanh</question>
+        <base>điểm h, khoản 1, Điều 6</base>
+        <answer>60.000 - 80.000đ;(giữ GPLX 2 tháng nếu gây TNGT)</answer>
+    </test>
+</data>

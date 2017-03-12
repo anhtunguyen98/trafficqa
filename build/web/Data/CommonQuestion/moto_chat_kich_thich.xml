@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test>
+        <question>Không có gương chiếu hậu bên trái người điều khiển hoặc có nhưng không có tác dụng
+        </question>
+        <base>điểm a, khoản 1, Điều 17</base>
+        <answer>80.000 - 100.000đ</answer>
+    </test>
+    <test>
+        <question>Gắn biển số không đúng quy định; biển số không rõ chữ, số; biển số bị bẻ cong, bị hỏng
+        </question>
+        <base>điểm b, khoản 1, Điều 17</base>
+        <answer>80.000 - 100.000đ</answer>
+    </test>
+    <test>
+        <question>Sử dụng còi không đúng quy chuẩn kỹ thuật cho từng loại xe</question>
+        <base>điểm a, khoản 2, Điều 17</base>
+        <answer>100.000 - 200.000đ</answer>
+    </test>
+    <test>
+        <question>Không có bộ phận giảm thanh, giảm khói hoặc có nhưng không bảo đảm</question>
+        <base>điểm b, khoản 2, Điều 17</base>
+        <answer>100.000 - 200.000đ</answer>
+    </test>
+    <test>
+        <question>Không có đèn chiếu sáng gần, xa hoặc có nhưng không có tác dụng</question>
+        <base>điểm c, khoản 2, Điều 17</base>
+        <answer>100.000 - 200.000đ</answer>
+    </test>
+    <test>
+        <question>Không gắn biển số; gắn biển số không đúng với biển số đăng ký ghi trong Giấy đăng ký xe; biển số không do cơ quan có thẩm quyền cấp
+        </question>
+        <base>điểm c, khoản 3, Điều 17</base>
+        <answer>300.000 - 400.000đ; tịch thu biển số không đúng quy định</answer>
+    </test>
+    <test>
+        <question>Điều khiển loại xe sản xuất, lắp ráp trái quy định tham gia giao thông</question>
+        <base>điểm b, khoản 4, Điều 17</base>
+        <answer>800.000 - 1.000.000đ; tịch thu  xe và giữ GPLX 02 tháng</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe chạy quá tốc độ quy định từ 05 km/h đến dưới 10 km/h</question>
+        <base>điểm c, khoản 3, Điều 6</base>
+        <answer>100.000 - 200.000đ</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe chạy quá tốc độ quy định từ 10 km/h đến 20 km/h</question>
+        <base>điểm a, khoản 5, Điều 6</base>
+        <answer>500.000 - 1 triệuđồng</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe chạy quá tốc độ quy định trên 20 km/h</question>
+        <base>điểm đ, khoản 6, Điều 6</base>
+        <answer>2 - 3 triệu đồng</answer>
+    </test>
+    <test>
+        <question>Không chú ý quan sát, điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông
+        </question>
+        <base>điểm c, khoản 6, Điều 6</base>
+        <answer>2 - 3 triệu đồng; giữ GPLX 2 tháng</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe chạy dàn hàng ngang từ 3 xe trở lên</question>
+        <base>điểm b, khoản 2, Điều 6</base>
+        <answer>80.000 - 100.000đ</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe thành đoàn gây cản trở giao thông</question>
+        <base>điểm đ, khoản 4, Điều 6</base>
+        <answer>200.000 - 400.000đ</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe lạng lách hoặc đánh võng trên đường bộ trong, ngoài đô thị
+        </question>
+        <base>điểm b, khoản 7, Điều 6</base>
+        <answer>5 - 7 triệu đồng; giữ GPLX 2 tháng</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe thành nhóm từ 2 xe trở lên chạy quá tốc độ quy định</question>
+        <base>điểm d, khoản 7, Điều 6</base>
+        <answer>5 - 7 triệu đồng; giữ GPLX 2 tháng</answer>
+    </test>
+    <test>
+        <question>Đua xe mô tô trái phép</question>
+        <base>khoản 2, Điều 34</base>
+        <answer>10 -20 triệu đồng; giữ GPLX 04 tháng và tịch thu phương tiện.</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 50 miligam đến 80 miligam/100 mililít máu hoặc vượt quá 0,25 miligam đến 0,4 miligam/1 lít khí thở
+        </question>
+        <base>điểm b, khoản 5, Điều 6</base>
+        <answer>500.000 - 1 triệu đồng</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở.
+        </question>
+        <base>điểm e, khoản 6, Điều 6</base>
+        <answer>2 - 3 triệu đồng</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe trên đường mà trong cơ thể có chất ma túy</question>
+        <base>khoản 9, Điều 6</base>
+        <answer>Tước GPLX 24 tháng (nếu có GPLX); hoặc phạt tiền 2 - 3 triệu đồng (nếu không có hoặc đang bị giữ GPLX)
+        </answer>
+    </test>
+    <test>
+        <question>Không chấp hành yêu cầu kiểm tra chất ma túy, nồng độ cồn của người kiểm soát giao thông hoặc người thi hành công vụ
+        </question>
+        <base>điểm b, khoản 6, Điều 6</base>
+        <answer>2 - 3 triệu đồng</answer>
+    </test>
+</data>

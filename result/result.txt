@@ -1,0 +1,9 @@
+Jaro Winkler 634
+Levenshtein 155
+Mahattan 59
+Euclide 52
+Cosin 1341
+NGram 59
+Matching 1223
+Dice 1343
+Jaccard 1343

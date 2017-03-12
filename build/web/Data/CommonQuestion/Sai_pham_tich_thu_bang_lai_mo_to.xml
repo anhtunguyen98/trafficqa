@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test>
+        <question>Chở theo từ 03 (ba) người trở lên trên xe</question>
+        <base>điểm b, khoản 4, Điều 6</base>
+        <answer>200.000 - 400.000 đồng; tước quyền sử dụng GPLX: 1 tháng</answer>
+    </test>
+    <test>
+        <question>Khi tín hiệu đèn giao thông đã chuyển sang màu đỏ nhưng không dừng lại trước vạch dừng mà vẫn tiếp tục đi, trừ trường hợp đã đi quá vạch dừng trước khi tín hiệu đèn chuyển sang màu vàng
+        </question>
+        <base>điểm c, khoản 4, Điều 6</base>
+        <answer>200.000 - 400.000 đồng ; tước quyền sử dụng GPLX: 1 tháng</answer>
+    </test>
+    <test>
+        <question>Đi vào đường cấm, khu vực cấm; đi ngược chiều của đường một chiều, đường có biển “Cấm đi ngược chiều”
+        </question>
+        <base>điểm i, khoản 4, Điều 6</base>
+        <answer>200.000 - 400.000 đồng ; tước quyền sử dụng GPLX: 1 tháng</answer>
+    </test>
+    <test>
+        <question>Không chấp hành hiệu lệnh, hướng dẫn của người điều khiển giao thông hoặc người kiểm soát giao thông
+        </question>
+        <base>điểm m, khoản 4, Điều 6</base>
+        <answer>200.000 - 400.000 đồng; tước quyền sử dụng GPLX: 1 tháng</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 50 miligam đến 80 miligam/100 mililít máu hoặc vượt quá 0,25 miligam đến 0,4 miligam/1 lít khí thở
+        </question>
+        <base>điểm b, khoản 5, Điều 6</base>
+        <answer>500.000 - 1.000.000 đồng; tước quyền sử dụng GPLX: 1 tháng</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe chạy quá tốc độ quy định trên 20 km/h</question>
+        <base>điểm đ, khoản 6, Điều 6</base>
+        <answer>2.000.000 - 3.000.000 đồng; tước quyền sử dụng GPLX: 1 tháng</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe đăng ký tạm hoạt động quá phạm vi, thời hạn cho phép</question>
+        <base>điểm a Khoản 4, Điều 17</base>
+        <answer>800.000 - 1.000.000 đồng; tước quyền sử dụng GPLX: 1 tháng</answer>
+    </test>
+    <test>
+        <question>Không nhường đường hoặc gây cản trở xe được quyền ưu tiên đang phát tín hiệu ưu tiên đi làm nhiệm vụ
+        </question>
+        <base>điểm đ, khoản 5, Điều 6</base>
+        <answer>500.000 - 1.000.000 đồng; tước quyền sử dụng GPLX: 2 tháng</answer>
+    </test>
+    <test>
+        <question>Sử dụng chân chống hoặc vật khác quệt xuống đường khi xe đang chạy</question>
+        <base>điểm a, khoản 6, Điều 6</base>
+        <answer>2.000.000 - 3.000.000 đồng; tước quyền sử dụng GPLX: 2 tháng</answer>
+    </test>
+    <test>
+        <question>Không chấp hành yêu cầu kiểm tra về chất ma túy, nồng độ cồn của người kiểm soát giao thông, người thi hành công vụ
+        </question>
+        <base>điểm b, khoản 6, Điều 6</base>
+        <answer>2.000.000 - 3.000.000 đồng; tước quyền sử dụng GPLX: 2 tháng</answer>
+    </test>
+    <test>
+        <question>Không chú ý quan sát, điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; vượt xe hoặc chuyển làn đường trái quy định gây TNGT
+        </question>
+        <base>điểm c, khoản 6, Điều 6</base>
+        <answer>2.000.000 - 3.000.000 đồng; tước quyền sử dụng GPLX: 2 tháng</answer>
+    </test>
+    <test>
+        <question>Gây tai nạn giao thông không dừng lại, không giữ nguyên hiện trường, bỏ trốn không đến trình báo với cơ quan có thẩm quyền, không tham gia cấp cứu người bị nạn
+        </question>
+        <base>điểm d, khoản 6, Điều 6</base>
+        <answer>2.000.000 - 3.000.000 đồng; tước quyền sử dụng GPLX: 2 tháng</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở
+        </question>
+        <base>điểm e, khoản 6, Điều 6</base>
+        <answer>2.000.000 - 3.000.000 đồng; tước quyền sử dụng GPLX: 2 tháng</answer>
+    </test>
+    <test>
+        <question>Buông cả hai tay khi đang điều khiển xe; dùng chân điều khiển xe; ngồi về một bên, nằm trên yên xe điều khiển xe; thay người điều khiển khi xe đang chạy; quay người về phía sau hoặc bịt mắt điều khiển xe
+        </question>
+        <base>điểm a, khoản 7, Điều 6</base>
+        <answer>5.000.000 - 7.000.000 đồng; tước quyền sử dụng GPLX: 2 tháng</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe lạng lách hoặc đánh võng trên đường bộ trong, ngoài đô thị
+        </question>
+        <base>điểm b, khoản 7, Điều 6</base>
+        <answer>5.000.000 - 7.000.000 đồng; tước quyền sử dụng GPLX: 2 tháng</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe chạy bằng một bánh đối với xe hai bánh, chạy bằng hai bánh đối với xe ba bánh
+        </question>
+        <base>điểm c, khoản 7, Điều 6</base>
+        <answer>5.000.000 - 7.000.000 đồng; tước quyền sử dụng GPLX: 2 tháng</answer>
+    </test>
+    <test>
+        <question>Điều khiển xe thành nhóm từ 02 (hai) xe trở lên chạy quá tốc độ quy định
+        </question>
+        <base>điểm d, khoản 7, Điều 6</base>
+        <answer>5.000.000 - 7.000.000 đồng; tước quyền sử dụng GPLX: 2 tháng</answer>
+    </test>
+    <test>
+        <question>Điều khiển loại xe sản xuất, lắp ráp trái quy định tham gia giao thông</question>
+        <base>điểm b Khoản 4, Điều 17</base>
+        <answer>800.000 - 1.000.000 đồng; tước quyền sử dụng GPLX: 2 tháng</answer>
+    </test>
+    <test>
+        <question>Không chấp hành hiệu lệnh, chỉ dẫn của biển báo hiệu, vạch kẻ đường</question>
+        <base>điểm a, khoản 1, Điều 6</base>
+        <answer>60.000 - 80.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Không giữ khoảng cách an toàn để xảy ra va chạm với xe chạy liền trước hoặc không giữ khoảng cách theo quy định của biển báo hiệu “Cự ly tối thiểu giữa hai xe”
+        </question>
+        <base>điểm c, khoản 1, Điều 6</base>
+        <answer>60.000 - 80.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Chuyển hướng không nhường quyền đi trước cho: Người đi bộ, xe lăn của người khuyết tật qua đường tại nơi có vạch kẻ đường dành cho người đi bộ; xe thô sơ đang đi trên phần đường dành cho xe thô sơ
+        </question>
+        <base>điểm d, khoản 1, Điều 6</base>
+        <answer>60.000 - 80.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Chuyển hướng không nhường đường cho: Các xe đi ngược chiều; người đi bộ, xe lăn của người khuyết tật đang qua đường tại nơi không có vạch kẻ đường cho người đi bộ
+        </question>
+        <base>điểm đ, khoản 1, Điều 6</base>
+        <answer>60.000 - 80.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Lùi xe mô tô ba bánh không quan sát hoặc không có tín hiệu báo trước</question>
+        <base>điểm e, khoản 1, Điều 6</base>
+        <answer>60.000 - 80.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Sử dụng đèn chiếu xa khi tránh xe đi ngược chiều</question>
+        <base>điểm g, khoản 1, Điều 6</base>
+        <answer>60.000 - 80.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Người đang điều khiển xe sử dụng ô, điện thoại di động, thiết bị âm thanh; người ngồi trên xe sử dụng ô
+        </question>
+        <base>điểm h, khoản 1, Điều 6</base>
+        <answer>60.000 - 80.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Điều khiển xe chạy dàn hàng ngang từ 03 (ba) xe trở lên</question>
+        <base>điểm b, khoản 2, Điều 6</base>
+        <answer>80.000 - 100.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Không sử dụng đèn chiếu sáng khi trời tối hoặc khi sương mù, thời tiết xấu hạn chế tầm nhìn
+        </question>
+        <base>điểm c, khoản 2, Điều 6</base>
+        <answer>80.000 - 100.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Không nhường đường cho xe xin vượt khi có đủ điều kiện an toàn; không nhường đường cho xe đi trên đường ưu tiên, đường chính từ bất kỳ hướng nào tới tại nơi đường giao nhau
+        </question>
+        <base>điểm d, khoản 2, Điều 6</base>
+        <answer>80.000 - 100.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Tránh xe không đúng quy định; không nhường đường cho xe đi ngược chiều theo quy định tại nơi đường hẹp, đường dốc, nơi có chướng ngại vật
+        </question>
+        <base>điểm đ, khoản 2, Điều 6</base>
+        <answer>80.000 - 100.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Quay đầu xe tại nơi cấm quay đầu xe</question>
+        <base>điểm h, khoản 2, Điều 6</base>
+        <answer>80.000 - 100.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Dừng xe, đỗ xe trên phần đường xe chạy ở đoạn đường ngoài đô thị nơi có lề đường
+        </question>
+        <base>điểm a, khoản 3, Điều 6</base>
+        <answer>100.000 - 200.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Dừng xe, đỗ xe ở lòng đường đô thị gây cản trở giao thông; tụ tập từ 03 xe trở lên ở lòng đường, trên cầu, trong hầm đường bộ; đỗ, để xe ở lòng đường đô thị, hè phố trái quy định
+        </question>
+        <base>điểm đ, khoản 3, Điều 6</base>
+        <answer>100.000 - 200.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Xe không được quyền ưu tiên sử dụng tín hiệu còi, cờ, đèn của xe ưu tiên
+        </question>
+        <base>điểm g, khoản 3, Điều 6</base>
+        <answer>100.000 - 200.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Dừng xe, đỗ xe trên đường xe điện, điểm dừng đón trả khách của xe buýt, trên cầu, nơi đường bộ giao nhau, trên phần đường dành cho người đi bộ qua đường; dừng xe nơi có biển “Cấm dừng xe và đỗ xe”; đỗ xe tại nơi có biển “Cấm đỗ xe” hoặc biển “Cấm dừng xe và đỗ xe”; không tuân thủ các quy định về dừng xe, đỗ xe tại nơi đường bộ giao nhau cùng mức với đường sắt; dừng xe, đỗ xe trong phạm vi an toàn của đường sắt
+        </question>
+        <base>điểm h, khoản 3, Điều 6</base>
+        <answer>100.000 - 200.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Không chấp hành hiệu lệnh của đèn tín hiệu giao thông</question>
+        <base>điểm o, khoản 3, Điều 6</base>
+        <answer>100.000 - 200.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Chở theo từ 03 (ba) người trở lên trên xe</question>
+        <base>điểm b, khoản 4, Điều 6</base>
+        <answer>200.000 - 400.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Khi tín hiệu đèn giao thông đã chuyển sang màu đỏ nhưng không dừng lại trước vạch dừng mà vẫn tiếp tục đi, trừ trường hợp đã đi quá vạch dừng trước khi tín hiệu đèn chuyển sang màu vàng
+        </question>
+        <base>điểm c, khoản 4, Điều 6</base>
+        <answer>200.000 - 400.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Điều khiển xe đi vào đường cao tốc, trừ xe phục vụ việc quản lý, bảo trì đường cao tốc
+        </question>
+        <base>điểm e, khoản 4, Điều 6</base>
+        <answer>200.000 - 400.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Điều khiển xe không đi bên phải theo chiều đi của mình; đi không đúng phần đường, làn đường quy định hoặc điều khiển xe đi trên hè phố
+        </question>
+        <base>điểm g, khoản 4, Điều 6</base>
+        <answer>200.000 - 400.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Đi vào đường cấm, khu vực cấm; đi ngược chiều của đường một chiều, đường có biển “Cấm đi ngược chiều”
+        </question>
+        <base>điểm i, khoản 4, Điều 6</base>
+        <answer>200.000 - 400.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Người điều khiển xe hoặc người ngồi trên xe bám, kéo, đẩy xe khác, vật khác, dẫn dắt súc vật, mang vác vật cồng kềnh; người ngồi trên xe đứng trên yên, giá đèo hàng hoặc ngồi trên tay lái; xếp hàng hóa trên xe vượt quá giới hạn quy định; điều khiển xe kéo theo xe khác, vật khác
+        </question>
+        <base>điểm k, khoản 4, Điều 6</base>
+        <answer>200.000 - 400.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Không chấp hành hiệu lệnh, hướng dẫn của người điều khiển giao thông hoặc người kiểm soát giao thông
+        </question>
+        <base>điểm m, khoản 4, Điều 6</base>
+        <answer>200.000 - 400.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 50 miligam đến 80 miligam/100 mililít máu hoặc vượt quá 0,25 miligam đến 0,4 miligam/1 lít khí thở
+        </question>
+        <base>điểm b, khoản 5, Điều 6</base>
+        <answer>500.000 - 1.000.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Chạy trong hầm đường bộ không sử dụng đèn chiếu sáng gần; dừng xe, đỗ xe, vượt xe trong hầm đường bộ không đúng nơi quy định; quay đầu xe trong hầm đường bộ
+        </question>
+        <base>điểm d, khoản 5, Điều 6</base>
+        <answer>500.000 - 1.000.000 đồng; tước quyền sử dụng GPLX: 2 tháng(gây tai nạn giao thông)
+        </answer>
+    </test>
+    <test>
+        <question>Buông cả hai tay khi đang điều khiển xe; dùng chân điều khiển xe; ngồi về một bên điều khiển xe; nằm trên yên xe điều khiển xe; thay người điều khiển khi xe đang chạy; quay người về phía sau để điều khiển xe hoặc bịt mắt điều khiển xe
+        </question>
+        <base>điểm a, khoản 7, Điều 6</base>
+        <answer>10 - 14 triệu đồng; tước quyền sử dụng GPLX: 4 tháng (nếu gây tai nạn giao thông hoặc không chấp hành hiệu lệnh dừng xe của người thi hành công vụ). Nếu tái phạm hoặc vi phạm nhiều lần ngoài việc bị tước quyền sử dụng GPLX 4 tháng còn bị tịch thu phương tiện.
+        </answer>
+    </test>
+    <test>
+        <question>Điều khiển xe lạng lách hoặc đánh võng trên đường bộ trong, ngoài đô thị
+        </question>
+        <base>điểm b, khoản 7, Điều 6</base>
+        <answer>10 - 14 triệu đồng; tước quyền sử dụng GPLX: 4 tháng (nếu gây tai nạn giao thông hoặc không chấp hành hiệu lệnh dừng xe của người thi hành công vụ). Nếu tái phạm hoặc vi phạm nhiều lần ngoài việc bị tước quyền sử dụng GPLX 4 tháng còn bị tịch thu phương tiện.
+        </answer>
+    </test>
+    <test>
+        <question>Điều khiển xe chạy bằng một bánh đối với xe hai bánh, chạy bằng hai bánh đối với xe ba bánh
+        </question>
+        <base>điểm c, khoản 7, Điều 6</base>
+        <answer>10 - 14 triệu đồng; tước quyền sử dụng GPLX: 4 tháng (nếu gây tai nạn giao thông hoặc không chấp hành hiệu lệnh dừng xe của người thi hành công vụ). Nếu tái phạm hoặc vi phạm nhiều lần ngoài việc bị tước quyền sử dụng GPLX 4 tháng còn bị tịch thu phương tiện.
+        </answer>
+    </test>
+    <test>
+        <question>Điều khiển xe thành nhóm từ 02 (hai) xe trở lên chạy quá tốc độ quy định
+        </question>
+        <base>điểm d, khoản 7, Điều 6</base>
+        <answer>10 - 14 triệu đồng; tước quyền sử dụng GPLX: 4 tháng (nếu gây tai nạn giao thông hoặc không chấp hành hiệu lệnh dừng xe của người thi hành công vụ). Nếu tái phạm hoặc vi phạm nhiều lần ngoài việc bị tước quyền sử dụng GPLX 4 tháng còn bị tịch thu phương tiện.
+        </answer>
+    </test>
+    <test>
+        <question>Đua xe mô tô trái phép</question>
+        <base>Khoản 2, Điều 34</base>
+        <answer>10 - 20 triệu đồng; tịch thu phương tiện; tước quyền sử dụng GPLX: 4 tháng (nếu gây tai nạn giao thông hoặc không chấp hành hiệu lệnh dừng xe của người thi hành công vụ).
+        </answer>
+    </test>
+    <test>
+        <question>Người điều khiển xe sử dụng Giấy phép lái xe không do cơ quan có thẩm quyền cấp, Giấy phép lái xe bị tẩy xóa
+        </question>
+        <base>khoản 5, Điều 21</base>
+        <answer>800.000 - 1.200.000 đồng; tịch thu Giấy phép lái xe</answer>
+    </test>
+    <test>
+        <question>Người điều khiển xe dung tích xi lanh từ 175 cm3 trở lên sử dụng GPLX không do cơ quan có thẩm quyền cấp, GPLX bị tẩy xóa
+        </question>
+        <base>Điểm b Khoản 7 Điều 21</base>
+        <answer>4.000.000 -6.000.000 đồng; tịch thu Giấy phép lái xe</answer>
+    </test>
+</data>

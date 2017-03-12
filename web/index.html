@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/index.js"></script>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div align='center'>
+                <!--        <form method="POST" action="SimilarityQuestion">-->
+                <table style="margin-bottom: 50px;">
+                    <tr style="text-align: right;">
+                        <td style="padding-right: 10px;">Câu hỏi:</td>
+                        <td>
+                            <textarea name="question" id="question" rows="5" cols="60" placeholder="Mời nhập câu hỏi!"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-right: 10px;">Phương pháp:</td>
+                        <td>
+                            <select name="mea" id="mea">
+                                <option value="1">Jaro Winkler</option>
+                                <option value="2">Levenshtein</option>
+                                <option value="3">Mahattan</option>
+                                <option value="4">Euclide</option>
+                                <option value="5">Cosin</option>
+                                <option value="6">NGram</option>
+                                <option value="7">Matching</option>
+                                <option value="8">Dice</option>
+                                <option value="9">Jaccard</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="button" class="button" id="btnSubmit" value="Tìm kiếm"/>
+                        </td>
+                    </tr>
+                </table>
+                <!--<input type="text" name="abs2Use" id="abs2Use" value='[{"abs": 1}]' hidden="true" />-->
+                <!--<input type="text" name="action" id="action" hidden="true" value="getCommonQuestions" />-->
+                <!--        </form>-->
+
+                <div style="width: 90%;">
+                    <table id="resultTable" class='table table-bordered table-striped table-sm table-hover'>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

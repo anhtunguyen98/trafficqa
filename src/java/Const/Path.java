@@ -10,4 +10,5 @@ package Const;
  * @author tutyb_000
  */
 public class Path {
+    public static String DATA_PATH = "";
 }

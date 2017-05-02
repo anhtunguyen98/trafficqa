@@ -20,6 +20,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
@@ -28,7 +29,7 @@ import org.json.JSONObject;
  */
 @WebServlet(name = "Answer", urlPatterns = {"/Answer"})
 public class Answer extends HttpServlet {
-
+    
     String DATA_PATH = "";
     String modelPath = "";
     DAO dao = null;
@@ -77,11 +78,11 @@ public class Answer extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json; charset=UTF-8");
-
+        
         String action = request.getParameter("action");
-
+        
         System.out.println(action);
-
+        
         if (action.equals("getAnswer")) {
             getAnswers(request, response);
         }
@@ -102,7 +103,7 @@ public class Answer extends HttpServlet {
         if (dao == null) {
             String domain = request.getServerName();
             String username, password, dbName;
-            if(domain.equals("localhost")){
+            if (domain.equals("localhost")) {
                 username = "root";
                 password = "";
                 dbName = "qaservice";
@@ -114,49 +115,59 @@ public class Answer extends HttpServlet {
             }
             dao = new DAO(domain, username, password, dbName);
         }
-
+        
         if (DATA_PATH.length() == 0) {
-            DATA_PATH = getServletContext().getRealPath("/") + "Data/";
+            String domain = request.getServerName();
+            if (domain.equals("localhost")) {
+                DATA_PATH = getServletContext().getRealPath("/") + "Data/";
+            } else {
+                DATA_PATH = System.getenv("OPENSHIFT_DATA_DIR");
+            }
             Path.DATA_PATH = DATA_PATH;
             modelPath = DATA_PATH + "model.crfsuite";
             tagger = new TrafficCrfTagger(modelPath);
         }
-
+        
         String question = URLDecoder.decode(request.getParameter("question"), "UTF-8");
-
+        
         List<Pair<String, String>> tags = tagger.tag(question);
         HashMap<String, String> hash = new HashMap();
         String content;
-
+        JSONArray jtags = new JSONArray();
+        
         for (int i = 0; i < tags.size(); i++) {
             Pair<String, String> pair = tags.get(i);
             String token = pair.getFirst();
             String tag = pair.getSecond().replaceAll("B-", "").replaceAll("I-", "");
+            JSONObject jobj = new JSONObject();
+            jobj.put("token", token);
+            jobj.put("tag", pair.second);
+            jtags.put(jobj);
 
 //            System.out.println(token + " " + tag);
-
             if (!tag.equals("O")) {
                 content = ((hash.containsKey(tag)) ? hash.get(tag) + " " + token : token);
                 hash.put(tag, content);
             }
         }
-
+        
         String answer;
-
+        
         try {
             answer = dao.getAnswers(hash);
         } catch (SQLException ex) {
             answer = "Something went wrong!";
         }
-
+        
         answer = ((answer.length() == 0) ? "No Answers!" : answer);
-
+        
         JSONObject json = new JSONObject();
         json.put("answer", answer);
+        json.put("tags", jtags);
         
         System.out.println(answer);
-
+        
         response.getWriter().write(json.toString());
     }
-
+    
 }

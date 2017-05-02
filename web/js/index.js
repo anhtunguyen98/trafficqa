@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $("#btnSubmit").click(function () {
-        $("#resultTable").html("Đang lấy dữ liệu...");
+        $("#answer").html("Đang lấy câu trả lời...");
         console.log($("#question").val());
         $.ajax({
             url: "Answer",
@@ -11,7 +11,7 @@ $(document).ready(function () {
                 question: encodeURI($("#question").val())
             },
             success: function (res) {
-                console.log(res);
+                console.log(res.tags);
                 $('#answer').html(res.answer);
             },
             error: function (ts) {

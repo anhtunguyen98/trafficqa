@@ -20,8 +20,8 @@ public class DAO {
 
     private Connection conn;
 
-    public DAO() {
-        String dbUrl = "jdbc:mysql://localhost:3306/qaservice?useUnicode=true&characterEncoding=utf-8";
+    public DAO(String domain, String username, String password, String dbName) {
+        String dbUrl = "jdbc:mysql://" + domain + ":3306/" + dbName + "?useUnicode=true&characterEncoding=utf-8";
         String dbClass = "com.mysql.jdbc.Driver";
         try {
             Class.forName(dbClass);

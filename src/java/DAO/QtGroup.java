@@ -46,6 +46,7 @@ public class QtGroup {
             }
 
             groups.add(arr);
+            inp.close();
         } catch (FileNotFoundException ex) {
             Logger.getLogger(QtGroup.class.getName()).log(Level.SEVERE, null, ex);
         }

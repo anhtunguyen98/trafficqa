@@ -7,19 +7,14 @@ package Servlet;
 
 import Const.*;
 import DAO.DAO;
-import com.aliasi.crf.ChainCrf;
-import com.aliasi.tag.Tagging;
-import com.aliasi.util.AbstractExternalizable;
-import java.io.File;
+import com.github.jcrfsuite.util.Pair;
+import crfsuite.TrafficCrfTagger;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.sql.SQLException;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -36,10 +31,8 @@ public class Answer extends HttpServlet {
 
     String DATA_PATH = "";
     String modelPath = "";
-    File modelFile = null;
-    @SuppressWarnings("unchecked")
-    ChainCrf<String> crf = null;
     DAO dao = null;
+    TrafficCrfTagger tagger = null;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -87,7 +80,9 @@ public class Answer extends HttpServlet {
 
         String action = request.getParameter("action");
 
-        if (action.equals("getAnswers")) {
+        System.out.println(action);
+
+        if (action.equals("getAnswer")) {
             getAnswers(request, response);
         }
     }
@@ -105,42 +100,43 @@ public class Answer extends HttpServlet {
     private void getAnswers(HttpServletRequest request, HttpServletResponse response)
             throws UnsupportedEncodingException, IOException {
         if (dao == null) {
-            dao = new DAO();
+            String domain = request.getServerName();
+            String username, password, dbName;
+            if(domain.equals("localhost")){
+                username = "root";
+                password = "";
+                dbName = "qaservice";
+            } else {
+                domain = "127.12.52.2";
+                username = "adminFf1Pbuj";
+                password = "c5h8CW-Kb-HV";
+                dbName = "QADatabase";
+            }
+            dao = new DAO(domain, username, password, dbName);
         }
 
         if (DATA_PATH.length() == 0) {
             DATA_PATH = getServletContext().getRealPath("/") + "Data/";
             Path.DATA_PATH = DATA_PATH;
-            modelPath = DATA_PATH + "model";
-            modelFile = new File(modelPath);
+            modelPath = DATA_PATH + "model.crfsuite";
+            tagger = new TrafficCrfTagger(modelPath);
         }
 
         String question = URLDecoder.decode(request.getParameter("question"), "UTF-8");
 
-        if (crf == null) {
-            try {
-                crf = (ChainCrf<String>) AbstractExternalizable.readObject(modelFile);
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            } catch (ClassNotFoundException ex) {
-                ex.printStackTrace();
-            }
-        }
-
-        List<String> tokens = Arrays.asList(question.split("\\s"));
-        Tagging<String> tagging = crf.tag(tokens);
-
+        List<Pair<String, String>> tags = tagger.tag(question);
         HashMap<String, String> hash = new HashMap();
-        String content = "";
+        String content;
 
-        for (int i = 0; i < tagging.size(); i++) {
-            String token = tagging.token(i);
-            String tag = tagging.tag(i);
+        for (int i = 0; i < tags.size(); i++) {
+            Pair<String, String> pair = tags.get(i);
+            String token = pair.getFirst();
+            String tag = pair.getSecond().replaceAll("B-", "").replaceAll("I-", "");
+
+//            System.out.println(token + " " + tag);
 
             if (!tag.equals("O")) {
-                if (hash.containsKey(tag)) {
-                    content = hash.get(tag) + " " + content;
-                }
+                content = ((hash.containsKey(tag)) ? hash.get(tag) + " " + token : token);
                 hash.put(tag, content);
             }
         }
@@ -158,6 +154,8 @@ public class Answer extends HttpServlet {
         JSONObject json = new JSONObject();
         json.put("answer", answer);
         
+        System.out.println(answer);
+
         response.getWriter().write(json.toString());
     }
 

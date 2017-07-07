@@ -15,6 +15,8 @@ import java.net.URLDecoder;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -29,7 +31,7 @@ import org.json.JSONObject;
  */
 @WebServlet(name = "Answer", urlPatterns = {"/Answer"})
 public class Answer extends HttpServlet {
-    
+
     String DATA_PATH = "";
     String modelPath = "";
     DAO dao = null;
@@ -78,11 +80,11 @@ public class Answer extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json; charset=UTF-8");
-        
+
         String action = request.getParameter("action");
-        
+
         System.out.println(action);
-        
+
         if (action.equals("getAnswer")) {
             getAnswers(request, response);
         }
@@ -115,7 +117,7 @@ public class Answer extends HttpServlet {
             }
             dao = new DAO(domain, username, password, dbName);
         }
-        
+
         if (DATA_PATH.length() == 0) {
             String domain = request.getServerName();
             if (domain.equals("localhost")) {
@@ -127,14 +129,14 @@ public class Answer extends HttpServlet {
             modelPath = DATA_PATH + "model.crfsuite";
             tagger = new TrafficCrfTagger(modelPath);
         }
-        
+
         String question = URLDecoder.decode(request.getParameter("question"), "UTF-8");
-        
+
         List<Pair<String, String>> tags = tagger.tag(question);
         HashMap<String, String> hash = new HashMap();
         String content;
         JSONArray jtags = new JSONArray();
-        
+
         for (int i = 0; i < tags.size(); i++) {
             Pair<String, String> pair = tags.get(i);
             String token = pair.getFirst();
@@ -150,24 +152,43 @@ public class Answer extends HttpServlet {
                 hash.put(tag, content);
             }
         }
-        
+
+        standardizeHash(hash);
+
         String answer;
-        
+
         try {
             answer = dao.getAnswers(hash);
         } catch (SQLException ex) {
             answer = "Something went wrong!";
         }
-        
+
         answer = ((answer.length() == 0) ? "No Answers!" : answer);
-        
+
         JSONObject json = new JSONObject();
         json.put("answer", answer);
         json.put("tags", jtags);
-        
+
         System.out.println(answer);
-        
+
         response.getWriter().write(json.toString());
     }
-    
+
+    public void standardizeHash(HashMap<String, String> hash) {
+        Pattern speed = Pattern.compile("(\\d)+ km/h");
+
+        for (String key : hash.keySet()) {
+            if (!key.equals("v")) {
+                String val = hash.get(key);
+                Matcher m = speed.matcher(val);
+
+                if (m.find()) {
+                    String group = m.group(1);
+                    val = val.replace(group, "");
+                    hash.put(key, val);
+                    hash.put("v", group);
+                }
+            }
+        }
+    }
 }

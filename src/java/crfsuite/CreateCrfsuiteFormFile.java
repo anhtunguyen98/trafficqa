@@ -40,7 +40,7 @@ public class CreateCrfsuiteFormFile {
 
                 String[] raw = line.split("\\s");
                 words.add(raw[0]);
-                tags.add(raw[2]);
+                tags.add(raw[1]);
             }
 
             if (words.size() > 0) {

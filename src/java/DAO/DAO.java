@@ -49,7 +49,7 @@ public class DAO {
                 continue;
             }
 
-            sql += key + "='" + pars.get(key) + "' ";
+            sql += key + "='" + pars.get(key).trim().replaceAll("\\s+", " ") + "' ";
         }
 
         System.out.println(sql);

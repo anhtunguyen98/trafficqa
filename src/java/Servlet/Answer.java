@@ -6,7 +6,7 @@
 package Servlet;
 
 import Const.*;
-import DAO.DAO;
+import DoAction.DAO;
 import com.github.jcrfsuite.util.Pair;
 import crfsuite.TrafficCrfTagger;
 import java.io.IOException;
@@ -130,7 +130,7 @@ public class Answer extends HttpServlet {
             tagger = new TrafficCrfTagger(modelPath);
         }
 
-        String question = URLDecoder.decode(request.getParameter("question"), "UTF-8");
+        String question = URLDecoder.decode(request.getParameter("question"), "UTF-8").trim().replaceAll("\\s+", " ");
 
         List<Pair<String, String>> tags = tagger.tag(question);
         HashMap<String, String> hash = new HashMap();
@@ -148,7 +148,7 @@ public class Answer extends HttpServlet {
 
 //            System.out.println(token + " " + tag);
             if (!tag.equals("O")) {
-                content = ((hash.containsKey(tag)) ? hash.get(tag) + " " + token : token);
+                content = ((hash.containsKey(tag)) ? hash.get(tag) + " " + token.trim() : token.trim());
                 hash.put(tag, content);
             }
         }

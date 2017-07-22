@@ -1,25 +1,21 @@
-bị phạt bao nhiêu tiền
-bị phạt bao nhiêu
-phạt bao nhiêu tiền
-bị phạt thế nào
+Bị phạt bao nhiêu tiền
+Bị phạt bao nhiêu
+Phạt bao nhiêu tiền
+Bị phạt thế nào
 
-có vi phạm luật giao thông không
-có bị vi phạm luật giao thông không
-có được không
-có được phép không
-có được hay không
-có bị phạt không
-có phải không
-có bị vi phạm không
-có bị vi phạm luật không
-có bị cấm không
-có bị nghiêm cấm hay không
-được hay không
-vi phạm luật không
-vi phạm luật giao thông không
-vi phạm luật hay không
-có bị nghiêm cấm không
-có vi phạm luật không
+Có vi phạm luật giao thông không
+Có bị vi phạm luật giao thông không
+Có bị phạt không
+Có phải không
+Có bị vi phạm không
+Có bị vi phạm luật không
+Có bị cấm không
+Có bị nghiêm cấm hay không
+Vi phạm luật không
+Vi phạm luật giao thông không
+Vi phạm luật hay không
+Có bị nghiêm cấm không
+Có vi phạm luật không
 
 là bao nhiêu
 
@@ -27,38 +23,43 @@ là bao nhiêu
 là gì
 thế nào là
 
-phải đi như thế nào
-phải làm gì
-phải như thế nào
-phải thế nào
+Phải đi như thế nào
+Phải làm gì
+Phải như thế nào
+Phải thế nào
 xử lý như thế nào
-thực hiện như thế nào
-đi như thế nào
-thực hiện các thao tác nào
+Thực hiện như thế nào
+Đi như thế nào
+Thực hiện các thao tác nào
 
-bao nhiêu tuổi
-bao nhiêu tuổi trở lên
+Bao nhiêu tuổi
+Bao nhiêu tuổi trở lên
 
-tốc độ tối đa cho phép là bao nhiêu
-tốc độ cho phép là bao nhiêu
-tốc độ tối đa là bao nhiêu
-đi tối đa là bao nhiêu
-tối đa là bao nhiêu
+Tốc độ tối đa cho phép là bao nhiêu
+Tốc độ cho phép là bao nhiêu
+Tốc độ tối đa là bao nhiêu
+Đi tối đa là bao nhiêu
+Tối đa là bao nhiêu
 
 trường hợp nào
 khi nào
 
 được đi hay không
-có được phép đi xe hay không
-có được di chuyển không
-được đi chưa
-có được đi xe không
+Có được phép đi xe hay không
+Có được di chuyển không
+Được đi chưa
+Có được đi xe không
 
-có được vượt hay không
-có được vượt không
+Có được vượt hay không
+Có được vượt không
 
-loại xe gì
-loại xe cơ giới nào
-xe gì
-xe nào
+Loại xe gì
+Loại xe cơ giới nào
+Xe gì
+Xe nào
 
+Có được không
+Có được phép không
+Có được hay không
+Được hay không
+Có bị nghiêm cấm không

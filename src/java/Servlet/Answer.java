@@ -5,24 +5,17 @@
  */
 package Servlet;
 
-import Const.*;
-import DoAction.DAO;
-import com.github.jcrfsuite.util.Pair;
+import core.FindingAnswer;
+import core.dao.DAO;
 import crfsuite.TrafficCrfTagger;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
-import java.sql.SQLException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
@@ -102,7 +95,7 @@ public class Answer extends HttpServlet {
 
     private void getAnswers(HttpServletRequest request, HttpServletResponse response)
             throws UnsupportedEncodingException, IOException {
-        if (dao == null) {//create DAO
+        if (FindingAnswer.dao == null) {//create DAO
             String domain = request.getServerName();
             String username, password, dbName;
             if (domain.equals("localhost")) {
@@ -115,83 +108,62 @@ public class Answer extends HttpServlet {
                 password = "c5h8CW-Kb-HV";
                 dbName = "QADatabase";
             }
-            dao = new DAO(domain, username, password, dbName);
+            FindingAnswer.dao = new DAO(domain, username, password, dbName);
         }
 
         if (DATA_PATH.length() == 0) {
             String domain = request.getServerName();
             if (domain.equals("localhost")) {
-                DATA_PATH = getServletContext().getRealPath("/") + "Data/";
+                DATA_PATH = getServletContext().getRealPath("/") + "Data\\";
             } else {
                 DATA_PATH = System.getenv("OPENSHIFT_DATA_DIR");
             }
-            Path.DATA_PATH = DATA_PATH;
-            modelPath = DATA_PATH + "model.crfsuite";
-            tagger = new TrafficCrfTagger(modelPath);
+            Const.Path.DATA_PATH = DATA_PATH;
+//            modelPath = DATA_PATH + "model.crfsuite";
+//            tagger = new TrafficCrfTagger(modelPath);
         }
 
         String question = URLDecoder.decode(request.getParameter("question"), "UTF-8").trim().replaceAll("\\s+", " ");
+//        System.out.println(question);
 
-        ///tagging
-        List<Pair<String, String>> tags = tagger.tag(question);
-        HashMap<String, String> hash = new HashMap();
-        String content;
-        JSONArray jtags = new JSONArray();
-
-        for (int i = 0; i < tags.size(); i++) {
-            Pair<String, String> pair = tags.get(i);
-            String token = pair.getFirst();
-            String tag = pair.getSecond().replaceAll("B-", "").replaceAll("I-", "");
-            JSONObject jobj = new JSONObject();
-            jobj.put("token", token);
-            jobj.put("tag", pair.second);
-            jtags.put(jobj);
-
-//            System.out.println(token + " " + tag);
-            if (!tag.equals("O")) {
-                content = ((hash.containsKey(tag)) ? hash.get(tag) + " " + token.trim() : token.trim());
-                hash.put(tag, content);
-            }
-        }
-        
-        ///end tagging
-
-        standardizeHash(hash);
+//        ///tagging
+//        List<Pair<String, String>> tags = tagger.tag(question);
+//        HashMap<String, String> hash = new HashMap();
+//        String content;
+//        JSONArray jtags = new JSONArray();
+//
+//        for (int i = 0; i < tags.size(); i++) {
+//            Pair<String, String> pair = tags.get(i);
+//            String token = pair.getFirst();
+//            String tag = pair.getSecond().replaceAll("B-", "").replaceAll("I-", "");
+//            JSONObject jobj = new JSONObject();
+//            jobj.put("token", token);
+//            jobj.put("tag", pair.second);
+//            jtags.put(jobj);
+//
+////            System.out.println(token + " " + tag);
+//            if (!tag.equals("O")) {
+//                content = ((hash.containsKey(tag)) ? hash.get(tag) + " " + token.trim() : token.trim());
+//                hash.put(tag, content);
+//            }
+//        }
+//
+//        ///end tagging
+//        standardizeHash(hash);
 
         String answer;
 
-        try {
-            answer = dao.getAnswers(hash);
-        } catch (SQLException ex) {
-            answer = "Something went wrong!";
-        }
+//        answer = dao.getClosestAnswer(hash);
+        answer = FindingAnswer.getAnswer(question).get(0).getAnswer();
 
-        answer = ((answer.length() == 0) ? "No Answers!" : answer);
+        answer = ((answer == null || answer.length() == 0) ? "No Answers!" : answer);
 
         JSONObject json = new JSONObject();
         json.put("answer", answer);
-        json.put("tags", jtags);
+//        json.put("tags", jtags);
 
         System.out.println(answer);
 
         response.getWriter().write(json.toString());
-    }
-
-    public void standardizeHash(HashMap<String, String> hash) {
-        Pattern speed = Pattern.compile("(\\d)+ km/h");
-
-        for (String key : hash.keySet()) {
-            if (!key.equals("v")) {
-                String val = hash.get(key);
-                Matcher m = speed.matcher(val);
-
-                if (m.find()) {
-                    String group = m.group(1);
-                    val = val.replace(group, "");
-                    hash.put(key, val);
-                    hash.put("v", group);
-                }
-            }
-        }
     }
 }

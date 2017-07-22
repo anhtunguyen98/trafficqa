@@ -122,11 +122,11 @@ public class SimilarityQuestion extends HttpServlet {
             Test test = tests.get(i);
             AbstractQuestion absq = absqs.get(i);
             TestMeasure testMeasure = new TestMeasure(test, abs2Use, mea);
-            Measure measure = new Measure();
-            measure.setAbs1(absq.getAbs());
-            measure.setAbs2(userAbsq.getAbs());
-            testMeasure.process(measure);
-            testMeasures.add(testMeasure);
+//            Measure measure = new Measure();
+//            measure.setAbs1(absq.getAbs());
+//            measure.setAbs2(userAbsq.getAbs());
+//            testMeasure.process(measure);
+//            testMeasures.add(testMeasure);
         }
 
         Collections.sort(testMeasures);

@@ -102,7 +102,7 @@ public class Answer extends HttpServlet {
 
     private void getAnswers(HttpServletRequest request, HttpServletResponse response)
             throws UnsupportedEncodingException, IOException {
-        if (dao == null) {
+        if (dao == null) {//create DAO
             String domain = request.getServerName();
             String username, password, dbName;
             if (domain.equals("localhost")) {
@@ -132,6 +132,7 @@ public class Answer extends HttpServlet {
 
         String question = URLDecoder.decode(request.getParameter("question"), "UTF-8").trim().replaceAll("\\s+", " ");
 
+        ///tagging
         List<Pair<String, String>> tags = tagger.tag(question);
         HashMap<String, String> hash = new HashMap();
         String content;
@@ -152,6 +153,8 @@ public class Answer extends HttpServlet {
                 hash.put(tag, content);
             }
         }
+        
+        ///end tagging
 
         standardizeHash(hash);
 

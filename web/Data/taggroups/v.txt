@@ -1,0 +1,48 @@
+0 20miligram/1 lít khí thở
+0 3 miligam/1 lít khí thở
+0 3miligram/1 lít khí thở
+0 5miligram/1 lít khí thở
+10 km/h
+10 km/h đến 20 km/h
+100 km/h
+11 km/h
+15 km/h
+20 km/h
+20 km/h đến 35 km/h
+25 km/h
+30 miligam/100 mililít máu
+35 km/h
+40 km/h
+45 km/h
+45 miligam/100 mililít máu
+45miligram/100 mililít máu
+5 đến 10 km/h
+5 km/h đến dưới 10 km/h
+50 km/h
+55 km/h
+6 km/h
+60 km/h
+60 miligam/100 mililít máu
+65 km/h
+70 km/h
+70 miligam/100 mililít khí thở
+80 km/h
+9 km/h
+90 km/h
+90miligram /100 mililít máu
+90miligram/100 mililít máu
+dưới 0 25miligram/1 lít khí thở
+dưới 10 km/h
+dưới 20 km/h
+dưới 50miligram/100 mililít máu
+trên 100 km/h đến 120 km/h
+trên 20 km/h
+trên 60 km/h đến 80 km/h
+trên 80 km/h đến 100 km/h
+vượt quá 0 25miligram đến 0 4 miligram trên 1 lít khí thở
+vượt quá 0 25miligram đến 0 4miligram/1 lít khí thở
+vượt quá 0 35 miligram/1 lít khí thở
+vượt quá 0 4miligram/1 lít khí thở
+vượt quá 50miligram đến 80miligram /100 mililít máu
+vượt quá 50miligram đến 80miligram trên 100 mililít máu
+vượt quá 80miligram/100 mililít máu

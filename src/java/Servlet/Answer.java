@@ -6,7 +6,7 @@
 package Servlet;
 
 import core.FindingAnswer;
-import core.dao.DAO;
+import core.dao.AnswerDAO;
 import crfsuite.TrafficCrfTagger;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -27,7 +27,7 @@ public class Answer extends HttpServlet {
 
     String DATA_PATH = "";
     String modelPath = "";
-    DAO dao = null;
+    AnswerDAO dao = null;
     TrafficCrfTagger tagger = null;
 
     /**
@@ -108,7 +108,7 @@ public class Answer extends HttpServlet {
                 password = "c5h8CW-Kb-HV";
                 dbName = "QADatabase";
             }
-            FindingAnswer.dao = new DAO(domain, username, password, dbName);
+            FindingAnswer.dao = new AnswerDAO(domain, username, password, dbName);
         }
 
         if (DATA_PATH.length() == 0) {
@@ -119,48 +119,20 @@ public class Answer extends HttpServlet {
                 DATA_PATH = System.getenv("OPENSHIFT_DATA_DIR");
             }
             Const.Path.DATA_PATH = DATA_PATH;
-//            modelPath = DATA_PATH + "model.crfsuite";
-//            tagger = new TrafficCrfTagger(modelPath);
         }
 
         String question = URLDecoder.decode(request.getParameter("question"), "UTF-8").trim().replaceAll("\\s+", " ");
 //        System.out.println(question);
 
-//        ///tagging
-//        List<Pair<String, String>> tags = tagger.tag(question);
-//        HashMap<String, String> hash = new HashMap();
-//        String content;
-//        JSONArray jtags = new JSONArray();
-//
-//        for (int i = 0; i < tags.size(); i++) {
-//            Pair<String, String> pair = tags.get(i);
-//            String token = pair.getFirst();
-//            String tag = pair.getSecond().replaceAll("B-", "").replaceAll("I-", "");
-//            JSONObject jobj = new JSONObject();
-//            jobj.put("token", token);
-//            jobj.put("tag", pair.second);
-//            jtags.put(jobj);
-//
-////            System.out.println(token + " " + tag);
-//            if (!tag.equals("O")) {
-//                content = ((hash.containsKey(tag)) ? hash.get(tag) + " " + token.trim() : token.trim());
-//                hash.put(tag, content);
-//            }
-//        }
-//
-//        ///end tagging
-//        standardizeHash(hash);
-
         String answer;
 
-//        answer = dao.getClosestAnswer(hash);
         answer = FindingAnswer.getAnswer(question).get(0).getAnswer();
 
         answer = ((answer == null || answer.length() == 0) ? "No Answers!" : answer);
 
         JSONObject json = new JSONObject();
         json.put("answer", answer);
-//        json.put("tags", jtags);
+        json.put("tags", FindingAnswer.jtags);
 
         System.out.println(answer);
 

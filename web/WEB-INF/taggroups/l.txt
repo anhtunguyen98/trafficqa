@@ -1,0 +1,149 @@
+bên trái đường một chiều
+chỗ dành riêng cho xe chữa cháy lấy nước
+chỗ đường điện cao thế
+chỗ đường giao nhau
+dưới gầm cầu vượt
+đầu cầu
+đoạn giao nhau với đường nhánh
+đoạn giao nhau với đường ưu tiên
+đường cao tốc
+đường một chiều
+giữa dốc
+giữa đường lưu thông
+giữa lòng đường
+lên vỉa hè
+miệng hầm của đường điện thoại
+ngã ba
+ngoài khu vực đông dân cư
+nơi có biển cấm
+nơi dành riêng cho xe chữa cháy lấy nước
+nơi đường giao nhau trên đường không ưu tiên
+ở bên trái đường một chiều
+ở các hướng khác nhau
+ở đầu cầu
+ở gầm cầu vượt
+ở giữa lòng đường
+ở giữa lòng đường đô thị
+ở giữa lòng đường thành phố
+ở hè phố
+ở khu vực đường bộ giao nhau cùng mức với đường sắt
+ở làn dừng xe khẩn cấp
+ở làn dừng xe khẩn cấp trên đường cao tốc
+ở ngã ba
+ở ngã bốn
+ở ngã tư
+ở nơi dừng của xe buýt
+ở nơi đường bộ giao nhau
+ở nơi giao nhau
+ở nơi giao với đường sắt
+ở phần đường cho người đi bộ qua đường
+ở phần đường dành cho người đi bộ qua đường
+ở phần lề đường cao tốc
+ở phía bên trái đường một chiều
+ở trên cầu
+ở trên cầu vượt
+ở trên đường cao tốc
+ở trên phần đường dành cho người đi bộ qua đường
+ở trong hầm
+tại các điểm giao nhau
+tại điểm dừng của xe buýt
+tại điểm dừng xe buýt
+tại điểm đón khách của xe buýt
+tại đường có biển cấm
+tại gầm cầu vượt
+tại khu đô thị
+tại ngã tư
+tại nơi bị cấm
+tại nơi cấm
+tại nơi cắm biển cấm
+tại nơi cấm dừng
+tại nơi cấm đi ngược chiều
+tại nơi cấm đỗ
+tại nơi cấm quay đầu
+tại nơi cấm quay đầu xe
+tại nơi có biển báo cấm quay đầu xe
+tại nơi có biển cấm
+tại nơi có biển cấm dừng
+tại nơi có biển cấm đỗ
+tại nơi đường bộ giao nhau cùng mức với đường sắt
+tại nơi đường giao nhau
+tại nơi đường giao nhau trên đường không ưu tiên
+tại nơi giao nhau
+tại nơi giao nhau với đường sắt
+tại nơi lấy nước của xe chữa cháy
+tại nơi lấy nước của xe cứu hỏa
+tại nơi qua đường của người đi bộ
+tại phần đường dành cho xe chạy
+tại phần đường dành cho xe chạy ở ngoài thành phố
+tại vị trí giao nhau giữa đường bộ và đường sắt
+trên cầu
+trên cầu có một làn xe
+trên cầu đường bộ đi chung với đường sắt
+trên cầu vượt
+trên cống thoát nước
+trên dốc
+trên đầu dốc
+trên điểm đỗ của xe buýt
+trên đoạn đường bộ giao nhau cùng mức với đường sắt
+trên đoạn đường vòng
+trên đường
+trên đường cao tốc
+trên đường cho người đi bộ
+trên đường có biển cấm đi ngược chiều
+trên đường có dải phân cách ngoài khu vực đông dân cư
+trên đường có nhiều làn đường
+trên đường có nhiều làn đường cho xe đi cùng chiều
+trên đường dốc
+trên đường đi của xe điện
+trên đường đôi có dải phân cách trong khu vực đông dân cư
+trên đường đôi ngoài khu vực đông dân cư
+trên đường đôi trong khu đông dân cư
+trên đường đôi trong khu vực đông dân cư
+trên đường hai chiều không có dải phân cách giữa ngoài khu vực đông dân cư
+trên đường hai chiều không có dải phân cách ngoài khu vực đông dân cư
+trên đường hai chiều không có dải phân cách trong khu vực đông dân cư
+trên đường hai chiều trong khu vực đông dân cư không có dải phân cách giữa
+trên đường hẹp
+trên đường không phân chia thành hai chiều xe chạy riêng biệt
+trên đường một chiều
+trên đường một chiều có 1 làn đường ngoài khu vực đông dân cư
+trên đường một chiều có 1 làn xe trong khu vực đông dân cư
+trên đường một chiều có 2 làn đường ngoài khu vực đông dân
+trên đường một chiều có 2 làn đường ngoài khu vực đông dân cư
+trên đường một chiều có 2 làn xe trong khu vực đông dân cư
+trên đường một chiều có 3 làn đường ngoài khu vực đông dân cư
+trên đường một chiều có vạch kẻ phân làn đường
+trên đường ngầm
+trên đường ở ngoài thành phố
+trên đường phố
+trên đường ưu tiên
+trên đường xe buýt
+trên đường xe điện
+trên hầm đường bộ
+trên hè phố
+trên làn dừng xe khẩn cấp
+trên làn đường dành cho ô tô
+trên làn qua đường của người đi bộ
+trên lề đường cao tốc
+trên miệng cống
+trên miệng cống thoát nước
+trên miệng hầm
+trên miệng hầm của đường điện thoại
+trên miệng hầm đường điện cao thế
+trên miệng hầm đường điện thoại
+trên vỉa hè
+trong đô thị
+trong gầm cầu vượt
+trong hầm
+trong khu dân cư
+trong khu đô thị
+trong khu đông dân cư
+trong khu vực đông dân cư
+trong lòng đường
+trong lòng đường ngoài thành phố
+trong lòng đường nội thành
+trong lòng đường thành phố
+trong nội thành
+trong thành phố
+trước cổng cơ quan
+trước cột lấy nước

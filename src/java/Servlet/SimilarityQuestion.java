@@ -6,7 +6,6 @@
 package Servlet;
 
 import Measure.LibConst;
-import Measure.Measure;
 import Model.AbstractQuestion;
 import Model.AbstractQuestionData;
 import Model.JSONPaser.Test2JSON;

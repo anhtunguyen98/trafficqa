@@ -6,11 +6,20 @@
 package Servlet;
 
 import core.FindingAnswer;
+import static core.SimilarityComparing.tags;
+import static core.SimilarityComparing.tagsMap;
 import core.dao.AnswerDAO;
 import crfsuite.TrafficCrfTagger;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -28,6 +37,7 @@ public class Answer extends HttpServlet {
     String DATA_PATH = "";
     String modelPath = "";
     AnswerDAO dao = null;
+    boolean isLocal = true;
     TrafficCrfTagger tagger = null;
 
     /**
@@ -102,23 +112,27 @@ public class Answer extends HttpServlet {
                 username = "root";
                 password = "";
                 dbName = "qaservice";
+                isLocal = true;
             } else {
                 domain = "127.12.52.2";
                 username = "adminFf1Pbuj";
                 password = "c5h8CW-Kb-HV";
                 dbName = "QADatabase";
+                isLocal = false;
             }
+            
             FindingAnswer.dao = new AnswerDAO(domain, username, password, dbName);
-        }
 
-        if (DATA_PATH.length() == 0) {
-            String domain = request.getServerName();
-            if (domain.equals("localhost")) {
-                DATA_PATH = getServletContext().getRealPath("/") + "Data\\";
-            } else {
-                DATA_PATH = System.getenv("OPENSHIFT_DATA_DIR");
+            if (DATA_PATH.length() == 0) {
+                if (isLocal) {
+                    DATA_PATH = getServletContext().getRealPath("/") + "Data/";
+                } else {
+                    DATA_PATH = System.getenv("OPENSHIFT_DATA_DIR");
+
+                    prepareTagsMap();
+                }
+                Const.Path.DATA_PATH = DATA_PATH;
             }
-            Const.Path.DATA_PATH = DATA_PATH;
         }
 
         String question = URLDecoder.decode(request.getParameter("question"), "UTF-8").trim().replaceAll("\\s+", " ");
@@ -133,9 +147,37 @@ public class Answer extends HttpServlet {
         JSONObject json = new JSONObject();
         json.put("answer", answer);
         json.put("tags", FindingAnswer.jtags);
+        json.put("query", AnswerDAO.foundedSql);
 
         System.out.println(answer);
 
         response.getWriter().write(json.toString());
+    }
+
+    private void prepareTagsMap() {
+        tagsMap = new HashMap<String, ArrayList<String>>();
+        for (String tag : tags) {
+            tagsMap.put(tag, new ArrayList<String>());
+
+            try {
+                Scanner inp = new Scanner(new File(DATA_PATH + "taggroups/" + tag + ".txt"));
+                String line = null;
+
+                while (inp.hasNext()) {
+                    line = inp.nextLine();
+                    if (line.length() == 0) {
+                        continue;
+                    }
+
+                    tagsMap.get(tag).add(line);
+                }
+
+//                System.out.println(tagsMap.get(tag).size());
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(Answer.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (IOException ex) {
+                Logger.getLogger(Answer.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }
 }

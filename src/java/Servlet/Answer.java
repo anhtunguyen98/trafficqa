@@ -9,6 +9,8 @@ import core.FindingAnswer;
 import static core.SimilarityComparing.tags;
 import static core.SimilarityComparing.tagsMap;
 import core.dao.AnswerDAO;
+import core.dao.SaveTestDAO;
+import core.model.Test;
 import crfsuite.TrafficCrfTagger;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -39,6 +41,8 @@ public class Answer extends HttpServlet {
     AnswerDAO dao = null;
     boolean isLocal = true;
     TrafficCrfTagger tagger = null;
+    FindingAnswer findingAnswer = new FindingAnswer();
+    SaveTestDAO saveTestDAO = null;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -86,10 +90,13 @@ public class Answer extends HttpServlet {
 
         String action = request.getParameter("action");
 
-        System.out.println(action);
-
+//        System.out.println(action);
         if (action.equals("getAnswer")) {
             getAnswers(request, response);
+        }
+
+        if (action.equals("saveTest")) {
+            saveTest(request, response);
         }
     }
 
@@ -105,51 +112,20 @@ public class Answer extends HttpServlet {
 
     private void getAnswers(HttpServletRequest request, HttpServletResponse response)
             throws UnsupportedEncodingException, IOException {
-        if (FindingAnswer.dao == null) {//create DAO
-            String domain = request.getServerName();
-            String username, password, dbName;
-            if (domain.equals("localhost")) {
-                username = "root";
-                password = "";
-                dbName = "qaservice";
-                isLocal = true;
-            } else {
-                domain = "127.12.52.2";
-                username = "adminFf1Pbuj";
-                password = "c5h8CW-Kb-HV";
-                dbName = "QADatabase";
-                isLocal = false;
-            }
-            
-            FindingAnswer.dao = new AnswerDAO(domain, username, password, dbName);
-
-            if (DATA_PATH.length() == 0) {
-                if (isLocal) {
-                    DATA_PATH = getServletContext().getRealPath("/") + "Data/";
-                } else {
-                    DATA_PATH = System.getenv("OPENSHIFT_DATA_DIR");
-
-                    prepareTagsMap();
-                }
-                Const.Path.DATA_PATH = DATA_PATH;
-            }
-        }
+        autoInit(request.getServerName());
 
         String question = URLDecoder.decode(request.getParameter("question"), "UTF-8").trim().replaceAll("\\s+", " ");
-//        System.out.println(question);
 
-        String answer;
+        core.model.Answer ans = findingAnswer.getAnswer(question).get(0);
 
-        answer = FindingAnswer.getAnswer(question).get(0).getAnswer();
-
-        answer = ((answer == null || answer.length() == 0) ? "No Answers!" : answer);
+        String answer = ((ans == null || ans.getAnswer().length() == 0) ? "No Answers!" : ans.getAnswer());
+        String base = ((ans == null || ans.getBase().length() == 0) ? "" : ans.getBase());
 
         JSONObject json = new JSONObject();
         json.put("answer", answer);
-        json.put("tags", FindingAnswer.jtags);
+        json.put("base", base);
+        json.put("tags", findingAnswer.jtags);
         json.put("query", AnswerDAO.foundedSql);
-
-        System.out.println(answer);
 
         response.getWriter().write(json.toString());
     }
@@ -177,6 +153,55 @@ public class Answer extends HttpServlet {
                 Logger.getLogger(Answer.class.getName()).log(Level.SEVERE, null, ex);
             } catch (IOException ex) {
                 Logger.getLogger(Answer.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
+
+    private void saveTest(HttpServletRequest request, HttpServletResponse response)
+            throws UnsupportedEncodingException, IOException {
+        autoInit(request.getServerName());
+        String question = URLDecoder.decode(request.getParameter("question"), "UTF-8").trim().replaceAll("\\s+", " ");
+        String answer = URLDecoder.decode(request.getParameter("answer"), "UTF-8");
+        String query = URLDecoder.decode(request.getParameter("query"), "UTF-8");
+        String tags = URLDecoder.decode(request.getParameter("tags"), "UTF-8");
+        boolean satisfied = "true".equals(URLDecoder.decode(request.getParameter("satisfied"), "UTF-8"));
+
+        Test test = new Test(question, answer, query, tags, satisfied);
+
+        saveTestDAO.saveTest(test);
+        JSONObject jobj = new JSONObject();
+        jobj.put("success", true);
+        response.getWriter().write(jobj.toString());
+    }
+
+    private void autoInit(String domain) {
+        if (findingAnswer.dao == null) {//create DAO
+            String username, password, dbName;
+            if (domain.equals("localhost")) {
+                username = "root";
+                password = "";
+                dbName = "qaservice";
+                isLocal = true;
+            } else {
+                domain = "127.12.52.2";
+                username = "adminFf1Pbuj";
+                password = "c5h8CW-Kb-HV";
+                dbName = "QADatabase";
+                isLocal = false;
+            }
+
+            findingAnswer.dao = new AnswerDAO(domain, username, password, dbName);
+            saveTestDAO = new SaveTestDAO(domain, username, password, dbName);
+
+            if (DATA_PATH.length() == 0) {
+                if (isLocal) {
+                    DATA_PATH = getServletContext().getRealPath("/") + "Data/";
+                } else {
+                    DATA_PATH = System.getenv("OPENSHIFT_DATA_DIR");
+
+                    prepareTagsMap();
+                }
+                Const.Path.DATA_PATH = DATA_PATH;
             }
         }
     }

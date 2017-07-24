@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Question Answering</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div align='center'>
+            <table style="margin-bottom: 50px;">
+                <tr style="text-align: right;">
+                    <td style="padding-right: 10px;">Câu hỏi:</td>
+                    <td>
+                        <textarea name="question" id="question" rows="5" cols="60" placeholder="Mời nhập câu hỏi!"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" class="button" id="btnSubmit" value="Tìm kiếm" />
+                    </td>
+                </tr>
+            </table>
+            <div id="answer">
+            </div>
+            <div id="confirm" class="text-center">
+                <p>Câu trả lời này có chấp nhận được không?</p>
+                <button id="btn-yes" class="btn btn-success">Yes</button>
+                <button id="btn-no" class="btn btn-danger">No</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

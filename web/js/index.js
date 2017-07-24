@@ -29,7 +29,7 @@ $(document).ready(function () {
                 console.log(res);
                 tags = res.tags;
                 query = res.query;
-                $('#answer').text('Trả lời: ' + res.answer);
+                $('#answer').html(`Trả lời: ${res.answer} <br>Điều khoản: ${res.base}`);
                 $('#btnSubmit').val('Tiếp tục');
                 $('#confirm').slideDown(300);
             },

@@ -5,32 +5,47 @@
     <title>Question Answering</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
     <script src="js/index.js"></script>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div align='center'>
-            <table style="margin-bottom: 50px;">
-                <tr style="text-align: right;">
-                    <td style="padding-right: 10px;">Câu hỏi:</td>
-                    <td>
-                        <textarea name="question" id="question" rows="5" cols="60" placeholder="Mời nhập câu hỏi!"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="center">
-                        <input type="button" class="button" id="btnSubmit" value="Tìm kiếm" />
-                    </td>
-                </tr>
-            </table>
-            <div id="answer">
+<div>
+    <img src="images/halong.jpg" alt="" style="visibility: hidden">
+    <div>
+        <div class="intro container-fluid text-center">
+            <h1>Hệ thống trả lời tự động luật giao thông</h1>
+            <div class="display-table col-md-offset-2 col-md-8">
+                <div class="display-row">
+                    <div class="display-cell col-md-6 text-right">Giảng viên hướng dẫn</div>
+                    <div class="display-cell col-md-6 text-left">TS. Ngô xuân Bách</div>
+                </div>
+                <div class="display-row">
+                    <div class="display-cell col-md-6 text-right">Sinh viên thực hiện:</div>
+                    <div class="display-cell col-md-6 text-left">Lê Thị Ngọc Châm</div>
+                </div>
+                <div class="display-row">
+                    <div class="display-cell col-md-6"></div>
+                    <div class="display-cell col-md-6 text-left">Trần Hà Ngọc Thiện</div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="input col-md-12 col-sm-12" style="margin-bottom: 50px;">
+                <div class="col-md-6 col-md-offset-2">
+                    <input name="question" id="question" type="text" class="form-control"
+                           placeholder="Mời nhập câu hỏi!"/>
+                </div>
+                <div class="col-md-4">
+                    <input type="button" class="button pull-left" id="btnSubmit" value="Tìm kiếm"/>
+                </div>
+            </div>
+            <div id="answer" class="text-center">
             </div>
             <div id="confirm" class="text-center">
                 <p>Câu trả lời này có chấp nhận được không?</p>
@@ -39,6 +54,7 @@
             </div>
         </div>
     </div>
+</div>
 </body>
 
 </html>

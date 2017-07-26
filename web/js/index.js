@@ -44,11 +44,15 @@ $(document).ready(function () {
     });
 
     $('#btn-yes').click(function () {
-        saveResult(true);
+        saveResult('yes');
+    });
+
+    $('#btn-ok').click(function () {
+        saveResult('ok')
     });
 
     $('#btn-no').click(function () {
-        saveResult(false);
+        saveResult('no');
     });
 });
 
@@ -69,8 +73,8 @@ function saveResult(confirm) {
             question: encodeURI($('#question').val()),
             answer: encodeURI($('#answer').text()),
             query: encodeURI(query),
-            'tags': encodeURI(tags.toString()),
-            satisfied: encodeURI((confirm) ? 'true' : 'false')
+            'tags': encodeURI(JSON.stringify(tags)),
+            satisfied: encodeURI(confirm)
         },
         success: function (data) {
             console.log(data);

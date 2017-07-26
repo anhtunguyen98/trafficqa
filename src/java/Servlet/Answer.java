@@ -164,7 +164,7 @@ public class Answer extends HttpServlet {
         String answer = URLDecoder.decode(request.getParameter("answer"), "UTF-8");
         String query = URLDecoder.decode(request.getParameter("query"), "UTF-8");
         String tags = URLDecoder.decode(request.getParameter("tags"), "UTF-8");
-        boolean satisfied = "true".equals(URLDecoder.decode(request.getParameter("satisfied"), "UTF-8"));
+        String satisfied = URLDecoder.decode(request.getParameter("satisfied"), "UTF-8");
 
         Test test = new Test(question, answer, query, tags, satisfied);
 

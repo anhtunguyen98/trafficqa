@@ -36,7 +36,7 @@ body {
     }
     position: relative;
     top: 0;
-    background: rgba(47, 137, 184, 0.65);
+    background: rgba(54, 184, 151, 0.65);
     max-height: 100%;
 
     > div {
@@ -117,6 +117,13 @@ table {
 
   h1 {
     color: white;
+    &:first-of-type {
+      color: #d43f3a;
+    }
+
+    &:nth-last-of-type(2) {
+      color: #255625;
+    }
   }
 
   .display-cell {
@@ -139,6 +146,7 @@ table {
     &:first-of-type {
       input {
         padding: 20px 12px;
+        font-size: 18px;
         font-family: Raleway-Regular;
       }
     }
@@ -157,9 +165,15 @@ table {
   width: 80%;
   margin-bottom: 40px;
   font-size: 18px;
-  color: #2aabd2;
 }
 
 #confirm {
   display: none;
+  p {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 16px;
+  }
 }

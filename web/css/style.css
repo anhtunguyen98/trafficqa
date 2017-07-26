@@ -28,7 +28,7 @@ body {
 body > div {
   position: relative;
   top: 0;
-  background: rgba(47, 137, 184, 0.65);
+  background: rgba(54, 184, 151, 0.65);
   max-height: 100%;
 }
 body > div img {
@@ -103,6 +103,12 @@ table {
 .intro h1 {
   color: white;
 }
+.intro h1:first-of-type {
+  color: #d43f3a;
+}
+.intro h1:nth-last-of-type(2) {
+  color: #255625;
+}
 .intro .display-cell {
   font-family: Raleway-Regular;
 }
@@ -115,6 +121,7 @@ table {
 }
 .input div:first-of-type input {
   padding: 20px 12px;
+  font-size: 18px;
   font-family: Raleway-Regular;
 }
 #resultTable thead {
@@ -128,8 +135,13 @@ table {
   width: 80%;
   margin-bottom: 40px;
   font-size: 18px;
-  color: #2aabd2;
 }
 #confirm {
   display: none;
+}
+#confirm p {
+  font-size: 20px;
+}
+#confirm button {
+  font-size: 16px;
 }

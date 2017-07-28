@@ -14,6 +14,7 @@ $(document).ready(function () {
             $('#question').prop('disabled', false);
             return;
         }
+        $('#thanks').slideUp(300);
 
         $("#answer").html("Đang lấy câu trả lời...");
         //        console.log($("#question").val());
@@ -29,7 +30,7 @@ $(document).ready(function () {
                 console.log(res);
                 tags = res.tags;
                 query = res.query;
-                $('#answer').html(`Trả lời: ${res.answer} <br>Điều khoản: ${res.base}`);
+                $('#answer').html(`Trả lời: ${res.answer} <br>Tham chiếu: ${res.base}`);
                 $('#btnSubmit').val('Tiếp tục');
                 $('#confirm').slideDown(300);
             },
@@ -48,7 +49,7 @@ $(document).ready(function () {
     });
 
     $('#btn-ok').click(function () {
-        saveResult('ok')
+        saveResult('ok');
     });
 
     $('#btn-no').click(function () {
@@ -78,6 +79,7 @@ function saveResult(confirm) {
         },
         success: function (data) {
             console.log(data);
+            $('#thanks').slideDown(300);
         },
         error: function (ts) {
             alert("Có lỗi trong việc lưu kết quả");

@@ -136,6 +136,9 @@ table {
   margin-bottom: 40px;
   font-size: 18px;
 }
+#answer ul {
+  list-style-type: none;
+}
 #confirm {
   display: none;
 }

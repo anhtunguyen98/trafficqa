@@ -1,4 +1,4 @@
-var tags, query;
+var tags, query, answer;
 
 $(document).ready(function () {
     $("#btnSubmit").click(function () {
@@ -29,8 +29,34 @@ $(document).ready(function () {
             success: function (res) {
                 console.log(res);
                 tags = res.tags;
+                answer = res.answer;
                 query = res.query;
-                $('#answer').html(`Trả lời: ${res.answer} <br>Tham chiếu: ${res.base}`);
+
+                var html = '';
+
+                if (res.answer.indexOf('_') !== -1) {
+                    var answers = res.answer.split('_');
+                    html = 'Trả lời: <ul>';
+
+                    for (var i = 0; i < answers.length; i++) {
+                        var ans = answers[i];
+                        html += `<li>${ans}</li>`;
+                    }
+
+                    html += '</ul>';
+
+                    html += 'Tham chiếu: <ul>';
+                    var bases = res.base.split('_');
+                    for (var i = 0; i < bases.length; i++) {
+                        var base = bases[i];
+                        html += `<li>${base}</li>`;
+                    }
+                    html += '</ul>';
+                } else {
+                    html = `Trả lời: ${res.answer} <br>Tham chiếu: ${res.base}`;
+                }
+
+                $('#answer').html(html);
                 $('#btnSubmit').val('Tiếp tục');
                 $('#confirm').slideDown(300);
             },
@@ -72,7 +98,7 @@ function saveResult(confirm) {
         data: {
             action: encodeURI('saveTest'),
             question: encodeURI($('#question').val()),
-            answer: encodeURI($('#answer').text()),
+            answer: encodeURI(answer),
             query: encodeURI(query),
             'tags': encodeURI(JSON.stringify(tags)),
             satisfied: encodeURI(confirm)

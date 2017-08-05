@@ -35,7 +35,7 @@ import org.json.JSONObject;
  */
 @WebServlet(name = "Answer", urlPatterns = {"/Answer"})
 public class Answer extends HttpServlet {
-
+    
     String DATA_PATH = "";
     String modelPath = "";
     AnswerDAO dao = null;
@@ -87,14 +87,14 @@ public class Answer extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json; charset=UTF-8");
-
+        
         String action = request.getParameter("action");
 
 //        System.out.println(action);
         if (action.equals("getAnswer")) {
             getAnswers(request, response);
         }
-
+        
         if (action.equals("saveTest")) {
             saveTest(request, response);
         }
@@ -113,38 +113,44 @@ public class Answer extends HttpServlet {
     private void getAnswers(HttpServletRequest request, HttpServletResponse response)
             throws UnsupportedEncodingException, IOException {
         autoInit(request.getServerName());
-
+        
         String question = URLDecoder.decode(request.getParameter("question"), "UTF-8").trim().replaceAll("\\s+", " ");
-
-        core.model.Answer ans = findingAnswer.getAnswer(question).get(0);
-
+        
+        ArrayList<core.model.Answer> answers = findingAnswer.getAnswer(question);
+        core.model.Answer ans;
+        if (answers == null || answers.size() == 0) {
+            ans = null;
+        } else {
+            ans = answers.get(0);
+        }
+        
         String answer = ((ans == null || ans.getAnswer().length() == 0) ? "No Answers!" : ans.getAnswer());
         String base = ((ans == null || ans.getBase().length() == 0) ? "" : ans.getBase());
-
+        
         JSONObject json = new JSONObject();
         json.put("answer", answer);
         json.put("base", base);
         json.put("tags", findingAnswer.jtags);
         json.put("query", AnswerDAO.foundedSql);
-
+        
         response.getWriter().write(json.toString());
     }
-
+    
     private void prepareTagsMap() {
         tagsMap = new HashMap<String, ArrayList<String>>();
         for (String tag : tags) {
             tagsMap.put(tag, new ArrayList<String>());
-
+            
             try {
                 Scanner inp = new Scanner(new File(DATA_PATH + "taggroups/" + tag + ".txt"));
                 String line = null;
-
+                
                 while (inp.hasNext()) {
                     line = inp.nextLine();
                     if (line.length() == 0) {
                         continue;
                     }
-
+                    
                     tagsMap.get(tag).add(line);
                 }
 
@@ -156,7 +162,7 @@ public class Answer extends HttpServlet {
             }
         }
     }
-
+    
     private void saveTest(HttpServletRequest request, HttpServletResponse response)
             throws UnsupportedEncodingException, IOException {
         autoInit(request.getServerName());
@@ -165,15 +171,15 @@ public class Answer extends HttpServlet {
         String query = URLDecoder.decode(request.getParameter("query"), "UTF-8");
         String tags = URLDecoder.decode(request.getParameter("tags"), "UTF-8");
         String satisfied = URLDecoder.decode(request.getParameter("satisfied"), "UTF-8");
-
+        
         Test test = new Test(question, answer, query, tags, satisfied);
-
+        
         saveTestDAO.saveTest(test);
         JSONObject jobj = new JSONObject();
         jobj.put("success", true);
         response.getWriter().write(jobj.toString());
     }
-
+    
     private void autoInit(String domain) {
         if (findingAnswer.dao == null) {//create DAO
             String username, password, dbName;
@@ -189,16 +195,16 @@ public class Answer extends HttpServlet {
                 dbName = "QADatabase";
                 isLocal = false;
             }
-
+            
             findingAnswer.dao = new AnswerDAO(domain, username, password, dbName);
             saveTestDAO = new SaveTestDAO(domain, username, password, dbName);
-
+            
             if (DATA_PATH.length() == 0) {
                 if (isLocal) {
                     DATA_PATH = getServletContext().getRealPath("/") + "Data/";
                 } else {
                     DATA_PATH = System.getenv("OPENSHIFT_DATA_DIR");
-
+                    
                     prepareTagsMap();
                 }
                 Const.Path.DATA_PATH = DATA_PATH;

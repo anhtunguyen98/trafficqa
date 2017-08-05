@@ -118,7 +118,7 @@ public class Answer extends HttpServlet {
         
         ArrayList<core.model.Answer> answers = findingAnswer.getAnswer(question);
         core.model.Answer ans;
-        if (answers == null || answers.size() == 0) {
+        if (answers == null || answers.isEmpty()) {
             ans = null;
         } else {
             ans = answers.get(0);
@@ -143,7 +143,7 @@ public class Answer extends HttpServlet {
             
             try {
                 Scanner inp = new Scanner(new File(DATA_PATH + "taggroups/" + tag + ".txt"));
-                String line = null;
+                String line;
                 
                 while (inp.hasNext()) {
                     line = inp.nextLine();

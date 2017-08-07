@@ -98,6 +98,10 @@ public class Answer extends HttpServlet {
         if (action.equals("saveTest")) {
             saveTest(request, response);
         }
+        
+        if(action.equals("reGetAnswer")){
+            reGetAnswer(request, response);
+        }
     }
 
     /**
@@ -178,6 +182,10 @@ public class Answer extends HttpServlet {
         JSONObject jobj = new JSONObject();
         jobj.put("success", true);
         response.getWriter().write(jobj.toString());
+    }
+
+    private void reGetAnswer(HttpServletRequest request, HttpServletResponse response) {
+        String tags = request.getParameter("tags");
     }
     
     private void autoInit(String domain) {

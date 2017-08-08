@@ -17,8 +17,7 @@
 
 <body>
 <div>
-    <img src="images/halong.jpg" alt="" style="visibility: hidden">
-    <div>
+    <div class="row">
         <div class="intro container-fluid text-center">
             <h1>Học Viện Công Nghệ Bưu Chính Viễn Thông</h1>
             <h1>Khoa Công nghệ Thông tin</h1>
@@ -47,6 +46,16 @@
                 <div class="col-md-4">
                     <input type="button" class="button pull-left" id="btnSubmit" value="Tìm kiếm"/>
                 </div>
+            </div>
+            <div class="added-info col-md-12 col-sm-12">
+                <p>Thiếu thông tin, hãy nhập thêm thông tin vào bên dưới!</p>
+                <input name="tv" id="tv" class="form-control"
+                       placeholder="Loại phương tiện"/>
+                <input name="qt" id="qt" class="form-control"
+                       placeholder="Câu hỏi"/>
+                <input name="a" id="a" class="form-control"
+                       placeholder="Hành động"/>
+                <input type="button" class="button" id="re-submit" value="Tiếp tục tìm"/>
             </div>
             <div id="answer" class="text-center">
             </div>

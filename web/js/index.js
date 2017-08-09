@@ -22,9 +22,9 @@ function refreshPage() {
     $('#answer').text('');
     $('#confirm').slideUp(300);
     $('.added-info').slideUp(300);
-    $('#tv').css({'display': 'none'});
-    $('#qt').css({'display': 'none'});
-    $('#a').css({'display': 'none'});
+    $('#tv').css({'display': 'none'}).val('');
+    $('#qt').css({'display': 'none'}).val('');
+    $('#a').css({'display': 'none'}).val('');
 }
 
 function saveResult(confirm) {
@@ -115,9 +115,10 @@ $(document).ready(function () {
                 answer = res.answer;
                 query = res.query;
 
-                if (res.qt === null) {
+                if (res.has_answer) {
                     showAnswer(res);
-                } else showAddedInfo(res.tv, res.qt, res.a);
+                } else
+                    showAddedInfo(res.tv, res.qt, res.a);
             },
             error: function (ts) {
                 alert("Có lỗi đã xảy ra! Hãy thử lại!");

@@ -131,24 +131,12 @@ public class Answer extends HttpServlet {
             json.put("tv", tv);
             json.put("qt", qt);
             json.put("a", a);
-        }
-
-        core.model.Answer ans;
-        if (answers == null || answers.isEmpty()) {
-            ans = null;
+            json.put("has_answer", false);
         } else {
-            ans = answers.get(0);
+            json.put("has_answer", true);
         }
 
-        String answer = ((ans == null || ans.getAnswer().length() == 0) ? "No Answers!" : ans.getAnswer());
-        String base = ((ans == null || ans.getBase().length() == 0) ? "" : ans.getBase());
-
-        json.put("answer", answer);
-        json.put("base", base);
-        json.put("tags", findingAnswer.jtags);
-        json.put("query", AnswerDAO.foundedSql);
-
-        response.getWriter().write(json.toString());
+        writeResponse(request, response, answers, json);
     }
 
     private void prepareTagsMap() {
@@ -206,22 +194,7 @@ public class Answer extends HttpServlet {
         ArrayList<core.model.Answer> answers = findingAnswer.getAnswerWithHash(hash);
         JSONObject json = new JSONObject();
 
-        core.model.Answer ans;
-        if (answers == null || answers.isEmpty()) {
-            ans = null;
-        } else {
-            ans = answers.get(0);
-        }
-
-        String answer = ((ans == null || ans.getAnswer().length() == 0) ? "No Answers!" : ans.getAnswer());
-        String base = ((ans == null || ans.getBase().length() == 0) ? "" : ans.getBase());
-
-        json.put("answer", answer);
-        json.put("base", base);
-        json.put("tags", findingAnswer.jtags);
-        json.put("query", AnswerDAO.foundedSql);
-
-        response.getWriter().write(json.toString());
+        writeResponse(request, response, answers, json);
     }
 
     private HashMap<String, String> parseToHash(JSONObject jtags, String tv, String qt, String a) {
@@ -274,5 +247,24 @@ public class Answer extends HttpServlet {
                 Const.Path.DATA_PATH = DATA_PATH;
             }
         }
+    }
+
+    private void writeResponse(HttpServletRequest request, HttpServletResponse response, ArrayList<core.model.Answer> answers, JSONObject json) throws IOException {
+        core.model.Answer ans;
+        if (answers == null || answers.isEmpty()) {
+            ans = null;
+        } else {
+            ans = answers.get(0);
+        }
+
+        String answer = ((ans == null || ans.getAnswer().length() == 0) ? "No Answers!" : ans.getAnswer());
+        String base = ((ans == null || ans.getBase().length() == 0) ? "" : ans.getBase());
+
+        json.put("answer", answer);
+        json.put("base", base);
+        json.put("tags", findingAnswer.jtags);
+        json.put("query", AnswerDAO.foundedSql);
+
+        response.getWriter().write(json.toString());
     }
 }

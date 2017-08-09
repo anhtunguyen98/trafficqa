@@ -139,31 +139,18 @@ public class Answer extends HttpServlet {
         writeResponse(request, response, answers, json);
     }
 
-    private void prepareTagsMap() {
-        tagsMap = new HashMap<String, ArrayList<String>>();
-        for (String tag : tags) {
-            tagsMap.put(tag, new ArrayList<String>());
+    private void reGetAnswer(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException, IOException {
+        String tags = URLDecoder.decode(request.getParameter("tags"), "UTF-8");
+        JSONObject jtags = new JSONObject(tags);
+        String tv = URLDecoder.decode(request.getParameter("tv"), "UTF-8");
+        String qt = URLDecoder.decode(request.getParameter("qt"), "UTF-8");
+        String a = URLDecoder.decode(request.getParameter("a"), "UTF-8");
 
-            try {
-                Scanner inp = new Scanner(new File(DATA_PATH + "taggroups/" + tag + ".txt"));
-                String line;
+        HashMap<String, String> hash = parseToHash(jtags, tv, qt, a);
+        ArrayList<core.model.Answer> answers = findingAnswer.getAnswerWithHash(hash);
+        JSONObject json = new JSONObject();
 
-                while (inp.hasNext()) {
-                    line = inp.nextLine();
-                    if (line.length() == 0) {
-                        continue;
-                    }
-
-                    tagsMap.get(tag).add(line);
-                }
-
-//                System.out.println(tagsMap.get(tag).size());
-            } catch (FileNotFoundException ex) {
-                Logger.getLogger(Answer.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (IOException ex) {
-                Logger.getLogger(Answer.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
+        writeResponse(request, response, answers, json);
     }
 
     private void saveTest(HttpServletRequest request, HttpServletResponse response)
@@ -181,20 +168,6 @@ public class Answer extends HttpServlet {
         JSONObject jobj = new JSONObject();
         jobj.put("success", true);
         response.getWriter().write(jobj.toString());
-    }
-
-    private void reGetAnswer(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException, IOException {
-        String tags = URLDecoder.decode(request.getParameter("tags"), "UTF-8");
-        JSONObject jtags = new JSONObject(tags);
-        String tv = URLDecoder.decode(request.getParameter("tv"), "UTF-8");
-        String qt = URLDecoder.decode(request.getParameter("qt"), "UTF-8");
-        String a = URLDecoder.decode(request.getParameter("a"), "UTF-8");
-
-        HashMap<String, String> hash = parseToHash(jtags, tv, qt, a);
-        ArrayList<core.model.Answer> answers = findingAnswer.getAnswerWithHash(hash);
-        JSONObject json = new JSONObject();
-
-        writeResponse(request, response, answers, json);
     }
 
     private HashMap<String, String> parseToHash(JSONObject jtags, String tv, String qt, String a) {
@@ -215,6 +188,32 @@ public class Answer extends HttpServlet {
         }
 
         return hash;
+    }
+
+    private void prepareTagsMap() {
+        tagsMap = new HashMap<String, ArrayList<String>>();
+        for (String tag : tags) {
+            tagsMap.put(tag, new ArrayList<String>());
+
+            try {
+                Scanner inp = new Scanner(new File(DATA_PATH + "taggroups/" + tag + ".txt"));
+                String line;
+
+                while (inp.hasNext()) {
+                    line = inp.nextLine();
+                    if (line.length() == 0) {
+                        continue;
+                    }
+
+                    tagsMap.get(tag).add(line);
+                }
+
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(Answer.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (IOException ex) {
+                Logger.getLogger(Answer.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }
 
     private void autoInit(String domain) {

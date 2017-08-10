@@ -27,6 +27,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
@@ -120,8 +121,24 @@ public class Answer extends HttpServlet {
 
         String question = URLDecoder.decode(request.getParameter("question"), "UTF-8").trim().replaceAll("\\s+", " ");
 
-        ArrayList<core.model.Answer> answers = findingAnswer.getAnswer(question);
+        //not finish
+        JSONObject jobj = findingAnswer.getAnswer(question);
         JSONObject json = new JSONObject();
+        ArrayList<core.model.Answer> answers = null;
+        boolean success = jobj.getBoolean("success");
+
+        if (success) {
+            answers = new ArrayList<core.model.Answer>();
+            JSONArray arr = (JSONArray) jobj.get("answers");
+            for(int i = 0; i<arr.length(); i++){
+                JSONObject obj = arr.getJSONObject(i);
+                answers.add(new core.model.Answer(obj.getString("answer"), obj.getString("base")));
+            }
+        } else {
+            if (jobj.has("error")) {
+                json.put("error", jobj.getInt("error"));
+            }
+        }
 
         if (answers == null || answers.size() > 1) {
             boolean tv = findingAnswer.jtags.has("tv");
@@ -147,7 +164,8 @@ public class Answer extends HttpServlet {
         String a = URLDecoder.decode(request.getParameter("a"), "UTF-8");
 
         HashMap<String, String> hash = parseToHash(jtags, tv, qt, a);
-        ArrayList<core.model.Answer> answers = findingAnswer.getAnswerWithHash(hash);
+        JSONObject jobj = findingAnswer.getAnswerWithHash(hash);
+        ArrayList<core.model.Answer> answers = (ArrayList<core.model.Answer>) jobj.get("answers");
         JSONObject json = new JSONObject();
 
         writeResponse(request, response, answers, json);

@@ -115,8 +115,11 @@ $(document).ready(function () {
                 answer = res.answer;
                 query = res.query;
 
-                if (res.has_answer) {
+                if (res.has_answer === true) {
                     showAnswer(res);
+                } else if(res.error === 1){
+                    alert('Hãy hỏi những câu liên quan tới giao thông!');
+                    refreshPage();
                 } else
                     showAddedInfo(res.tv, res.qt, res.a);
             },

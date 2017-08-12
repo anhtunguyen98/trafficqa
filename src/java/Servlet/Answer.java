@@ -130,7 +130,7 @@ public class Answer extends HttpServlet {
         if (success) {
             answers = new ArrayList<core.model.Answer>();
             JSONArray arr = (JSONArray) jobj.get("answers");
-            for(int i = 0; i<arr.length(); i++){
+            for (int i = 0; i < arr.length(); i++) {
                 JSONObject obj = arr.getJSONObject(i);
                 answers.add(new core.model.Answer(obj.getString("answer"), obj.getString("base")));
             }
@@ -159,14 +159,23 @@ public class Answer extends HttpServlet {
     private void reGetAnswer(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException, IOException {
         String tags = URLDecoder.decode(request.getParameter("tags"), "UTF-8");
         JSONObject jtags = new JSONObject(tags);
-        String tv = URLDecoder.decode(request.getParameter("tv"), "UTF-8");
-        String qt = URLDecoder.decode(request.getParameter("qt"), "UTF-8");
-        String a = URLDecoder.decode(request.getParameter("a"), "UTF-8");
+        String question = URLDecoder.decode(request.getParameter("question"), "UTF-8");
 
-        HashMap<String, String> hash = parseToHash(jtags, tv, qt, a);
+        HashMap<String, String> hash = parseToHash(jtags, question);
         JSONObject jobj = findingAnswer.getAnswerWithHash(hash);
-        ArrayList<core.model.Answer> answers = (ArrayList<core.model.Answer>) jobj.get("answers");
+        ArrayList<core.model.Answer> answers = new ArrayList<core.model.Answer>();
+        JSONArray arr = (JSONArray) jobj.get("answers");
+        for (int i = 0; i < arr.length(); i++) {
+            JSONObject obj = arr.getJSONObject(i);
+            answers.add(new core.model.Answer(obj.getString("answer"), obj.getString("base")));
+        }
         JSONObject json = new JSONObject();
+
+        if (answers.isEmpty()) {
+            json.put("has_answer", false);
+        } else {
+            json.put("has_answer", true);
+        }
 
         writeResponse(request, response, answers, json);
     }
@@ -188,21 +197,17 @@ public class Answer extends HttpServlet {
         response.getWriter().write(jobj.toString());
     }
 
-    private HashMap<String, String> parseToHash(JSONObject jtags, String tv, String qt, String a) {
+    private HashMap<String, String> parseToHash(JSONObject jtags, String addedInfo) {
         HashMap<String, String> hash = new HashMap<String, String>();
 
         for (String key : jtags.keySet()) {
             hash.put(key, jtags.getString(key));
         }
 
-        if (tv.length() > 0) {
-            hash.put("tv", tv);
-        }
-        if (qt.length() > 0) {
-            hash.put("qt", qt);
-        }
-        if (a.length() > 0) {
-            hash.put("a", a);
+        HashMap<String, String> addedInfoHash = findingAnswer.CRFToHash(addedInfo);
+
+        for (String key : addedInfoHash.keySet()) {
+            hash.put(key, addedInfoHash.get(key));
         }
 
         return hash;

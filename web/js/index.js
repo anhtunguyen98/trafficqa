@@ -1,30 +1,18 @@
 var tags, query, answer;
+var needInfo = false;
 
-function showAddedInfo(tv, qt, a) {
+function showAddedInfo() {
     $("#answer").html("");
     $('.added-info').slideDown(300);
-    if (!tv) {
-        $('#tv').css({'display': 'block'});
-    }
-
-    if (!qt) {
-        $('#qt').css({'display': 'block'});
-    }
-
-    if (!a) {
-        $('#a').css({'display': 'block'});
-    }
+    needInfo = true;
 }
 
 function refreshPage() {
-    $('#question').prop('disabled', false);
-    $('#btnSubmit').val("Tìm kiếm");
+    $('#question').val('');
     $('#answer').text('');
     $('#confirm').slideUp(300);
     $('.added-info').slideUp(300);
-    $('#tv').css({'display': 'none'}).val('');
-    $('#qt').css({'display': 'none'}).val('');
-    $('#a').css({'display': 'none'}).val('');
+    needInfo = false;
 }
 
 function saveResult(confirm) {
@@ -55,6 +43,7 @@ function saveResult(confirm) {
 
 function showAnswer(res) {
     var html = '';
+    $('.added-info').slideUp(300);
 
     if (res.answer.indexOf('_') !== -1) {
         var answers = res.answer.split('_');
@@ -79,7 +68,7 @@ function showAnswer(res) {
     }
 
     $('#answer').html(html);
-    $('#btnSubmit').val('Tiếp tục');
+    // $('#btnSubmit').val('Tiếp tục');
     $('#confirm').slideDown(300);
 }
 
@@ -90,7 +79,7 @@ $(document).ready(function () {
             return;
         }
 
-        $('#question').prop('disabled', true);
+        // $('#question').prop('disabled', true);
 
         if ($('#question').val() === '') {
             alert('Bạn chưa nhập câu hỏi!');
@@ -101,14 +90,22 @@ $(document).ready(function () {
 
         $("#answer").html("Đang lấy câu trả lời...");
         //        console.log($("#question").val());
+
+        var dat = {
+            action: needInfo ? encodeURI('reGetAnswer') : encodeURI('getAnswer'),
+            question: $('#question').val()
+        };
+
+        if (needInfo) {
+            dat.tags = encodeURI(JSON.stringify(tags));
+            needInfo = false;
+        }
+
         $.ajax({
             url: "Answer",
             type: 'post',
             dataType: 'json',
-            data: {
-                action: encodeURI("getAnswer"),
-                question: encodeURI($("#question").val())
-            },
+            data: dat,
             success: function (res) {
                 console.log(res);
                 tags = res.tags;
@@ -117,11 +114,11 @@ $(document).ready(function () {
 
                 if (res.has_answer === true) {
                     showAnswer(res);
-                } else if(res.error === 1){
+                } else if (res.error === 1) {
                     alert('Hãy hỏi những câu liên quan tới giao thông!');
                     refreshPage();
                 } else
-                    showAddedInfo(res.tv, res.qt, res.a);
+                    showAddedInfo();
             },
             error: function (ts) {
                 alert("Có lỗi đã xảy ra! Hãy thử lại!");
@@ -133,26 +130,8 @@ $(document).ready(function () {
         });
     });
 
-    $('#re-submit').click(function () {
-        $.ajax({
-            url: "Answer",
-            type: 'post',
-            dataType: 'json',
-            data: {
-                'tags': encodeURI(JSON.stringify(tags)),
-                action: encodeURI('reGetAnswer'),
-                tv: encodeURI($('#tv').val()),
-                qt: encodeURI($('#qt').val()),
-                a: encodeURI($('#a').val())
-            },
-            success: function (res) {
-                console.log(res);
-                showAnswer(res);
-            },
-            error: function (err) {
-                console.log(err.message);
-            }
-        })
+    $('#refresh').click(function () {
+        refreshPage();
     });
 
     $('#btn-yes').click(function () {

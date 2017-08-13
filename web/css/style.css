@@ -148,9 +148,14 @@ table {
   width: 80%;
   margin-bottom: 40px;
   font-size: 18px;
+  font-family: Comfortaa !important;
 }
 #answer ul {
   list-style-type: none;
+}
+#answer a {
+  font-family: Comfortaa;
+  color: white;
 }
 #confirm {
   display: none;
@@ -164,4 +169,3 @@ table {
 #thanks {
   display: none;
 }
-/*# sourceMappingURL=style.css.map */

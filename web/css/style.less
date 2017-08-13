@@ -1,202 +1,208 @@
 * {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
 }
 
 @font-face {
-  font-family: Lobster;
-  src: url(../fonts/Lobster-Regular.ttf);
+    font-family: Lobster;
+    src: url(../fonts/Lobster-Regular.ttf);
 }
 
 @font-face {
-  font-family: Raleway-Regular;
-  src: url(../fonts/Raleway-Regular-vi.ttf);
+    font-family: Raleway-Regular;
+    src: url(../fonts/Raleway-Regular-vi.ttf);
 }
 
 .display-table {
-  display: table;
+    display: table;
 }
 
 .display-row {
-  display: table-row;
+    display: table-row;
 }
 
 .display-cell {
-  display: table-cell;
+    display: table-cell;
 }
 
 body {
-  width: 100%;
-  height: 800px;
-  overflow-x: auto;
-  padding-bottom: 100px;
-  margin: auto;
-  color: white;
-  background: url(../images/halong.jpg) no-repeat fixed center;
-  position: relative;
-
-  > div {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(54, 184, 151, 0.65);
+    height: 800px;
+    overflow-x: auto;
+    padding-bottom: 100px;
+    margin: auto;
+    color: white;
+    background: url(../images/halong.jpg) no-repeat fixed center;
+    position: relative;
 
     > div {
-      position: absolute;
-      top: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(54, 184, 151, 0.65);
+
+        > div {
+            position: absolute;
+            top: 0;
+        }
     }
-  }
 }
 
 div {
-  width: 100%;
-  margin: auto;
+    width: 100%;
+    margin: auto;
 }
 
 .button {
-  background-color: #56a1e7;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 24px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  font-family: Raleway-Regular;
+    background-color: #56a1e7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    font-family: Raleway-Regular;
 }
 
 .button:hover {
-  background-color: #2568d0;
-  -webkit-box-shadow: 3px 10px 24px -5px rgba(0, 0, 0, 0.69);
-  -moz-box-shadow: 3px 10px 24px -5px rgba(0, 0, 0, 0.69);
-  box-shadow: 3px 10px 24px -5px rgba(0, 0, 0, 0.69);
+    background-color: #2568d0;
+    -webkit-box-shadow: 3px 10px 24px -5px rgba(0, 0, 0, 0.69);
+    -moz-box-shadow: 3px 10px 24px -5px rgba(0, 0, 0, 0.69);
+    box-shadow: 3px 10px 24px -5px rgba(0, 0, 0, 0.69);
 }
 
 select {
-  background: transparent;
-  width: 300px;
-  padding: 5px 8px;
-  font-size: 16px;
-  line-height: 1;
-  border-radius: 3px;
-  height: 34px;
-  -webkit-appearance: none;
+    background: transparent;
+    width: 300px;
+    padding: 5px 8px;
+    font-size: 16px;
+    line-height: 1;
+    border-radius: 3px;
+    height: 34px;
+    -webkit-appearance: none;
 }
 
 textarea {
-  margin-top: 10px;
-  width: 300px;
-  height: 100px;
-  -moz-border-bottom-colors: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
-  /*border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;*/
-  border-radius: 6px 6px 6px 6px;
-  border: 1px solid;
-  /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;*/
-  color: #555555;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.4em;
-  padding: 5px 8px;
-  transition: background-color 0.2s ease 0s;
-  outline: none;
+    margin-top: 10px;
+    width: 300px;
+    height: 100px;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    /*border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;*/
+    border-radius: 6px 6px 6px 6px;
+    border: 1px solid;
+    /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;*/
+    color: #555555;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    padding: 5px 8px;
+    transition: background-color 0.2s ease 0s;
+    outline: none;
 }
 
 table {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 .intro {
-  font-family: Lobster;
+    font-family: Lobster;
 
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 
-  h1 {
-    color: white;
-    &:first-of-type {
-      color: #d43f3a;
+    h1 {
+        color: white;
+        &:first-of-type {
+            color: #d43f3a;
+        }
+
+        &:nth-last-of-type(2) {
+            color: #255625;
+        }
     }
 
-    &:nth-last-of-type(2) {
-      color: #255625;
+    .display-cell {
+        font-family: Raleway-Regular;
     }
-  }
 
-  .display-cell {
-    font-family: Raleway-Regular;
-  }
-
-  > div {
-    margin-top: 50px;
-    font-weight: bold;
-  }
+    > div {
+        margin-top: 50px;
+        font-weight: bold;
+    }
 }
 
 .input {
-  input {
-    margin-top: 30px;
-  }
-
-  div {
-    &:first-of-type {
-      input {
-        padding: 4px 12px;
-        font-size: 18px;
-        font-family: Raleway-Regular;
-        box-sizing: content-box;
-      }
+    input {
+        margin-top: 30px;
     }
-  }
+
+    div {
+        &:first-of-type {
+            input {
+                padding: 4px 12px;
+                font-size: 18px;
+                font-family: Raleway-Regular;
+                box-sizing: content-box;
+            }
+        }
+    }
 }
 
 .added-info {
-  text-align: center;
-  display: none;
-
-  .form-control {
+    text-align: center;
     display: none;
-    width: 50%;
-    margin: auto auto 20px;
-  }
+
+    .form-control {
+        display: none;
+        width: 50%;
+        margin: auto auto 20px;
+    }
 }
 
 #resultTable thead {
-  width: auto !important;
+    width: auto !important;
 }
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: #5bc0de;
+    background-color: #5bc0de;
 }
 
 #answer {
-  width: 80%;
-  margin-bottom: 40px;
-  font-size: 18px;
+    width: 80%;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-family: Comfortaa !important;
 
-  ul {
-    list-style-type: none;
-  }
+    ul {
+        list-style-type: none;
+    }
+
+    a{
+        font-family: Comfortaa;
+        color: white;
+    }
 }
 
 #confirm {
-  display: none;
-  p {
-    font-size: 20px;
-  }
+    display: none;
+    p {
+        font-size: 20px;
+    }
 
-  button {
-    font-size: 16px;
-  }
+    button {
+        font-size: 16px;
+    }
 }
 
 #thanks {
-  display: none;
+    display: none;
 }

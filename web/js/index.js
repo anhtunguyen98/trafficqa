@@ -56,18 +56,34 @@ function showAnswer(res) {
 
         html += '</ul>';
 
-        html += 'Tham chiếu: <ul>';
-        var bases = res.base.split('_');
-        for (var i = 0; i < bases.length; i++) {
-            var base = bases[i];
-            html += `<li>${base}</li>`;
+        if (res.base != null) {
+            html += 'Tham chiếu: <ul>';
+            var bases = res.base.split('_');
+            for (var i = 0; i < bases.length; i++) {
+                var base = bases[i];
+                html += `<li><a>${base}</a></li>`;
+            }
         }
         html += '</ul>';
     } else {
-        html = `Trả lời: ${res.answer} <br>Tham chiếu: ${res.base}`;
+        html = `Trả lời: ${res.answer} <br>${res.base != null ? `Tham chiếu: <a>${res.base}</a>` : ''}`;
     }
 
     $('#answer').html(html);
+
+    $('#answer a').click(function () {
+        var text = $(this).text();
+        var diem = text.substring(5, 6);
+        var khoan = text.substring(13, 14);
+        var dieu = text.substring(20, 21);
+        var nd = text.substring(32, 34);
+
+        // console.log(`${nd} ${dieu} ${khoan} ${diem}`);
+
+        $.ajax({
+            
+        })
+    });
     // $('#btnSubmit').val('Tiếp tục');
     $('#confirm').slideDown(300);
 }

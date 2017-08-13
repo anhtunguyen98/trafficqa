@@ -9,7 +9,8 @@ function showAddedInfo() {
 
 function refreshPage() {
     $('#question').val('');
-    $('#answer').text('');
+    $('#answer').html('');
+    $('#base').html('');
     $('#confirm').slideUp(300);
     $('.added-info').slideUp(300);
     needInfo = false;
@@ -43,7 +44,7 @@ function saveResult(confirm) {
 
 function showAnswer(res) {
     var html = '';
-    $('.added-info').slideUp(300);
+    needInfo = false;
 
     if (res.answer.indexOf('_') !== -1) {
         var answers = res.answer.split('_');
@@ -72,17 +73,45 @@ function showAnswer(res) {
     $('#answer').html(html);
 
     $('#answer a').click(function () {
+        var rdiem = /điểm \S+/gim;
+        var rkhoan = /khoản \S+/gim;
+        var rdieu = /điều \S+/gim;
+        var rnd = /nghị định \d+/gim;
         var text = $(this).text();
-        var diem = text.substring(5, 6);
-        var khoan = text.substring(13, 14);
-        var dieu = text.substring(20, 21);
-        var nd = text.substring(32, 34);
+        // var diem = text.substring(5, 6);
+        var match = rdiem.exec(text);
+        var diem = text.substring(rdiem.lastIndex - match[0].length, rdiem.lastIndex).split(' ')[1];
+        // var khoan = text.substring(13, 14);
+        match = rkhoan.exec(text);
+        var khoan = text.substring(rkhoan.lastIndex - match[0].length, rkhoan.lastIndex).split(' ')[1];
+        // var dieu = text.substring(20, 21);
+        match = rdieu.exec(text);
+        var dieu = text.substring(rdieu.lastIndex - match[0].length, rdieu.lastIndex).split(' ')[1];
+        // var nd = text.substring(32, 34);
+        match = rnd.exec(text);
+        var nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[2];
 
-        // console.log(`${nd} ${dieu} ${khoan} ${diem}`);
+        console.log(`${nd} ${dieu} ${khoan} ${diem}`);
 
         $.ajax({
-            
-        })
+            url: 'Base',
+            type: 'post',
+            dataType: 'json',
+            data: {
+                'nd': nd,
+                'dieu': `d${dieu}`,
+                'khoan': `k${khoan}`,
+                'diem': diem
+            },
+            success: function (data) {
+                var html = `<p>${data.dieu}</p><p>${data.khoan}</p><p>${data.diem}</p>`;
+                $('#base').html(html);
+                $('#base').slideDown(300);
+            },
+            error: function (err) {
+                console.log(err.message);
+            }
+        });
     });
     // $('#btnSubmit').val('Tiếp tục');
     $('#confirm').slideDown(300);
@@ -94,6 +123,8 @@ $(document).ready(function () {
             refreshPage();
             return;
         }
+
+        $('#base').html('');
 
         // $('#question').prop('disabled', true);
 

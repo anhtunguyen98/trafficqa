@@ -166,6 +166,9 @@ table {
 #confirm button {
   font-size: 16px;
 }
+#base {
+  display: none;
+}
 #thanks {
   display: none;
 }

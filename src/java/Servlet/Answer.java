@@ -140,7 +140,7 @@ public class Answer extends HttpServlet {
             }
         }
 
-        if (answers == null || answers.size() > 1) {
+        if (answers == null || answers.isEmpty()) {
             boolean tv = findingAnswer.jtags.has("tv");
             boolean qt = findingAnswer.jtags.has("qt");
             boolean a = findingAnswer.jtags.has("a");

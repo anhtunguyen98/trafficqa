@@ -122,7 +122,8 @@ public class Answer extends HttpServlet {
         String question = URLDecoder.decode(request.getParameter("question"), "UTF-8").trim().replaceAll("\\s+", " ");
 
         //not finish
-        JSONObject jobj = findingAnswer.getAnswer(question);
+        HashMap<String, String> hash = findingAnswer.CRFToHash(question);
+        JSONObject jobj = findingAnswer.getAnswerWithHash(hash);
         JSONObject json = new JSONObject();
         ArrayList<core.model.Answer> answers = null;
         boolean success = jobj.getBoolean("success");
@@ -140,7 +141,7 @@ public class Answer extends HttpServlet {
             }
         }
 
-        if (answers == null || answers.isEmpty()) {
+        if (answers == null || answers.isEmpty() || !hash.containsKey("qt")) {
             boolean tv = findingAnswer.jtags.has("tv");
             boolean qt = findingAnswer.jtags.has("qt");
             boolean a = findingAnswer.jtags.has("a");

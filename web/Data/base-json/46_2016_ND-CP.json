@@ -984,10 +984,7 @@
 			}
 		},
 		"d27": {
-			"tenDieu": "Điều 27. Xử phạt người điều khiển xe vệ sinh môi trường, xe ô tô chở phế thải, vật liệu rời và xe chở hàng khác thực hiện hành vi vi phạm quy định về hoạt động vận tải trong đô thị",
-			"k1": {
-				"tenKhoan": "Phạt tiền từ 500.000 đồng đến 1.000.000 đồng đối với hành vi điều khiển xe không chạy đúng tuyến, phạm vi, thời gian quy định."
-			}
+			"tenDieu": "Điều 27. Xử phạt người điều khiển xe vệ sinh môi trường, xe ô tô chở phế thải, vật liệu rời và xe chở hàng khác thực hiện hành vi vi phạm quy định về hoạt động vận tải trong đô thị\n                Phạt tiền từ 500.000 đồng đến 1.000.000 đồng đối với hành vi điều khiển xe không chạy đúng tuyến, phạm vi, thời gian quy định.\n                "
 		},
 		"d28": {
 			"tenDieu": "Điều 28. Xử phạt các hành vi vi phạm quy định về vận tải đường bộ, dịch vụ hỗ trợ vận tải đường bộ",
@@ -1412,7 +1409,7 @@
 				"tenKhoan": "2. Ngoài việc bị áp dụng hình thức xử phạt, tổ chức được giao quản lý, khai thác, bảo trì kết cấu hạ tầng giao thông đường sắt, đường bộ thực hiện hành vi vi phạm quy định tại Khoản 1 Điều này còn bị áp dụng biện pháp khắc phục hậu quả buộc phải lắp đặt đầy đủ hệ thống báo hiệu, thiết bị theo quy định."
 			}
 		},
-		"d40": {
+		"d46": {
 			"tenDieu": "Điều 46. Xử phạt các hành vi vi phạm quy định về quy tắc giao thông tại đường ngang, cầu chung, hầm",
 			"k1": {
 				"tenKhoan": "1. Phạt tiền từ 50.000 đồng đến 60.000 đồng đối với một trong các hành vi vi phạm sau đây:",

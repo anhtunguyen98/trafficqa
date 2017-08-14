@@ -119,9 +119,9 @@ public class Answer extends HttpServlet {
         HashMap<String, String> hash = null;
         JSONObject jtags = null;
         JSONObject json = new JSONObject();
-        String question = URLDecoder.decode(request.getParameter("question"), "UTF-8").trim().replaceAll("\\s+", " ");
+        String question = request.getParameter("question").trim().replaceAll("\\s+", " ");
         String tags = request.getParameter("tags");
-        tags = tags == null ? tags : URLDecoder.decode(tags, "UTF-8");
+//        tags = tags == null ? tags : URLDecoder.decode(tags, "UTF-8");
 
         if (tags != null) {
             jtags = new JSONObject(tags);

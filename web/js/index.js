@@ -22,12 +22,12 @@ function saveResult(confirm) {
         type: 'post',
         dataType: 'json',
         data: {
-            action: encodeURI('saveTest'),
-            question: encodeURI($('#question').val()),
-            answer: encodeURI(answer),
-            query: encodeURI(query),
-            'tags': encodeURI(JSON.stringify(tags)),
-            satisfied: encodeURI(confirm)
+            action: 'saveTest',
+            question: $('#question').val(),
+            answer: answer,
+            query: query,
+            'tags': JSON.stringify(tags),
+            satisfied: confirm
         },
         success: function (data) {
             console.log(data);
@@ -138,12 +138,12 @@ $(document).ready(function () {
         //        console.log($("#question").val());
 
         var dat = {
-            action: encodeURI('getAnswer'),
+            action: 'getAnswer',
             question: $('#question').val()
         };
 
         if (needInfo) {
-            dat.tags = encodeURI(JSON.stringify(tags));
+            dat.tags = JSON.stringify(tags);
             needInfo = false;
         }
 

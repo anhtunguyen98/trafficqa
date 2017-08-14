@@ -45,6 +45,7 @@ function saveResult(confirm) {
 function showAnswer(res) {
     var html = '';
     needInfo = false;
+    $('.added-info').slideUp(300);
 
     if (res.answer.indexOf('_') !== -1) {
         var answers = res.answer.split('_');
@@ -119,18 +120,16 @@ function showAnswer(res) {
 
 $(document).ready(function () {
     $("#btnSubmit").click(function () {
-        if ($('#question').prop('disabled')) {
-            refreshPage();
-            return;
-        }
-
         $('#base').html('');
+        $('.added-info').slideUp(300);
 
         // $('#question').prop('disabled', true);
 
         if ($('#question').val() === '') {
-            alert('Bạn chưa nhập câu hỏi!');
-            $('#question').prop('disabled', false);
+            if (needInfo) {
+                alert('Hãy nhập thông tin thêm để tìm kiếm tiếp hoặc nhấn làm mới để bắt đầu lại từ đầu!');
+            } else
+                alert('Bạn chưa nhập câu hỏi!');
             return;
         }
         $('#thanks').slideUp(300);
@@ -139,7 +138,7 @@ $(document).ready(function () {
         //        console.log($("#question").val());
 
         var dat = {
-            action: needInfo ? encodeURI('reGetAnswer') : encodeURI('getAnswer'),
+            action: encodeURI('getAnswer'),
             question: $('#question').val()
         };
 

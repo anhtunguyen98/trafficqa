@@ -100,9 +100,6 @@ public class Answer extends HttpServlet {
             saveTest(request, response);
         }
 
-        if (action.equals("reGetAnswer")) {
-            reGetAnswer(request, response);
-        }
     }
 
     /**
@@ -119,12 +116,22 @@ public class Answer extends HttpServlet {
             throws UnsupportedEncodingException, IOException {
         autoInit(request.getServerName());
 
+        HashMap<String, String> hash = null;
+        JSONObject jtags = null;
+        JSONObject json = new JSONObject();
         String question = URLDecoder.decode(request.getParameter("question"), "UTF-8").trim().replaceAll("\\s+", " ");
+        String tags = request.getParameter("tags");
+        tags = tags == null ? tags : URLDecoder.decode(tags, "UTF-8");
+
+        if (tags != null) {
+            jtags = new JSONObject(tags);
+            hash = parseToHash(jtags, question);
+        } else {
+            hash = findingAnswer.CRFToHash(question);
+        }
 
         //not finish
-        HashMap<String, String> hash = findingAnswer.CRFToHash(question);
         JSONObject jobj = findingAnswer.getAnswerWithHash(hash);
-        JSONObject json = new JSONObject();
         ArrayList<core.model.Answer> answers = null;
         boolean success = jobj.getBoolean("success");
 
@@ -141,39 +148,17 @@ public class Answer extends HttpServlet {
             }
         }
 
-        if (answers == null || answers.isEmpty() || !hash.containsKey("qt")) {
-            boolean tv = findingAnswer.jtags.has("tv");
-            boolean qt = findingAnswer.jtags.has("qt");
-            boolean a = findingAnswer.jtags.has("a");
-
-            json.put("tv", tv);
-            json.put("qt", qt);
-            json.put("a", a);
+        if (answers == null || answers.isEmpty()) {
             json.put("has_answer", false);
-        } else {
-            json.put("has_answer", true);
-        }
+        } else if (answers.size() > 1) {
+            boolean has_answer = true;
+            if (hash.containsKey("ano")) {
+                has_answer = true;
+            } else if (!hash.containsKey("qt")) {
+                has_answer = false;
+            }
 
-        writeResponse(request, response, answers, json);
-    }
-
-    private void reGetAnswer(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException, IOException {
-        String tags = URLDecoder.decode(request.getParameter("tags"), "UTF-8");
-        JSONObject jtags = new JSONObject(tags);
-        String question = URLDecoder.decode(request.getParameter("question"), "UTF-8");
-
-        HashMap<String, String> hash = parseToHash(jtags, question);
-        JSONObject jobj = findingAnswer.getAnswerWithHash(hash);
-        ArrayList<core.model.Answer> answers = new ArrayList<core.model.Answer>();
-        JSONArray arr = (JSONArray) jobj.get("answers");
-        for (int i = 0; i < arr.length(); i++) {
-            JSONObject obj = arr.getJSONObject(i);
-            answers.add(new core.model.Answer(obj.getString("answer"), obj.getString("base")));
-        }
-        JSONObject json = new JSONObject();
-
-        if (answers.isEmpty()) {
-            json.put("has_answer", false);
+            json.put("has_answer", has_answer);
         } else {
             json.put("has_answer", true);
         }

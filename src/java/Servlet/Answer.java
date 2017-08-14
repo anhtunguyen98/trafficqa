@@ -205,7 +205,7 @@ public class Answer extends HttpServlet {
             tagsMap.put(tag, new ArrayList<String>());
 
             try {
-                Scanner inp = new Scanner(new File(DATA_PATH + "taggroups/" + tag + ".txt"));
+                Scanner inp = new Scanner(new File(DATA_PATH + "taggroups/" + tag + ".txt"), "UTF-8");
                 String line;
 
                 while (inp.hasNext()) {

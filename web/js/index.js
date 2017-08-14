@@ -105,8 +105,8 @@ function showAnswer(res) {
                 'diem': diem
             },
             success: function (data) {
-                var html = `<p>${data.dieu}</p><p>${data.khoan}</p><p>${data.diem}</p>`;
-                $('#base').html(html);
+                var content = `${data.dieu}\r\n${data.khoan}\r\n${data.diem}`;
+                $('#base textarea').first().text(content);
                 $('#base').slideDown(300);
             },
             error: function (err) {
@@ -120,7 +120,7 @@ function showAnswer(res) {
 
 $(document).ready(function () {
     $("#btnSubmit").click(function () {
-        $('#base').html('');
+        $('#base').slideUp(300);
         $('.added-info').slideUp(300);
 
         // $('#question').prop('disabled', true);

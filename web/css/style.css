@@ -3,6 +3,15 @@
   font-size: 16px;
 }
 @font-face {
+  font-family: Comfortaa;
+  src: url(../fonts/Comfortaa-Regular.ttf);
+}
+@font-face {
+  font-family: Comfortaa;
+  src: url(../fonts/Comfortaa-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
   font-family: Lobster;
   src: url(../fonts/Lobster-Regular.ttf);
 }

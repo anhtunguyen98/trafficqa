@@ -68,7 +68,7 @@ function showAnswer(res) {
         }
         html += '</ul>';
     } else {
-        html = `Trả lời: ${res.answer} <br>${res.base != null ? `Tham chiếu: <a>${res.base}</a>` : ''}`;
+        html = `Trả lời: ${res.answer.indexOf("đồng") !== -1 ? 'bị phạt từ ' : ''}${res.answer} <br>${res.base != null ? `Tham chiếu: <a>${res.base}</a>` : ''}`;
     }
 
     $('#answer').html(html);

@@ -10,7 +10,7 @@ function showAddedInfo() {
 function refreshPage() {
     $('#question').val('');
     $('#answer').html('');
-    $('#base').html('');
+    $('#base').slideUp(300);
     $('#confirm').slideUp(300);
     $('.added-info').slideUp(300);
     needInfo = false;

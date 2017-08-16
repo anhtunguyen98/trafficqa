@@ -130,7 +130,28 @@ public class Answer extends HttpServlet {
             hash = findingAnswer.CRFToHash(question);
         }
 
-        //not finish
+        if (!hash.containsKey("ano")) {
+            boolean ok = true;
+            String message = "";
+
+            if (!hash.containsKey("qt")) {
+                message = "Hãy nhập điều muốn hỏi vào bên trên!";
+                ok = false;
+            } else if (hash.containsKey("tv") && hash.containsKey("qt")
+                    && !(hash.containsKey("a") || hash.containsKey("ac") || hash.containsKey("sp"))) {
+                message = "Hãy nhập thêm hành động cho câu hỏi!";
+                ok = false;
+            }
+
+            if (!ok) {
+                json.put("hash_answer", false);
+                json.put("message", message);
+                json.put("tags", hash);
+                response.getWriter().write(json.toString());
+                return;
+            }
+        }
+
         JSONObject jobj = findingAnswer.getAnswerWithHash(hash);
         ArrayList<core.model.Answer> answers = null;
         boolean success = jobj.getBoolean("success");

@@ -1,8 +1,9 @@
 var tags, query, answer;
 var needInfo = false;
 
-function showAddedInfo() {
+function showAddedInfo(message) {
     $("#answer").html("");
+    $('.added-info p').first().text(message);
     $('.added-info').slideDown(300);
     needInfo = true;
 }
@@ -135,7 +136,6 @@ $(document).ready(function () {
         $('#thanks').slideUp(300);
 
         $("#answer").html("Đang lấy câu trả lời...");
-        //        console.log($("#question").val());
 
         var dat = {
             action: 'getAnswer',
@@ -158,13 +158,13 @@ $(document).ready(function () {
                 answer = res.answer;
                 query = res.query;
 
-                if (res.has_answer === true) {
-                    showAnswer(res);
-                } else if (res.error === 1) {
+                if (res.error === 1) {
                     alert('Hãy hỏi những câu liên quan tới giao thông!');
                     refreshPage();
+                } else if (res.has_answer === true) {
+                    showAnswer(res);
                 } else
-                    showAddedInfo();
+                    showAddedInfo(res.message);
             },
             error: function (ts) {
                 alert("Có lỗi đã xảy ra! Hãy thử lại!");

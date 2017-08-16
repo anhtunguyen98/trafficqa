@@ -269,10 +269,10 @@ public class Answer extends HttpServlet {
                 if (isLocal) {
                     DATA_PATH = getServletContext().getRealPath("/") + "Data/";
                 } else {
-                    DATA_PATH = System.getenv("OPENSHIFT_DATA_DIR");
-
-                    prepareTagsMap();
+                    DATA_PATH = System.getenv("OPENSHIFT_DATA_DIR");                  
                 }
+                
+                prepareTagsMap();
                 Const.Path.DATA_PATH = DATA_PATH;
             }
         }

@@ -22,6 +22,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -122,7 +123,6 @@ public class Answer extends HttpServlet {
         JSONObject json = new JSONObject();
         String question = request.getParameter("question").trim().replaceAll("\\s+", " ");
         String tags = request.getParameter("tags");
-//        tags = tags == null ? tags : URLDecoder.decode(tags, "UTF-8");
 
         if (tags != null) {
             jtags = new JSONObject(tags);
@@ -131,12 +131,13 @@ public class Answer extends HttpServlet {
             hash = findingAnswer.CRFToHash(question);
         }
 
+        //<editor-fold defaultstate="collapsed" desc="handle for each case">
         if (!hash.containsKey("ano")) {
             boolean ok = true;
             String message = "";
 
             if (!hash.containsKey("qt")) {
-                message = "Hãy nhập điều muốn hỏi vào bên trên!";
+                message = "Bạn muốn hỏi như thế nào!";
                 ok = false;
             } else if (hash.containsKey("tv") && hash.containsKey("qt")
                     && !(hash.containsKey("a") || hash.containsKey("ac") || hash.containsKey("sp"))) {
@@ -151,8 +152,9 @@ public class Answer extends HttpServlet {
                 response.getWriter().write(json.toString());
                 return;
             }
-        }
+        }//</editor-fold>
 
+        //<editor-fold defaultstate="collapsed" desc="find answers and return it">
         JSONObject jobj = findingAnswer.getAnswerWithHash(hash);
         ArrayList<core.model.Answer> answers = null;
         boolean success = jobj.getBoolean("success");
@@ -186,6 +188,7 @@ public class Answer extends HttpServlet {
         }
 
         writeResponse(request, response, answers, json);
+        //</editor-fold>
     }//</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc="saveTest">

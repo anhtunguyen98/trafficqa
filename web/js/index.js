@@ -79,29 +79,32 @@ function showAnswer(res) {
         var rkhoan = /khoản \S+/gim;
         var rdieu = /điều \S+/gim;
         var rnd = /nghị định \d+/gim;
+        var diem, dieu, khoan, nd;
         var text = $(this).text();
         // var diem = text.substring(5, 6);
         var match = rdiem.exec(text);
         if (match != null)
-            var diem = text.substring(rdiem.lastIndex - match[0].length, rdiem.lastIndex).split(' ')[1];
+            diem = text.substring(rdiem.lastIndex - match[0].length, rdiem.lastIndex).split(' ')[1];
         // var khoan = text.substring(13, 14);
         match = rkhoan.exec(text);
-        var khoan = text.substring(rkhoan.lastIndex - match[0].length, rkhoan.lastIndex).split(' ')[1];
+        khoan = text.substring(rkhoan.lastIndex - match[0].length, rkhoan.lastIndex).split(' ')[1];
         // var dieu = text.substring(20, 21);
         match = rdieu.exec(text);
-        var dieu = text.substring(rdieu.lastIndex - match[0].length, rdieu.lastIndex).split(' ')[1];
+        dieu = text.substring(rdieu.lastIndex - match[0].length, rdieu.lastIndex).split(' ')[1];
         // var nd = text.substring(32, 34);
         match = rnd.exec(text);
         if (match == null) {
             rnd = /thông tư số \d+/gim;
             match = rnd.exec(text);
+            nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[3];
         }
 
         if(match == null){
             rnd = /theo Luật số: \d+/gim;
             match = rnd.exec(text);
+            nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[3];
         }
-        var nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[3];
+        nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[2];
 
         console.log(`${nd} ${dieu} ${khoan} ${diem}`);
 

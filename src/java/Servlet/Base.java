@@ -28,7 +28,7 @@ import org.json.JSONObject;
  */
 @WebServlet(name = "Base", urlPatterns = {"/Base"})
 public class Base extends HttpServlet {
-    
+
     private JSONObject base = null;
 
     /**
@@ -89,7 +89,7 @@ public class Base extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json; charset=UTF-8");
-        
+
         getBase(request, response);
     }
 
@@ -104,50 +104,55 @@ public class Base extends HttpServlet {
     }// </editor-fold>
 
     private void getBase(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException, IOException {
-        String diem = URLDecoder.decode(request.getParameter("diem"), "UTF-8");
+        String diem = null;
+        try {
+            diem = URLDecoder.decode(request.getParameter("diem"), "UTF-8");
+        } catch (NullPointerException e) {
+            diem = null;
+        }
         String khoan = URLDecoder.decode(request.getParameter("khoan"), "UTF-8");
         String dieu = URLDecoder.decode(request.getParameter("dieu"), "UTF-8");
         String nd = URLDecoder.decode(request.getParameter("nd"), "UTF-8");
-        
+
         if (base == null) {
             prepareBase(request.getServerName());
         }
-        
+
         JSONObject res = new JSONObject();
-        
+
         try {
             JSONObject jobj = base.getJSONObject(nd);
             jobj = jobj.getJSONObject(dieu);
             res.put("dieu", jobj.getString("tenDieu"));
             jobj = jobj.getJSONObject(khoan);
             res.put("khoan", jobj.getString("tenKhoan"));
-            
+
             if (diem != null && jobj.has(diem)) {
                 res.put("diem", jobj.getString(diem));
             }
-            
+
             response.getWriter().write(res.toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }
     }
-    
+
     private void prepareBase(String domain) {
         String path;
-        
+
         if (domain.equals("localhost")) {
             path = getServletContext().getRealPath("/") + "Data/";
         } else {
             path = System.getenv("OPENSHIFT_DATA_DIR");
         }
-        
+
         base = new JSONObject();
-        
+
         base.put("12", fileToJSONObject(path + "base-json/12-2017-TT-BGTVT.json"));
         base.put("23", fileToJSONObject(path + "base-json/23-2008-QH12.json"));
         base.put("46", fileToJSONObject(path + "base-json/46_2016_ND-CP.json"));
     }
-    
+
     private JSONObject fileToJSONObject(String filePath) {
         try {
             Scanner inp = new Scanner(new File(filePath), "UTF-8");
@@ -155,13 +160,13 @@ public class Base extends HttpServlet {
             while (inp.hasNext()) {
                 json += inp.nextLine();
             }
-            
+
             return new JSONObject(json).getJSONObject("root");
         } catch (FileNotFoundException ex) {
             Logger.getLogger(Base.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
         return null;
     }
-    
+
 }

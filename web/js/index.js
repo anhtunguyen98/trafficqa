@@ -82,7 +82,8 @@ function showAnswer(res) {
         var text = $(this).text();
         // var diem = text.substring(5, 6);
         var match = rdiem.exec(text);
-        var diem = text.substring(rdiem.lastIndex - match[0].length, rdiem.lastIndex).split(' ')[1];
+        if (match != null)
+            var diem = text.substring(rdiem.lastIndex - match[0].length, rdiem.lastIndex).split(' ')[1];
         // var khoan = text.substring(13, 14);
         match = rkhoan.exec(text);
         var khoan = text.substring(rkhoan.lastIndex - match[0].length, rkhoan.lastIndex).split(' ')[1];
@@ -91,7 +92,16 @@ function showAnswer(res) {
         var dieu = text.substring(rdieu.lastIndex - match[0].length, rdieu.lastIndex).split(' ')[1];
         // var nd = text.substring(32, 34);
         match = rnd.exec(text);
-        var nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[2];
+        if (match == null) {
+            rnd = /thông tư số \d+/gim;
+            match = rnd.exec(text);
+        }
+
+        if(match == null){
+            rnd = /theo Luật số: \d+/gim;
+            match = rnd.exec(text);
+        }
+        var nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[3];
 
         console.log(`${nd} ${dieu} ${khoan} ${diem}`);
 

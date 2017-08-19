@@ -112,6 +112,7 @@ public class Answer extends HttpServlet {
         return "Short description";
     }// </editor-fold>
 
+    //<editor-fold defaultstate="collapsed" desc="getAnswers">
     private void getAnswers(HttpServletRequest request, HttpServletResponse response)
             throws UnsupportedEncodingException, IOException {
         autoInit(request.getServerName());
@@ -185,8 +186,9 @@ public class Answer extends HttpServlet {
         }
 
         writeResponse(request, response, answers, json);
-    }
+    }//</editor-fold>
 
+    //<editor-fold defaultstate="collapsed" desc="saveTest">
     private void saveTest(HttpServletRequest request, HttpServletResponse response)
             throws UnsupportedEncodingException, IOException {
         autoInit(request.getServerName());
@@ -202,8 +204,9 @@ public class Answer extends HttpServlet {
         JSONObject jobj = new JSONObject();
         jobj.put("success", true);
         response.getWriter().write(jobj.toString());
-    }
+    }//</editor-fold>
 
+    //<editor-fold defaultstate="collapsed" desc="prepare">
     private HashMap<String, String> parseToHash(JSONObject jtags, String addedInfo) {
         HashMap<String, String> hash = new HashMap<String, String>();
 
@@ -269,16 +272,19 @@ public class Answer extends HttpServlet {
                 if (isLocal) {
                     DATA_PATH = getServletContext().getRealPath("/") + "Data/";
                 } else {
-                    DATA_PATH = System.getenv("OPENSHIFT_DATA_DIR");                  
+                    DATA_PATH = System.getenv("OPENSHIFT_DATA_DIR");
                 }
-                
+
                 prepareTagsMap();
                 Const.Path.DATA_PATH = DATA_PATH;
             }
         }
-    }
+    }//</editor-fold>
 
-    private void writeResponse(HttpServletRequest request, HttpServletResponse response, ArrayList<core.model.Answer> answers, JSONObject json) throws IOException {
+    //<editor-fold defaultstate="collapsed" desc="writeResponse">
+    private void writeResponse(HttpServletRequest request, HttpServletResponse response,
+            ArrayList<core.model.Answer> answers, JSONObject json)
+            throws IOException {
         core.model.Answer ans;
         if (answers == null || answers.isEmpty()) {
             ans = null;
@@ -295,5 +301,5 @@ public class Answer extends HttpServlet {
         json.put("query", AnswerDAO.foundedSql);
 
         response.getWriter().write(json.toString());
-    }
+    }//</editor-fold>
 }

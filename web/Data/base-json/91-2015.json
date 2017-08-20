@@ -75,6 +75,12 @@
 					}
 				]
 			}
+		},
+		"d8": {
+			"tenDieu": "Điều 8. Tốc độ tối đa cho phép đối với xe máy chuyên dùng, xe gắn máy (kể cả xe máy điện) và các loại xe tương tự trên đường bộ (trừ đường cao tốc) _ Đối với xe máy chuyên dùng, xe gắn máy (kể cả xe máy điện) và các loại xe tương tự khi tham gia giao thông thì tốc độ tối đa được xác định theo báo hiệu đường bộ và không quá 40 km/h."
+		},
+		"d9": {
+			"tenDieu": "Điều 9. Tốc độ của các loại xe cơ giới, xe máy chuyên dùng trên đường cao tốc _ Khi tham gia giao thông trên đường cao tốc, người điều khiển xe cơ giới, xe máy chuyên dùng phải tuân thủ tốc độ tối đa, tốc độ tối thiểu ghi trên biển báo hiệu đường bộ. Tốc độ tối đa cho phép khai thác trên đường cao tốc không vượt quá 120 km/h."
 		}
 	}
 }

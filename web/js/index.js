@@ -81,17 +81,17 @@ function showAnswer(res) {
         var rnd = /nghị định \d+/gim;
         var diem, dieu, khoan, nd;
         var text = $(this).text();
-        // var diem = text.substring(5, 6);
+
         var match = rdiem.exec(text);
         if (match != null)
             diem = text.substring(rdiem.lastIndex - match[0].length, rdiem.lastIndex).split(' ')[1];
-        // var khoan = text.substring(13, 14);
+
         match = rkhoan.exec(text);
         khoan = text.substring(rkhoan.lastIndex - match[0].length, rkhoan.lastIndex).split(' ')[1];
-        // var dieu = text.substring(20, 21);
+
         match = rdieu.exec(text);
         dieu = text.substring(rdieu.lastIndex - match[0].length, rdieu.lastIndex).split(' ')[1];
-        // var nd = text.substring(32, 34);
+
         match = rnd.exec(text);
         if (match == null) {
             rnd = /thông tư số \d+/gim;
@@ -99,7 +99,7 @@ function showAnswer(res) {
             nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[3];
         }
 
-        if(match == null){
+        if (match == null) {
             rnd = /theo Luật số: \d+/gim;
             match = rnd.exec(text);
             nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[3];
@@ -128,7 +128,6 @@ function showAnswer(res) {
             }
         });
     });
-    // $('#btnSubmit').val('Tiếp tục');
     $('#confirm').slideDown(300);
 }
 

@@ -96,15 +96,14 @@ function showAnswer(res) {
         if (match == null) {
             rnd = /thông tư số \d+/gim;
             match = rnd.exec(text);
-            nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[3];
-        }
 
-        if (match == null) {
-            rnd = /theo Luật số: \d+/gim;
-            match = rnd.exec(text);
+            if (match == null) {
+                rnd = /theo Luật số: \d+/gim;
+                match = rnd.exec(text);
+            }
             nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[3];
-        }
-        nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[2];
+        } else
+            nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[2];
 
         console.log(`${nd} ${dieu} ${khoan} ${diem}`);
 
@@ -119,7 +118,7 @@ function showAnswer(res) {
                 'diem': diem
             },
             success: function (data) {
-                var content = `${data.dieu}\r\n${data.khoan}\r\n${data.diem}`;
+                var content = `${data.dieu.trim()}\r\n${data.khoan.trim()}\r\n${data.diem != null ? data.diem.trim() : ''}`;
                 $('#base textarea').first().text(content);
                 $('#base').slideDown(300);
             },

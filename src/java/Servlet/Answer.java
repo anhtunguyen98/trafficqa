@@ -140,7 +140,10 @@ public class Answer extends HttpServlet {
                 message = "Bạn muốn hỏi như thế nào!";
                 ok = false;
             } else if (hash.containsKey("tv") && hash.containsKey("qt")
-                    && !(hash.containsKey("a") || hash.containsKey("ac") || hash.containsKey("sp"))) {
+                    && !(hash.containsKey("a") || hash.containsKey("ac")
+                    || hash.containsKey("sp") || hash.containsKey("if1")
+                    || hash.containsKey("if2") || hash.containsKey("if3")
+                    || hash.containsKey("if4"))) {
                 message = "Hãy nhập thêm hành động cho câu hỏi!";
                 ok = false;
             }

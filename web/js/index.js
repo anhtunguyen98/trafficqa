@@ -69,7 +69,7 @@ function showAnswer(res) {
         }
         html += '</ul>';
     } else {
-        html = `Trả lời: ${res.answer.indexOf("đồng") !== -1 ? 'bị phạt từ ' : ''}${res.answer} <br>${res.base != null ? `Tham chiếu: <a>${res.base}</a>` : ''}`;
+        html = `Trả lời: ${res.answer.indexOf("đồng") !== -1 ? 'bị phạt từ ' : ''}${res.answer} <br>${res.base != null && res.base.length > 0 ? `Tham chiếu: <a>${res.base}</a>` : ''}`;
     }
 
     $('#answer').html(html);
@@ -87,7 +87,8 @@ function showAnswer(res) {
             diem = text.substring(rdiem.lastIndex - match[0].length, rdiem.lastIndex).split(' ')[1];
 
         match = rkhoan.exec(text);
-        khoan = text.substring(rkhoan.lastIndex - match[0].length, rkhoan.lastIndex).split(' ')[1];
+        if (match != null)
+            khoan = text.substring(rkhoan.lastIndex - match[0].length, rkhoan.lastIndex).split(' ')[1];
 
         match = rdieu.exec(text);
         dieu = text.substring(rdieu.lastIndex - match[0].length, rdieu.lastIndex).split(' ')[1];
@@ -100,6 +101,11 @@ function showAnswer(res) {
             if (match == null) {
                 rnd = /theo Luật số: \d+/gim;
                 match = rnd.exec(text);
+
+                if (match == null) {
+                    rnd = /thông tư số: \d+/gim;
+                    match = rnd.exec(text);
+                }
             }
             nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[3];
         } else
@@ -118,8 +124,35 @@ function showAnswer(res) {
                 'diem': diem
             },
             success: function (data) {
-                var content = `${data.dieu.trim()}\r\n${data.khoan.trim()}\r\n${data.diem != null ? data.diem.trim() : ''}`;
-                $('#base textarea').first().text(content);
+                var content;
+
+                if (nd === '91' && data.dieu.bang != null) {
+                    data.dieu.bang.dong.forEach(function (item, index) {
+                        content += '<tr>';
+
+                        var cot = item.cot;
+
+                        if (cot.length == 2) {
+                            content += `<td></td><td>${cot[0]}</td><td>${cot[1]}</td>`;
+                        } else {
+                            content += `<td>${cot[0]}</td><td>${cot[1]}</td><td>${cot[2]}</td>`;
+                        }
+
+                        content += '</tr>';
+                    });
+                }
+                else {
+                    content = `${data.dieu.trim()}\r\n${data.khoan != null ? data.khoan.trim() : ''}
+                \r\n${data.diem != null ? data.diem.trim() : ''}`;
+                }
+
+                if (nd === '91') {
+                    $('#base textarea').first().text('').hide();
+                    $('#base table').first().html(content).show();
+                } else {
+                    $('#base table').first().html('').hide();
+                    $('#base textarea').first().text(content).show();
+                }
                 $('#base').slideDown(300);
             },
             error: function (err) {

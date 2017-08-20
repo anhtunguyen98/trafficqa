@@ -188,6 +188,10 @@ table {
   font-family: Comfortaa;
   margin: auto;
 }
+#base table {
+  background-color: white;
+  color: black;
+}
 #thanks {
   display: none;
 }

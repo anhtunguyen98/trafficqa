@@ -104,13 +104,19 @@ public class Base extends HttpServlet {
     }// </editor-fold>
 
     private void getBase(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException, IOException {
-        String diem = null;
+        String diem;
         try {
             diem = URLDecoder.decode(request.getParameter("diem"), "UTF-8");
         } catch (NullPointerException e) {
             diem = null;
         }
-        String khoan = URLDecoder.decode(request.getParameter("khoan"), "UTF-8");
+        String khoan;
+
+        try {
+            khoan = URLDecoder.decode(request.getParameter("khoan"), "UTF-8");
+        } catch (NullPointerException e) {
+            khoan = null;
+        }
         String dieu = URLDecoder.decode(request.getParameter("dieu"), "UTF-8");
         String nd = URLDecoder.decode(request.getParameter("nd"), "UTF-8");
 
@@ -123,9 +129,17 @@ public class Base extends HttpServlet {
         try {
             JSONObject jobj = base.getJSONObject(nd);
             jobj = jobj.getJSONObject(dieu);
-            res.put("dieu", jobj.getString("tenDieu"));
-            jobj = jobj.getJSONObject(khoan);
-            res.put("khoan", jobj.getString("tenKhoan"));
+
+            if (nd.equals("91") && (dieu.equals("d6") || dieu.equals("d7"))) {
+                res.put("dieu", jobj);
+            } else {
+                res.put("dieu", jobj.getString("tenDieu"));
+            }
+
+            if (khoan != null && jobj.has(khoan)) {
+                jobj = jobj.getJSONObject(khoan);
+                res.put("khoan", jobj.getString("tenKhoan"));
+            }
 
             if (diem != null && jobj.has(diem)) {
                 res.put("diem", jobj.getString(diem));
@@ -151,7 +165,7 @@ public class Base extends HttpServlet {
         base.put("12", fileToJSONObject(path + "base-json/12-2017-TT-BGTVT.json"));
         base.put("23", fileToJSONObject(path + "base-json/23-2008-QH12.json"));
         base.put("46", fileToJSONObject(path + "base-json/46_2016_ND-CP.json"));
-        base.put("91", fileToJSONObject(path+"base-json/91-2015.json"));
+        base.put("91", fileToJSONObject(path + "base-json/91-2015.json"));
     }
 
     private JSONObject fileToJSONObject(String filePath) {

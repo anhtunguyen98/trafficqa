@@ -1,0 +1,80 @@
+{
+	"root": {
+		"ten": "91/2015/TT-BGTVT",
+		"d6": {
+			"tenDieu": "Điều 6. Tốc độ tối đa cho phép xe cơ giới trên đường bộ (trừ đường cao tốc) trong khu vực đông dân cư",
+			"bang": {
+				"dong": [
+					{
+						"cot": [
+							"Loại xe cơ giới đường bộ",
+							"Tốc độ tối đa (km/h)"
+						]
+					},
+					{
+						"cot": [
+							"",
+							"Đường đôi (có dải phân cách giữa); đường một chiều có từ 2 làn xe cơ giới trở lên",
+							"Đường hai chiều không có dải phân cách giữa; đường một chiều có 1 làn xe cơ giới"
+						]
+					},
+					{
+						"cot": [
+							"Các phương tiện xe cơ giới, trừ các xe được quy định tại Điều 8 Thông tư này.",
+							"60",
+							"50"
+						]
+					}
+				]
+			}
+		},
+		"d7": {
+			"tenDieu": "Điều 7. Tốc độ tối đa cho phép xe cơ giới trên đường bộ (trừ đường cao tốc) ngoài khu vực đông dân cư",
+			"bang": {
+				"dong": [
+					{
+						"cot": [
+							"Loại xe cơ giới đường bộ",
+							"Tốc độ tối đa (km/h)"
+						]
+					},
+					{
+						"cot": [
+							"",
+							"Đường đôi (có dải phân cách giữa); đường một chiều có từ 2 làn xe cơ giới trở lên",
+							"Đường hai chiều không có dải phân cách giữa; đường một chiều có 1 làn xe cơ giới"
+						]
+					},
+					{
+						"cot": [
+							"Xe ô tô con, xe ô tô chở người đến 30 chỗ (trừ xe buýt); ô tô tải có trọng tải đến 3,5 tấn.",
+							"90",
+							"80"
+						]
+					},
+					{
+						"cot": [
+							"Xe ô tô chở người trên 30 chỗ (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn.",
+							"80",
+							"70"
+						]
+					},
+					{
+						"cot": [
+							"Ô tô buýt; ô tô đầu kéo kéo sơ mi rơ moóc; ô tô chuyên dùng; xe mô tô.",
+							"70",
+							"60"
+						]
+					},
+					{
+						"cot": [
+							"Ô tô kéo rơ moóc; ô tô kéo xe khác.",
+							"60",
+							"50"
+						]
+					}
+				]
+			}
+		}
+	}
+}

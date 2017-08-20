@@ -1,6 +1,105 @@
 {
 	"root": {
 		"ten": "23/2008/QH12",
+		"d3": {
+			"tenDieu": "Điều 3. Giải thích từ ngữ",
+			"k1": {
+				"tenKhoan": "1. Đường bộ gồm đường, cầu đường bộ, hầm đường bộ, bến phà đường bộ."
+			},
+			"k2": {
+				"tenKhoan": "2. Công trình đường bộ gồm đường bộ, nơi dừng xe, đỗ xe trên đường bộ, đèn tín hiệu, biển báo hiệu, vạch kẻ đường, cọc tiêu, rào chắn, đảo giao thông, dải phân cách, cột cây số, tường, kè, hệ thống thoát nước, trạm kiểm tra tải trọng xe, trạm thu phí và các công trình, thiết bị phụ trợ đường bộ khác."
+			},
+			"k3": {
+				"tenKhoan": "3. Kết cấu hạ tầng giao thông đường bộ gồm công trình đường bộ, bến xe, bãi đỗ xe, trạm dừng nghỉ và các công trình phụ trợ khác trên đường bộ phục vụ giao thông và hành lang an toàn đường bộ."
+			},
+			"k4": {
+				"tenKhoan": "4. Đất của đường bộ là phần đất trên đó công trình đường bộ được xây dựng và phần đất dọc hai bên đường bộ để quản lý, bảo trì, bảo vệ công trình đường bộ. "
+			},
+			"k5": {
+				"tenKhoan": "5. Hành lang an toàn đường bộ là dải đất dọc hai bên đất của đường bộ, tính từ mép ngoài đất của đường bộ ra hai bên để bảo đảm an toàn giao thông đường bộ."
+			},
+			"k6": {
+				"tenKhoan": "6. Phần đường xe chạy là phần của đường bộ được sử dụng cho phương tiện giao thông qua lại. "
+			},
+			"k7": {
+				"tenKhoan": "7. Làn đường là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn. "
+			},
+			"k8": {
+				"tenKhoan": "8. Khổ giới hạn của đường bộ là khoảng trống có kích thước giới hạn về chiều cao, chiều rộng của đường, cầu, bến phà, hầm đường bộ để các xe kể cả hàng hóa xếp trên xe đi qua được an toàn."
+			},
+			"k9": {
+				"tenKhoan": "9. Đường phố là đường đô thị, gồm lòng đường và hè phố."
+			},
+			"k10": {
+				"tenKhoan": "10. Dải phân cách là bộ phận của đường để phân chia mặt đường thành hai chiều xe chạy riêng biệt hoặc để phân chia phần đường của xe cơ giới và xe thô sơ. Dải phân cách gồm loại cố định và loại di động. "
+			},
+			"k11": {
+				"tenKhoan": "11. Nơi đường giao nhau cùng mức (sau đây gọi là nơi đường giao nhau) là nơi hai hay nhiều đường bộ gặp nhau trên cùng một mặt phẳng, gồm cả mặt bằng hình thành vị trí giao nhau đó."
+			},
+			"k12": {
+				"tenKhoan": "12. Đường cao tốc là đường dành cho xe cơ giới, có dải phân cách chia đường cho xe chạy hai chiều riêng biệt; không giao nhau cùng mức với một hoặc các đường khác; được bố trí đầy đủ trang thiết bị phục vụ, bảo đảm giao thông liên tục, an toàn, rút ngắn thời gian hành trình và chỉ cho xe ra, vào ở những điểm nhất định."
+			},
+			"k13": {
+				"tenKhoan": "13. Đường chính là đường bảo đảm giao thông chủ yếu trong khu vực. "
+			},
+			"k14": {
+				"tenKhoan": "14. Đường nhánh là đường nối vào đường chính."
+			},
+			"k15": {
+				"tenKhoan": "15. Đường ưu tiên là đường mà trên đó phương tiện tham gia giao thông đường bộ được các phương tiện giao thông đến từ hướng khác nhường đường khi qua nơi đường giao nhau, được cắm biển báo hiệu đường ưu tiên."
+			},
+			"k16": {
+				"tenKhoan": "16. Đường gom là đường để gom hệ thống đường giao thông nội bộ của các khu đô thị, công nghiệp, kinh tế, dân cư, thương mại - dịch vụ và các đường khác vào đường chính hoặc vào đường nhánh trước khi đấu nối vào đường chính. "
+			},
+			"k17": {
+				"tenKhoan": "17. Phương tiện giao thông đường bộ gồm phương tiện giao thông cơ giới đường bộ, phương tiện giao thông thô sơ đường bộ."
+			},
+			"k18": {
+				"tenKhoan": "18. Phương tiện giao thông cơ giới đường bộ (sau đây gọi là xe cơ giới) gồm xe ô tô; máy kéo; rơ moóc hoặc sơ mi rơ moóc được kéo bởi xe ô tô, máy kéo; xe mô tô hai bánh; xe mô tô ba bánh; xe gắn máy (kể cả xe máy điện) và các loại xe tương tự. "
+			},
+			"k19": {
+				"tenKhoan": "19. Phương tiện giao thông thô sơ đường bộ (sau đây gọi là xe thô sơ) gồm xe đạp (kể cả xe đạp máy), xe xích lô, xe lăn dùng cho người khuyết tật, xe súc vật kéo và các loại xe tương tự."
+			},
+			"k20": {
+				"tenKhoan": "20. Xe máy chuyên dùng gồm xe máy thi công, xe máy nông nghiệp, lâm nghiệp và các loại xe đặc chủng khác sử dụng vào mục đích quốc phòng, an ninh có tham gia giao thông đường bộ."
+			},
+			"k21": {
+				"tenKhoan": "21. Phương tiện tham gia giao thông đường bộ gồm phương tiện giao thông đường bộ và xe máy chuyên dùng."
+			},
+			"k22": {
+				"tenKhoan": "22. Người tham gia giao thông gồm người điều khiển, người sử dụng phương tiện tham gia giao thông đường bộ; người điều khiển, dẫn dắt súc vật; người đi bộ trên đường bộ."
+			},
+			"k23": {
+				"tenKhoan": "23. Người điều khiển phương tiện gồm người điều khiển xe cơ giới, xe thô sơ, xe máy chuyên dùng tham gia giao thông đường bộ."
+			},
+			"k24": {
+				"tenKhoan": "24. Người lái xe là người điều khiển xe cơ giới."
+			},
+			"k25": {
+				"tenKhoan": "25. Người điều khiển giao thông là cảnh sát giao thông; người được giao nhiệm vụ hướng dẫn giao thông tại nơi thi công, nơi ùn tắc giao thông, ở bến phà, tại cầu đường bộ đi chung với đường sắt."
+			},
+			"k26": {
+				"tenKhoan": "26. Hành khách là người được chở trên phương tiện vận tải hành khách đường bộ, có trả tiền."
+			},
+			"k27": {
+				"tenKhoan": "27. Hành lý là vật phẩm mà hành khách mang theo trên cùng phương tiện hoặc gửi theo phương tiện khác."
+			},
+			"k28": {
+				"tenKhoan": "28. Hàng hóa là máy móc, thiết bị, nguyên vật liệu, nhiên liệu, hàng tiêu dùng, động vật sống và các động sản khác được vận chuyển bằng phương tiện giao thông đường bộ."
+			},
+			"k29": {
+				"tenKhoan": "29. Hàng nguy hiểm là hàng hóa có chứa các chất nguy hiểm khi chở trên đường có khả năng gây nguy hại tới tính mạng, sức khỏe con người, môi trường, an toàn và an ninh quốc gia."
+			},
+			"k30": {
+				"tenKhoan": "30. Vận tải đường bộ là hoạt động sử dụng phương tiện giao thông đường bộ để vận chuyển người, hàng hóa trên đường bộ."
+			},
+			"k31": {
+				"tenKhoan": "31. Người vận tải là tổ chức, cá nhân sử dụng phương tiện giao thông đường bộ để thực hiện hoạt động vận tải đường bộ."
+			},
+			"k32": {
+				"tenKhoan": "32. Cơ quan quản lý đường bộ là cơ quan thực hiện chức năng quản lý nhà nước chuyên ngành thuộc Bộ Giao thông vận tải; cơ quan chuyên môn thuộc Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương (sau đây gọi chung là cấp tỉnh), Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh (sau đây gọi chung là cấp huyện); Ủy ban nhân dân xã, phường, thị trấn (sau đây gọi chung là cấp xã)."
+			}
+		},
 		"d60": {
 			"tenDieu": "Điều 60. Tuổi, sức khỏe của người lái xe",
 			"k1": {
@@ -14,6 +113,21 @@
 			},
 			"k2": {
 				"tenKhoan": "2. Người lái xe phải có sức khỏe phù hợp với loại xe, công dụng của xe. Bộ trưởng Bộ Y tế chủ trì, phối hợp với Bộ trưởng Bộ Giao thông vận tải quy định về tiêu chuẩn sức khỏe của người lái xe, việc khám sức khỏe định kỳ đối với người lái xe ô tô và quy định về cơ sở y tế khám sức khoẻ của người lái xe."
+			}
+		},
+		"d65": {
+			"tenDieu": "Điều 65. Thời gian làm việc của người lái xe ô tô",
+			"k1": {
+				"tenKhoan": "1. Thời gian làm việc của người lái xe ô tô không được quá 10 giờ trong một ngày và không được lái xe liên tục quá 4 giờ. "
+			},
+			"k2": {
+				"tenKhoan": "2. Người vận tải và người lái xe ô tô chịu trách nhiệm thực hiện quy định tại khoản 1 Điều này."
+			}
+		},
+		"d8": {
+			"tenDieu": "Điều 8. Các hành vi bị nghiêm cấm",
+			"k8": {
+				"tenKhoan": "8. Điều khiển xe ô tô, máy kéo, xe máy chuyên dùng trên đường mà trong máu hoặc hơi thở có nồng độ cồn. Điều khiển xe mô tô, xe gắn máy mà trong máu có nồng độ cồn vượt quá 50 miligam/100 mililít máu hoặc 0,25 miligam/1 lít khí thở. "
 			}
 		}
 	}

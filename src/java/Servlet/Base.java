@@ -103,6 +103,7 @@ public class Base extends HttpServlet {
         return "Short description";
     }// </editor-fold>
 
+    // <editor-fold defaultstate="collapsed" desc="getBase">
     private void getBase(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException, IOException {
         String diem;
         try {
@@ -149,8 +150,9 @@ public class Base extends HttpServlet {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-    }
+    }//</editor-fold>
 
+    // <editor-fold defaultstate="collapsed" desc="prepareBase">
     private void prepareBase(String domain) {
         String path;
 
@@ -182,6 +184,6 @@ public class Base extends HttpServlet {
         }
 
         return null;
-    }
+    }//</editor-fold>
 
 }

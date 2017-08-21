@@ -170,6 +170,11 @@ table {
   font-family: Comfortaa;
   color: white;
 }
+#answer table {
+  background-color: white;
+  color: black;
+  text-align: justify;
+}
 #confirm {
   display: none;
 }

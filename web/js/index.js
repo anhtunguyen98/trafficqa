@@ -43,6 +43,94 @@ function saveResult(confirm) {
     refreshPage();
 }
 
+function showBase(t) {
+    var rdiem = /điểm \S+/gim;
+    var rkhoan = /khoản \S+/gim;
+    var rdieu = /điều \S+/gim;
+    var rnd = /nghị định \d+/gim;
+    var diem, dieu, khoan, nd;
+    var text = t.text();
+
+    var match = rdiem.exec(text);
+    if (match != null)
+        diem = text.substring(rdiem.lastIndex - match[0].length, rdiem.lastIndex).split(' ')[1];
+
+    match = rkhoan.exec(text);
+    if (match != null)
+        khoan = text.substring(rkhoan.lastIndex - match[0].length, rkhoan.lastIndex).split(' ')[1];
+
+    match = rdieu.exec(text);
+    dieu = text.substring(rdieu.lastIndex - match[0].length, rdieu.lastIndex).split(' ')[1];
+
+    match = rnd.exec(text);
+    if (match == null) {
+        rnd = /thông tư số \d+/gim;
+        match = rnd.exec(text);
+
+        if (match == null) {
+            rnd = /theo Luật số: \d+/gim;
+            match = rnd.exec(text);
+
+            if (match == null) {
+                rnd = /thông tư số: \d+/gim;
+                match = rnd.exec(text);
+            }
+        }
+
+        nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[3];
+    } else
+        nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[2];
+
+    console.log(`${nd} ${dieu} ${khoan} ${diem}`);
+
+    $.ajax({
+        url: 'Base',
+        type: 'post',
+        dataType: 'json',
+        data: {
+            'nd': nd,
+            'dieu': `d${dieu}`,
+            'khoan': `k${khoan}`,
+            'diem': diem
+        },
+        success: function (data) {
+            var content;
+
+            if (nd === '91' && data.dieu.bang != null) {
+                data.dieu.bang.dong.forEach(function (item, index) {
+                    content += '<tr>';
+
+                    var cot = item.cot;
+
+                    if (cot.length == 2) {
+                        content += `<td></td><td>${cot[0]}</td><td>${cot[1]}</td>`;
+                    } else {
+                        content += `<td>${cot[0]}</td><td>${cot[1]}</td><td>${cot[2]}</td>`;
+                    }
+
+                    content += '</tr>';
+                });
+            }
+            else {
+                content = `${data.dieu.trim()}\r\n${data.khoan != null ? data.khoan.trim() : ''}
+                \r\n${data.diem != null ? data.diem.trim() : ''}`;
+            }
+
+            if (nd === '91') {
+                $('#base textarea').first().text('').hide();
+                $('#base table').first().html(content).show();
+            } else {
+                $('#base table').first().html('').hide();
+                $('#base textarea').first().text(content).show();
+            }
+            $('#base').slideDown(300);
+        },
+        error: function (err) {
+            console.log(err.message);
+        }
+    });
+}
+
 function showAnswer(res) {
     var html = '';
     needInfo = false;
@@ -50,24 +138,33 @@ function showAnswer(res) {
 
     if (res.answer.indexOf('_') !== -1) {
         var answers = res.answer.split('_');
-        html = 'Trả lời: <ul>';
+        var bases = res.base.split('_');
+        // html = 'Trả lời: <ul>';
+        //
+        // for (var i = 0; i < answers.length; i++) {
+        //     var ans = answers[i];
+        //     html += `<li>${ans}</li>`;
+        // }
+
+        html = '<table class="table table-bordered table-hover"><thead><td>Trả lời</td><td>Tham chiếu</td></thead>';
+
+        // html += '</ul>';
+
+        // if (res.base != null) {
+        //     html += 'Tham chiếu: <ul>';
+        //     var bases = res.base.split('_');
+        //     for (var i = 0; i < bases.length; i++) {
+        //         var base = bases[i];
+        //         html += `<li><a>${base}</a></li>`;
+        //     }
+        // }
+        // html += '</ul>';
 
         for (var i = 0; i < answers.length; i++) {
-            var ans = answers[i];
-            html += `<li>${ans}</li>`;
+            html += `<tr><td>${answers[i]}</td><td>${bases[i]}</td></tr>`;
         }
 
-        html += '</ul>';
-
-        if (res.base != null) {
-            html += 'Tham chiếu: <ul>';
-            var bases = res.base.split('_');
-            for (var i = 0; i < bases.length; i++) {
-                var base = bases[i];
-                html += `<li><a>${base}</a></li>`;
-            }
-        }
-        html += '</ul>';
+        html += '</table>';
     } else {
         html = `Trả lời: ${res.answer.indexOf("đồng") !== -1 ? 'bị phạt từ ' : ''}${res.answer} <br>${res.base != null && res.base.length > 0 ? `Tham chiếu: <a>${res.base}</a>` : ''}`;
     }
@@ -75,90 +172,10 @@ function showAnswer(res) {
     $('#answer').html(html);
 
     $('#answer a').click(function () {
-        var rdiem = /điểm \S+/gim;
-        var rkhoan = /khoản \S+/gim;
-        var rdieu = /điều \S+/gim;
-        var rnd = /nghị định \d+/gim;
-        var diem, dieu, khoan, nd;
-        var text = $(this).text();
-
-        var match = rdiem.exec(text);
-        if (match != null)
-            diem = text.substring(rdiem.lastIndex - match[0].length, rdiem.lastIndex).split(' ')[1];
-
-        match = rkhoan.exec(text);
-        if (match != null)
-            khoan = text.substring(rkhoan.lastIndex - match[0].length, rkhoan.lastIndex).split(' ')[1];
-
-        match = rdieu.exec(text);
-        dieu = text.substring(rdieu.lastIndex - match[0].length, rdieu.lastIndex).split(' ')[1];
-
-        match = rnd.exec(text);
-        if (match == null) {
-            rnd = /thông tư số \d+/gim;
-            match = rnd.exec(text);
-
-            if (match == null) {
-                rnd = /theo Luật số: \d+/gim;
-                match = rnd.exec(text);
-
-                if (match == null) {
-                    rnd = /thông tư số: \d+/gim;
-                    match = rnd.exec(text);
-                }
-            }
-            nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[3];
-        } else
-            nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[2];
-
-        console.log(`${nd} ${dieu} ${khoan} ${diem}`);
-
-        $.ajax({
-            url: 'Base',
-            type: 'post',
-            dataType: 'json',
-            data: {
-                'nd': nd,
-                'dieu': `d${dieu}`,
-                'khoan': `k${khoan}`,
-                'diem': diem
-            },
-            success: function (data) {
-                var content;
-
-                if (nd === '91' && data.dieu.bang != null) {
-                    data.dieu.bang.dong.forEach(function (item, index) {
-                        content += '<tr>';
-
-                        var cot = item.cot;
-
-                        if (cot.length == 2) {
-                            content += `<td></td><td>${cot[0]}</td><td>${cot[1]}</td>`;
-                        } else {
-                            content += `<td>${cot[0]}</td><td>${cot[1]}</td><td>${cot[2]}</td>`;
-                        }
-
-                        content += '</tr>';
-                    });
-                }
-                else {
-                    content = `${data.dieu.trim()}\r\n${data.khoan != null ? data.khoan.trim() : ''}
-                \r\n${data.diem != null ? data.diem.trim() : ''}`;
-                }
-
-                if (nd === '91') {
-                    $('#base textarea').first().text('').hide();
-                    $('#base table').first().html(content).show();
-                } else {
-                    $('#base table').first().html('').hide();
-                    $('#base textarea').first().text(content).show();
-                }
-                $('#base').slideDown(300);
-            },
-            error: function (err) {
-                console.log(err.message);
-            }
-        });
+        showBase($(this));
+    });
+    $('#answer tr td:last-of-type').click(function () {
+        showBase($(this));
     });
     $('#confirm').slideDown(300);
 }

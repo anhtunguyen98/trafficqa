@@ -145,7 +145,14 @@ function showAnswer(res) {
         html = '<table class="table table-bordered table-hover"><thead><td>Trả lời</td><td>Tham chiếu</td></thead>';
 
         for (var i = 0; i < answers.length; i++) {
-            html += `<tr><td>${answers[i]}</td><td>${bases[i]}</td></tr>`;
+            html += `<tr><td>${answers[i]}</td>`;
+            if (i == 0 && bases.length < answers.length) {
+                html += `<td rowspan="${answers.length}">${bases[i]}</td></tr>`;
+            } else if (bases.length < answers.length) {
+                html += '</tr>';
+            } else {
+                html += `<td>${bases[i]}</td></tr>`;
+            }
         }
 
         html += '</table>';

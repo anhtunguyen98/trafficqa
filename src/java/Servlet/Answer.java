@@ -188,7 +188,7 @@ public class Answer extends HttpServlet {
                 has_answer = false;
             } else if (containsSomeTv(answers)) {
                 json.put("error", 2);
-                json.put("message", "Hãy nhập thêm thông tin về phương tiện!");
+                json.put("message", "Bạn muốn hỏi về phương tiện gì?");
                 has_answer = false;
             }
             

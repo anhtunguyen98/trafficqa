@@ -80,6 +80,7 @@ function showBase(t) {
         nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[3];
     } else
         nd = text.substring(rnd.lastIndex - match[0].length, rnd.lastIndex).split(' ')[2];
+    $('#base p:first-of-type').slideDown(100);
 
     console.log(`${nd} ${dieu} ${khoan} ${diem}`);
 
@@ -94,6 +95,7 @@ function showBase(t) {
             'diem': diem
         },
         success: function (data) {
+            $('#base p:first-of-type').slideUp(100);
             var content;
 
             if (nd === '91' && data.dieu.bang != null) {

@@ -139,26 +139,8 @@ function showAnswer(res) {
     if (res.answer.indexOf('_') !== -1) {
         var answers = res.answer.split('_');
         var bases = res.base.split('_');
-        // html = 'Trả lời: <ul>';
-        //
-        // for (var i = 0; i < answers.length; i++) {
-        //     var ans = answers[i];
-        //     html += `<li>${ans}</li>`;
-        // }
 
         html = '<table class="table table-bordered table-hover"><thead><td>Trả lời</td><td>Tham chiếu</td></thead>';
-
-        // html += '</ul>';
-
-        // if (res.base != null) {
-        //     html += 'Tham chiếu: <ul>';
-        //     var bases = res.base.split('_');
-        //     for (var i = 0; i < bases.length; i++) {
-        //         var base = bases[i];
-        //         html += `<li><a>${base}</a></li>`;
-        //     }
-        // }
-        // html += '</ul>';
 
         for (var i = 0; i < answers.length; i++) {
             html += `<tr><td>${answers[i]}</td><td>${bases[i]}</td></tr>`;

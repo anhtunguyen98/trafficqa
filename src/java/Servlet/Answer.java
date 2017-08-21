@@ -139,11 +139,14 @@ public class Answer extends HttpServlet {
             if (!hash.containsKey("qt")) {
                 message = "Bạn muốn hỏi như thế nào!";
                 ok = false;
-            } else if (hash.containsKey("tv") && hash.containsKey("qt")
-                    && !(hash.containsKey("a") || hash.containsKey("ac")
-                    || hash.containsKey("sp") || hash.containsKey("if1")
-                    || hash.containsKey("if2") || hash.containsKey("if3")
-                    || hash.containsKey("if4"))) {
+            } else if (hash.size() == 1) {
+                message = "Câu hỏi không liên quan tới giao thông hoặc"
+                        + " thiếu thông tin cho câu hỏi như là phương tiện hoặc hành động, v.v.";
+                ok = false;
+            } else if (hash.containsKey("tv") && !(hash.containsKey("a")
+                    || hash.containsKey("ac") || hash.containsKey("sp")
+                    || hash.containsKey("if1") || hash.containsKey("if2")
+                    || hash.containsKey("if3") || hash.containsKey("if4"))) {
                 message = "Hãy nhập thêm hành động cho câu hỏi!";
                 ok = false;
             }
@@ -157,7 +160,7 @@ public class Answer extends HttpServlet {
             }
         }//</editor-fold>
 
-        //<editor-fold defaultstate="collapsed" desc="find answers and return it">
+        //<editor-fold defaultstate="collapsed" desc="find answers and return them">
         JSONObject jobj = findingAnswer.getAnswerWithHash(hash);
         ArrayList<core.model.Answer> answers = null;
         boolean success = jobj.getBoolean("success");
@@ -167,7 +170,7 @@ public class Answer extends HttpServlet {
             JSONArray arr = (JSONArray) jobj.get("answers");
             for (int i = 0; i < arr.length(); i++) {
                 JSONObject obj = arr.getJSONObject(i);
-                answers.add(new core.model.Answer(obj.getString("answer"), obj.getString("base")));
+                answers.add(new core.model.Answer(obj.getString("answer"), obj.getString("base"), obj.getJSONObject("tags")));
             }
         } else {
             if (jobj.has("error")) {
@@ -182,6 +185,10 @@ public class Answer extends HttpServlet {
             if (hash.containsKey("ano")) {
                 has_answer = true;
             } else if (!hash.containsKey("qt")) {
+                has_answer = false;
+            } else if (containsSomeTv(answers)) {
+                json.put("error", 2);
+                json.put("message", "Hãy nhập thêm thông tin về phương tiện!");
                 has_answer = false;
             }
 
@@ -298,7 +305,8 @@ public class Answer extends HttpServlet {
             ans = answers.get(0);
         }
 
-        String answer = ((ans == null || ans.getAnswer().length() == 0) ? "No Answers!" : ans.getAnswer());
+        String answer = ((ans == null || ans.getAnswer().length() == 0 || !json.getBoolean("has_answer"))
+                ? "No Answers!" : ans.getAnswer());
         String base = ((ans == null || ans.getBase().length() == 0) ? "" : ans.getBase());
 
         json.put("answer", answer);
@@ -307,5 +315,32 @@ public class Answer extends HttpServlet {
         json.put("query", AnswerDAO.foundedSql);
 
         response.getWriter().write(json.toString());
+    }//</editor-fold>
+
+    //<editor-fold defaultstate="collapsed" desc="containsSomeTv">
+    private boolean containsSomeTv(ArrayList<core.model.Answer> answers) {
+        boolean isContain = false;
+        String tv = "";
+        int count = 0;
+
+        for (core.model.Answer answer : answers) {
+            JSONObject tags = answer.getTags();
+            if (tags != null) {
+                isContain = isContain || tags.has("tv");
+                if (tags.has("tv")) {
+                    String t = tags.getString("tv");
+                    if (!tv.equals(t)) {
+                        count++;
+                        tv = t;
+                    }
+                }
+            }
+        }
+
+        if (count < 2) {
+            isContain = false;
+        }
+
+        return isContain;
     }//</editor-fold>
 }

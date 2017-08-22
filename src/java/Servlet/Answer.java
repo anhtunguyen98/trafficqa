@@ -115,12 +115,13 @@ public class Answer extends HttpServlet {
     //<editor-fold defaultstate="collapsed" desc="getAnswers">
     private void getAnswers(HttpServletRequest request, HttpServletResponse response)
             throws UnsupportedEncodingException, IOException {
-        autoInit(request.getServerName());
+        autoInit(request.getServerName(), false);
         
         HashMap<String, String> hash = null;
         JSONObject jtags = null;
         JSONObject json = new JSONObject();
-        String question = request.getParameter("question").trim().replaceAll("\\s+", " ");
+        String question = request.getParameter("question").trim().replaceAll("\\s+", " ")
+                .replaceAll("môtô", "xe máy").replaceAll("ôtô", "ô tô");
         String tags = request.getParameter("tags");
         
         if (tags != null) {
@@ -204,7 +205,7 @@ public class Answer extends HttpServlet {
     //<editor-fold defaultstate="collapsed" desc="saveTest">
     private void saveTest(HttpServletRequest request, HttpServletResponse response)
             throws UnsupportedEncodingException, IOException {
-        autoInit(request.getServerName());
+        autoInit(request.getServerName(), false);
         String question = URLDecoder.decode(request.getParameter("question"), "UTF-8").trim().replaceAll("\\s+", " ");
         String answer = URLDecoder.decode(request.getParameter("answer"), "UTF-8");
         String query = URLDecoder.decode(request.getParameter("query"), "UTF-8");
@@ -262,35 +263,39 @@ public class Answer extends HttpServlet {
         }
     }
     
-    private void autoInit(String domain) {
-        if (findingAnswer.dao == null) {//create DAO
-            String username, password, dbName;
-            if (domain.equals("localhost")) {
-                username = "root";
-                password = "";
-                dbName = "qaservice";
-                isLocal = true;
+    private void autoInit(String domain, boolean force) {
+        if (force || findingAnswer.dao == null) {//create DAO
+            createAllThings(domain);
+        }
+    }
+    
+    private void createAllThings(String domain) {
+        String username, password, dbName;
+        if (domain.equals("localhost")) {
+            username = "root";
+            password = "";
+            dbName = "qaservice";
+            isLocal = true;
+        } else {
+            domain = "127.12.52.2";
+            username = "adminFf1Pbuj";
+            password = "c5h8CW-Kb-HV";
+            dbName = "QADatabase";
+            isLocal = false;
+        }
+        
+        findingAnswer.dao = new AnswerDAO(domain, username, password, dbName);
+        saveTestDAO = new SaveTestDAO(domain, username, password, dbName);
+        
+        if (DATA_PATH.length() == 0) {
+            if (isLocal) {
+                DATA_PATH = getServletContext().getRealPath("/") + "Data/";
             } else {
-                domain = "127.12.52.2";
-                username = "adminFf1Pbuj";
-                password = "c5h8CW-Kb-HV";
-                dbName = "QADatabase";
-                isLocal = false;
+                DATA_PATH = System.getenv("OPENSHIFT_DATA_DIR");
             }
             
-            findingAnswer.dao = new AnswerDAO(domain, username, password, dbName);
-            saveTestDAO = new SaveTestDAO(domain, username, password, dbName);
-            
-            if (DATA_PATH.length() == 0) {
-                if (isLocal) {
-                    DATA_PATH = getServletContext().getRealPath("/") + "Data/";
-                } else {
-                    DATA_PATH = System.getenv("OPENSHIFT_DATA_DIR");
-                }
-                
-                prepareTagsMap();
-                Const.Path.DATA_PATH = DATA_PATH;
-            }
+            prepareTagsMap();
+            Const.Path.DATA_PATH = DATA_PATH;
         }
     }//</editor-fold>
 

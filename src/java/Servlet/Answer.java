@@ -36,7 +36,7 @@ import org.json.JSONObject;
  */
 @WebServlet(name = "Answer", urlPatterns = {"/Answer"})
 public class Answer extends HttpServlet {
-    
+
     String DATA_PATH = "";
     String modelPath = "";
     AnswerDAO dao = null;
@@ -88,18 +88,18 @@ public class Answer extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json; charset=UTF-8");
-        
+
         String action = request.getParameter("action");
 
 //        System.out.println(action);
         if (action.equals("getAnswer")) {
             getAnswers(request, response);
         }
-        
+
         if (action.equals("saveTest")) {
             saveTest(request, response);
         }
-        
+
     }
 
     /**
@@ -116,90 +116,94 @@ public class Answer extends HttpServlet {
     private void getAnswers(HttpServletRequest request, HttpServletResponse response)
             throws UnsupportedEncodingException, IOException {
         autoInit(request.getServerName(), false);
-        
-        HashMap<String, String> hash = null;
-        JSONObject jtags = null;
-        JSONObject json = new JSONObject();
-        String question = request.getParameter("question").trim().replaceAll("\\s+", " ")
-                .replaceAll("môtô", "xe máy").replaceAll("ôtô", "ô tô");
-        String tags = request.getParameter("tags");
-        
-        if (tags != null) {
-            jtags = new JSONObject(tags);
-            hash = parseToHash(jtags, question);
-        } else {
-            hash = findingAnswer.CRFToHash(question);
-        }
 
-        //<editor-fold defaultstate="collapsed" desc="handle for each case">
-        if (!hash.containsKey("ano")) {
-            boolean ok = true;
-            String message = "";
-            
-            if (!hash.containsKey("qt")) {
-                message = "Bạn muốn hỏi như thế nào!";
-                ok = false;
-            } else if (hash.size() == 1) {
-                message = "Câu hỏi không liên quan tới giao thông hoặc"
-                        + " thiếu thông tin cho câu hỏi như là phương tiện hoặc hành động, v.v.";
-                ok = false;
-            } else if (hash.containsKey("tv") && !(hash.containsKey("a")
-                    || hash.containsKey("ac") || hash.containsKey("sp")
-                    || hash.containsKey("if1") || hash.containsKey("if2")
-                    || hash.containsKey("if3") || hash.containsKey("if4")
-                    || hash.containsKey("dl"))) {
-                message = "Hãy nhập thêm hành động cho câu hỏi!";
-                ok = false;
-            }
-            
-            if (!ok) {
-                json.put("hash_answer", false);
-                json.put("message", message);
-                json.put("tags", hash);
-                response.getWriter().write(json.toString());
-                return;
-            }
-        }//</editor-fold>
+        try {
+            HashMap<String, String> hash = null;
+            JSONObject jtags = null;
+            JSONObject json = new JSONObject();
+            String question = request.getParameter("question").trim().replaceAll("\\s+", " ")
+                    .replaceAll("môtô", "xe máy").replaceAll("ôtô", "ô tô");
+            String tags = request.getParameter("tags");
 
-        //<editor-fold defaultstate="collapsed" desc="find answers and return them">
-        JSONObject jobj = findingAnswer.getAnswerWithHash(hash);
-        ArrayList<core.model.Answer> answers = null;
-        boolean success = jobj.getBoolean("success");
-        
-        if (success) {
-            answers = new ArrayList<core.model.Answer>();
-            JSONArray arr = (JSONArray) jobj.get("answers");
-            for (int i = 0; i < arr.length(); i++) {
-                JSONObject obj = arr.getJSONObject(i);
-                answers.add(new core.model.Answer(obj.getString("answer"), obj.getString("base"), obj.getJSONObject("tags")));
+            if (tags != null) {
+                jtags = new JSONObject(tags);
+                hash = parseToHash(jtags, question);
+            } else {
+                hash = findingAnswer.CRFToHash(question);
             }
-        } else {
-            if (jobj.has("error")) {
-                json.put("error", jobj.getInt("error"));
+
+            //<editor-fold defaultstate="collapsed" desc="handle for each case">
+            if (!hash.containsKey("ano")) {
+                boolean ok = true;
+                String message = "";
+
+                if (!hash.containsKey("qt")) {
+                    message = "Bạn muốn hỏi như thế nào!";
+                    ok = false;
+                } else if (hash.size() == 1) {
+                    message = "Câu hỏi không liên quan tới giao thông hoặc"
+                            + " thiếu thông tin cho câu hỏi như là phương tiện hoặc hành động, v.v.";
+                    ok = false;
+                } else if (hash.containsKey("tv") && !(hash.containsKey("a")
+                        || hash.containsKey("ac") || hash.containsKey("sp")
+                        || hash.containsKey("if1") || hash.containsKey("if2")
+                        || hash.containsKey("if3") || hash.containsKey("if4")
+                        || hash.containsKey("dl"))) {
+                    message = "Hãy nhập thêm hành động cho câu hỏi!";
+                    ok = false;
+                }
+
+                if (!ok) {
+                    json.put("hash_answer", false);
+                    json.put("message", message);
+                    json.put("tags", hash);
+                    response.getWriter().write(json.toString());
+                    return;
+                }
+            }//</editor-fold>
+
+            //<editor-fold defaultstate="collapsed" desc="find answers and return them">
+            JSONObject jobj = findingAnswer.getAnswerWithHash(hash);
+            ArrayList<core.model.Answer> answers = null;
+            boolean success = jobj.getBoolean("success");
+
+            if (success) {
+                answers = new ArrayList<core.model.Answer>();
+                JSONArray arr = (JSONArray) jobj.get("answers");
+                for (int i = 0; i < arr.length(); i++) {
+                    JSONObject obj = arr.getJSONObject(i);
+                    answers.add(new core.model.Answer(obj.getString("answer"), obj.getString("base"), obj.getJSONObject("tags")));
+                }
+            } else {
+                if (jobj.has("error")) {
+                    json.put("error", jobj.getInt("error"));
+                }
             }
+
+            if (answers == null || answers.isEmpty()) {
+                json.put("has_answer", false);
+            } else if (answers.size() > 1) {
+                boolean has_answer = true;
+                if (hash.containsKey("ano")) {
+                    has_answer = true;
+                } else if (!hash.containsKey("qt")) {
+                    has_answer = false;
+                } else if (containsSomeTv(answers)) {
+                    json.put("error", 2);
+                    json.put("message", "Bạn muốn hỏi về phương tiện gì?");
+                    has_answer = false;
+                }
+
+                json.put("has_answer", has_answer);
+            } else {
+                json.put("has_answer", true);
+            }
+
+            writeResponse(request, response, answers, json);
+            //</editor-fold>
+        } catch (Exception e) {
+            autoInit(request.getServerName(), true);
         }
-        
-        if (answers == null || answers.isEmpty()) {
-            json.put("has_answer", false);
-        } else if (answers.size() > 1) {
-            boolean has_answer = true;
-            if (hash.containsKey("ano")) {
-                has_answer = true;
-            } else if (!hash.containsKey("qt")) {
-                has_answer = false;
-            } else if (containsSomeTv(answers)) {
-                json.put("error", 2);
-                json.put("message", "Bạn muốn hỏi về phương tiện gì?");
-                has_answer = false;
-            }
-            
-            json.put("has_answer", has_answer);
-        } else {
-            json.put("has_answer", true);
-        }
-        
-        writeResponse(request, response, answers, json);
-        //</editor-fold>
     }//</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc="saveTest">
@@ -211,9 +215,9 @@ public class Answer extends HttpServlet {
         String query = URLDecoder.decode(request.getParameter("query"), "UTF-8");
         String tags = URLDecoder.decode(request.getParameter("tags"), "UTF-8");
         String satisfied = URLDecoder.decode(request.getParameter("satisfied"), "UTF-8");
-        
+
         Test test = new Test(question, answer, query, tags, satisfied);
-        
+
         saveTestDAO.saveTest(test);
         JSONObject jobj = new JSONObject();
         jobj.put("success", true);
@@ -223,38 +227,38 @@ public class Answer extends HttpServlet {
     //<editor-fold defaultstate="collapsed" desc="prepare">
     private HashMap<String, String> parseToHash(JSONObject jtags, String addedInfo) {
         HashMap<String, String> hash = new HashMap<String, String>();
-        
+
         for (String key : jtags.keySet()) {
             hash.put(key, jtags.getString(key));
         }
-        
+
         HashMap<String, String> addedInfoHash = findingAnswer.CRFToHash(addedInfo);
-        
+
         for (String key : addedInfoHash.keySet()) {
             hash.put(key, addedInfoHash.get(key));
         }
-        
+
         return hash;
     }
-    
+
     private void prepareTagsMap() {
         tagsMap = new HashMap<String, ArrayList<String>>();
         for (String tag : tags) {
             tagsMap.put(tag, new ArrayList<String>());
-            
+
             try {
                 Scanner inp = new Scanner(new File(DATA_PATH + "taggroups/" + tag + ".txt"), "UTF-8");
                 String line;
-                
+
                 while (inp.hasNext()) {
                     line = inp.nextLine();
                     if (line.length() == 0) {
                         continue;
                     }
-                    
+
                     tagsMap.get(tag).add(line);
                 }
-                
+
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(Answer.class.getName()).log(Level.SEVERE, null, ex);
             } catch (IOException ex) {
@@ -262,13 +266,13 @@ public class Answer extends HttpServlet {
             }
         }
     }
-    
+
     private void autoInit(String domain, boolean force) {
         if (force || findingAnswer.dao == null) {//create DAO
             createAllThings(domain);
         }
     }
-    
+
     private void createAllThings(String domain) {
         String username, password, dbName;
         if (domain.equals("localhost")) {
@@ -283,17 +287,17 @@ public class Answer extends HttpServlet {
             dbName = "QADatabase";
             isLocal = false;
         }
-        
+
         findingAnswer.dao = new AnswerDAO(domain, username, password, dbName);
         saveTestDAO = new SaveTestDAO(domain, username, password, dbName);
-        
+
         if (DATA_PATH.length() == 0) {
             if (isLocal) {
                 DATA_PATH = getServletContext().getRealPath("/") + "Data/";
             } else {
                 DATA_PATH = System.getenv("OPENSHIFT_DATA_DIR");
             }
-            
+
             prepareTagsMap();
             Const.Path.DATA_PATH = DATA_PATH;
         }
@@ -309,16 +313,16 @@ public class Answer extends HttpServlet {
         } else {
             ans = answers.get(0);
         }
-        
+
         String answer = ((ans == null || ans.getAnswer().length() == 0 || !json.getBoolean("has_answer"))
                 ? "No Answers!" : ans.getAnswer());
         String base = ((ans == null || ans.getBase().length() == 0) ? "" : ans.getBase());
-        
+
         json.put("answer", answer);
         json.put("base", base);
         json.put("tags", findingAnswer.jtags);
         json.put("query", AnswerDAO.foundedSql);
-        
+
         response.getWriter().write(json.toString());
     }//</editor-fold>
 
@@ -327,7 +331,7 @@ public class Answer extends HttpServlet {
         boolean isContain = false;
         String tv = "";
         int count = 0;
-        
+
         for (core.model.Answer answer : answers) {
             JSONObject tags = answer.getTags();
             if (tags != null) {
@@ -341,11 +345,11 @@ public class Answer extends HttpServlet {
                 }
             }
         }
-        
+
         if (count < 2) {
             isContain = false;
         }
-        
+
         return isContain;
     }//</editor-fold>
 }

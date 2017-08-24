@@ -121,8 +121,14 @@ public class Answer extends HttpServlet {
             HashMap<String, String> hash = null;
             JSONObject jtags = null;
             JSONObject json = new JSONObject();
-            String question = request.getParameter("question").trim().replaceAll("\\s+", " ")
-                    .replaceAll("môtô", "xe máy").replaceAll("ôtô", "ô tô");
+            String question;
+            try {
+                question = request.getParameter("question").toLowerCase().trim().replaceAll("\\s+", " ")
+                        .replaceAll("môtô", "xe máy").replaceAll("ôtô", "ô tô");
+            } catch (Exception e) {
+                writeError(request, response, json, "Không có câu hỏi");
+                return;
+            }
             String tags = request.getParameter("tags");
 
             if (tags != null) {
@@ -303,7 +309,7 @@ public class Answer extends HttpServlet {
         }
     }//</editor-fold>
 
-    //<editor-fold defaultstate="collapsed" desc="writeResponse">
+    //<editor-fold defaultstate="collapsed" desc="Response">
     private void writeResponse(HttpServletRequest request, HttpServletResponse response,
             ArrayList<core.model.Answer> answers, JSONObject json)
             throws IOException {
@@ -323,6 +329,13 @@ public class Answer extends HttpServlet {
         json.put("tags", findingAnswer.jtags);
         json.put("query", AnswerDAO.foundedSql);
 
+        response.getWriter().write(json.toString());
+    }
+
+    private void writeError(HttpServletRequest request,
+            HttpServletResponse response, JSONObject json, String... messages)
+            throws IOException {
+        json.put("messages", messages);
         response.getWriter().write(json.toString());
     }//</editor-fold>
 

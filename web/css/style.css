@@ -119,12 +119,6 @@ table {
 .intro h1 {
   color: white;
 }
-.intro h1:first-of-type {
-  color: #d43f3a;
-}
-.intro h1:nth-last-of-type(2) {
-  color: #255625;
-}
 .intro .display-cell {
   font-family: Raleway-Regular;
 }

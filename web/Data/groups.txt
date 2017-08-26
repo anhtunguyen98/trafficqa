@@ -74,7 +74,6 @@ Có được không
 Có được phép không
 Có được hay không
 Được hay không
-Có bị nghiêm cấm không
 
 cho phép là bao nhiêu
 bao nhiêu thì bị cấm

@@ -28,6 +28,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
@@ -123,8 +124,9 @@ public class Answer extends HttpServlet {
             JSONObject json = new JSONObject();
             String question;
             try {
-                question = request.getParameter("question").toLowerCase().trim().replaceAll("\\s+", " ")
-                        .replaceAll("môtô", "xe máy").replaceAll("ôtô", "ô tô");
+                question = request.getParameter("question").toLowerCase().trim()
+                        .replaceAll("\\s+", " ").replaceAll("môtô", "xe máy")
+                        .replaceAll("ôtô", "ô tô");
             } catch (Exception e) {
                 writeError(request, response, json, "Không có câu hỏi");
                 return;
@@ -207,8 +209,9 @@ public class Answer extends HttpServlet {
 
             writeResponse(request, response, answers, json);
             //</editor-fold>
-        } catch (Exception e) {
+        } catch (IOException e) {
             autoInit(request.getServerName(), true);
+        } catch (JSONException e) {
         }
     }//</editor-fold>
 

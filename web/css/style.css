@@ -129,11 +129,24 @@ table {
 .input input {
   margin-top: 30px;
 }
+.input div:first-of-type {
+  position: relative;
+}
 .input div:first-of-type input {
   padding: 4px 12px;
   font-size: 18px;
   font-family: Raleway-Regular;
   box-sizing: content-box;
+  border: none;
+}
+.input div:first-of-type a {
+  font-size: 20px !important;
+  background-color: white;
+  color: black;
+  right: 0;
+  padding: 10px;
+  position: absolute;
+  top: 32px;
 }
 .added-info {
   text-align: center;

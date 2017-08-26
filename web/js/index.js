@@ -171,6 +171,23 @@ function showAnswer(res) {
     $('#confirm').slideDown(300);
 }
 
+function speechRecognition(){
+    if (window.hasOwnProperty('webkitSpeechRecognition')) {
+        var recognition = new webkitSpeechRecognition();
+        recognition.continuous = false;
+        recognition.interimResults = false;
+        recognition.lang = "vi";
+        recognition.start();
+        recognition.onresult = function(e) {
+            $('#question').val(e.results[0][0].transcript);
+            recognition.stop();
+        };
+        recognition.onerror = function(e) {
+            recognition.stop();
+        }
+    }
+}
+
 $(document).ready(function () {
     $("#btnSubmit").click(function () {
         $('#base').slideUp(300);
@@ -230,6 +247,10 @@ $(document).ready(function () {
 
     $('#refresh').click(function () {
         refreshPage();
+    });
+
+    $('#speech').click(function () {
+        speechRecognition();
     });
 
     $('#btn-yes').click(function () {

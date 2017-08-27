@@ -45,6 +45,7 @@ public class Answer extends HttpServlet {
     TrafficCrfTagger tagger = null;
     FindingAnswer findingAnswer = new FindingAnswer();
     SaveTestDAO saveTestDAO = null;
+    HashMap<String, String> replacer = null;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -124,9 +125,7 @@ public class Answer extends HttpServlet {
             JSONObject json = new JSONObject();
             String question;
             try {
-                question = request.getParameter("question").toLowerCase().trim()
-                        .replaceAll("\\s+", " ").replaceAll("môtô", "xe máy")
-                        .replaceAll("ôtô", "ô tô");
+                question = prepareQuestion(request.getParameter("question"));
             } catch (Exception e) {
                 writeError(request, response, json, "Không có câu hỏi");
                 return;
@@ -308,7 +307,30 @@ public class Answer extends HttpServlet {
             }
 
             prepareTagsMap();
+            prepareReplacer();
             Const.Path.DATA_PATH = DATA_PATH;
+        }
+    }
+
+    public void prepareReplacer() {
+        if (replacer == null) {
+            replacer = new HashMap<String, String>();
+
+            try {
+                Scanner inp = new Scanner(new File(DATA_PATH + "replacer.txt"), "UTF-8");
+
+                while (inp.hasNext()) {
+                    String line = inp.nextLine();
+                    if (line.isEmpty()) {
+                        continue;
+                    }
+
+                    String[] tokens = line.split("_");
+                    replacer.put(tokens[0], tokens[1]);
+                }
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(Answer.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }//</editor-fold>
 
@@ -368,4 +390,12 @@ public class Answer extends HttpServlet {
 
         return isContain;
     }//</editor-fold>
+
+    private String prepareQuestion(String question) {
+        for (String key : replacer.keySet()) {
+            question = question.replaceAll(key, replacer.get(key));
+        }
+
+        return question;
+    }
 }

@@ -1,0 +1,14 @@
+ôtô_ô tô
+xế hộp_ô tô
+xe bốn bánh_ô tô
+xe 4 bánh_ô tô
+xe con_ô tô
+
+môtô_xe máy
+mô tô_xe máy
+xe hai bánh_xe máy
+xe 2 bánh_xe máy
+xe gắn máy_xe máy
+
+xe lam_xe ba bánh
+xe ba gác_xe ba bánh

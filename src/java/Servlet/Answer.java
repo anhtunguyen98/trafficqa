@@ -211,6 +211,7 @@ public class Answer extends HttpServlet {
         } catch (IOException e) {
             autoInit(request.getServerName(), true);
         } catch (JSONException e) {
+            autoInit(request.getServerName(), true);
         }
     }//</editor-fold>
 

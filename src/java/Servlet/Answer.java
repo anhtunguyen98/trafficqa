@@ -17,6 +17,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
+import java.sql.Date;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -219,13 +221,14 @@ public class Answer extends HttpServlet {
     private void saveTest(HttpServletRequest request, HttpServletResponse response)
             throws UnsupportedEncodingException, IOException {
         autoInit(request.getServerName(), false);
+        Timestamp createdDate = new Timestamp(new java.util.Date().getTime());
         String question = URLDecoder.decode(request.getParameter("question"), "UTF-8").trim().replaceAll("\\s+", " ");
         String answer = URLDecoder.decode(request.getParameter("answer"), "UTF-8");
         String query = URLDecoder.decode(request.getParameter("query"), "UTF-8");
         String tags = URLDecoder.decode(request.getParameter("tags"), "UTF-8");
         String satisfied = URLDecoder.decode(request.getParameter("satisfied"), "UTF-8");
 
-        Test test = new Test(question, answer, query, tags, satisfied);
+        Test test = new Test(createdDate, question, answer, query, tags, satisfied);
 
         saveTestDAO.saveTest(test);
         JSONObject jobj = new JSONObject();

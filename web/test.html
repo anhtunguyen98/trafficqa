@@ -2,11 +2,12 @@
 <html>
 
 <head>
-    <title>Question Answering</title>
+    <title>Traffic Question Answering Testing</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css"/>
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -17,12 +18,11 @@
 
 <body>
 <div>
-    <img src="images/halong.jpg" alt="" style="visibility: hidden;height: 100%;">
-    <div>
+    <div class="row">
         <div class="intro container-fluid text-center">
             <h1>Học Viện Công Nghệ Bưu Chính Viễn Thông</h1>
             <h1>Khoa Công nghệ Thông tin</h1>
-            <h1>Hệ thống trả lời tự động luật giao thông</h1>
+            <h1 style="color: #EEF36F; font-weight: bold">Hệ thống trả lời tự động luật giao thông</h1>
             <div class="display-table col-md-offset-2 col-md-8">
                 <div class="display-row">
                     <div class="display-cell col-md-6 text-right">Giảng viên hướng dẫn</div>
@@ -43,14 +43,23 @@
                 <div class="col-md-6 col-md-offset-2">
                     <input name="question" id="question" class="form-control"
                            placeholder="Mời nhập câu hỏi!"/>
+                    <a id="speech" class="fa fa-microphone" style="font-size: 18px;"></a>
                 </div>
                 <div class="col-md-4">
                     <input type="button" class="button pull-left" id="btnSubmit" value="Tìm kiếm"/>
+                    <input type="button" class="button" id="refresh" value="Làm mới"/>
                 </div>
             </div>
-            <div id="answer" class="text-center">
+            <div class="added-info col-md-12 col-sm-12">
+                <p>Bạn hãy nhập thêm thông tin cho câu hỏi hoặc nhấn làm mới để đặt câu hỏi khác!</p>
             </div>
-            <div id="confirm" class="text-center">
+            <div id="answer" class="text-center"></div>
+            <div id="base" class="text-center">
+                <p class="hidden">Đang lấy thông tin...</p>
+                <textarea class="form-control" rows="5"></textarea>
+                <table class="table table-bordered table-hover text-justify"></table>
+            </div>
+            <div id="confirm" class="text-center" style="margin-top: 50px;">
                 <p>Mức độ hài lòng về câu trả lời?</p>
                 <button id="btn-yes" class="btn btn-success">Tốt</button>
                 <button id="btn-ok" class="btn btn-primary">Ổn</button>

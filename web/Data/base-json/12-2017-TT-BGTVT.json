@@ -97,6 +97,23 @@
 			"k4": {
 				"tenKhoan": "4. Giấy phép lái xe hạng C, D, E, FB2, FC, FD, FE có thời hạn 05 năm, kể từ ngày cấp.\n\t\t"
 			}
+		},
+		"d9": {
+			"tenDieu": "Điều 9. Hồ sơ của người học lái xe",
+			"k1": {
+				"tenKhoan": "1. Người học lái xe lần đầu lập 01 bộ hồ sơ, nộp trực tiếp tại cơ sở đào tạo. Hồ sơ bao gồm:",
+				"da": "a) Đơn đề nghị học, sát hạch để cấp giấy phép lái xe theo mẫu quy định tại Phụ lục 7 ban hành kèm theo Thông tư này;\n\t\t\t",
+				"db": "b) Bản sao giấy chứng minh nhân dân hoặc thẻ căn cước công dân hoặc hộ chiếu còn thời hạn có ghi số giấy chứng minh nhân dân hoặc thẻ căn cước công dân đối với người Việt Nam; hộ chiếu còn thời hạn đối với người Việt Nam định cư ở nước ngoài;\n\t\t\t",
+				"dc": "c) Bản sao hộ chiếu còn thời hạn trên 06 tháng và thẻ tạm trú hoặc thẻ thường trú hoặc chứng minh thư ngoại giao hoặc chứng minh thư công vụ đối với người nước ngoài;\n\t\t\t",
+				"dd": "d) Giấy khám sức khỏe của người lái xe do cơ sở y tế có thẩm quyền cấp theo quy định.\n\t\t\t"
+			},
+			"k2": {
+				"tenKhoan": "2. Người học lái xe nâng hạng lập 01 bộ hồ sơ, nộp trực tiếp tại cơ sở đào tạo. Hồ sơ bao gồm:",
+				"da": "a) Giấy tờ quy định tại khoản 1 Điều này;\n\t\t\t",
+				"db": "b) Bản khai thời gian hành nghề và số km lái xe an toàn theo mẫu quy định tại Phụ lục 8 ban hành kèm theo Thông tư này và phải chịu trách nhiệm về nội dung khai trước pháp luật;\n\t\t\t",
+				"dc": "c) Bản sao bằng tốt nghiệp trung học cơ sở hoặc bằng cấp tương đương trở lên đối với trường hợp nâng hạng giấy phép lái xe lên các hạng D, E (xuất trình bản chính khi kiểm tra hồ sơ dự sát hạch);\n\t\t\t",
+				"dd": "d) Bản sao giấy phép lái xe (xuất trình bản chính khi dự sát hạch).\nNgười học lái xe khi đến nộp hồ sơ được cơ sở đào tạo chụp ảnh trực tiếp lưu giữ trong cơ sở dữ liệu giấy phép lái xe.\n\t\t\t"
+			}
 		}
 	}
 }

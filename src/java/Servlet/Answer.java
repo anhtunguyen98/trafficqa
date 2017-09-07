@@ -152,7 +152,19 @@ public class Answer extends HttpServlet {
                 String message = "";
 
                 if (!hash.containsKey("qt")) {
-                    message = "Bạn muốn hỏi như thế nào!";
+                    if (hash.size() == 1) {
+                        String tag = hash.keySet().iterator().next();
+                        ArrayList<TagContent> tagContents = SimilarityComparing.getSimiContent(hash.get(tag), tag);
+
+                        if (tagContents == null || tagContents.isEmpty()) {
+                            message = "Câu hỏi không liên quan tới giao thông đường bộ!";
+                            json.put("error", 1);
+                        } else {
+                            message = "Bạn muốn hỏi như thế nào!";
+                        }
+                    } else {
+                        message = "Bạn muốn hỏi như thế nào!";
+                    }
                     ok = false;
                 } else if (hash.size() == 1) {
                     ArrayList<TagContent> tagContents = SimilarityComparing.getSimiContent(hash.get("qt"), "qt");
@@ -161,7 +173,7 @@ public class Answer extends HttpServlet {
                         message = "Câu hỏi không liên quan tới giao thông đường bộ!";
                         json.put("error", 1);
                     } else {
-                        message = "Câu hỏi thiếu thông tin như là phương tiện hoặc hành động, v.v.";
+                        message = "Câu hỏi của bạn thiếu thông tin như là phương tiện hoặc hành động, v.v.";
                     }
                     ok = false;
                 } else if (hash.containsKey("tv") && !(hash.containsKey("a")

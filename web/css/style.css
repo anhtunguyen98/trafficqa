@@ -182,6 +182,9 @@ table {
   color: black;
   text-align: justify;
 }
+#answer table td {
+  width: 50%;
+}
 #confirm {
   display: none;
 }

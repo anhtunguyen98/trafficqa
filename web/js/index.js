@@ -142,7 +142,7 @@ function showAnswer(res) {
         var answers = res.answer.split('_');
         var bases = res.base.split('_');
 
-        html = '<table class="table table-bordered table-hover"><thead><td>Trả lời</td><td>Tham chiếu</td></thead>';
+        html = `<table class="table table-bordered table-hover"><thead><td>Trả lời${res.answer.indexOf("đồng") !== -1 ? ': bị phạt' : ''}</td><td>Tham chiếu</td></thead>`;
 
         for (var i = 0; i < answers.length; i++) {
             html += `<tr><td>${answers[i]}</td>`;
@@ -157,7 +157,19 @@ function showAnswer(res) {
 
         html += '</table>';
     } else {
-        html = `Trả lời: ${res.answer.indexOf("đồng") !== -1 ? 'bị phạt từ ' : ''}${res.answer} <br>${res.base != null && res.base.length > 0 ? `Tham chiếu: <a>${res.base}</a>` : ''}`;
+        if (res.base.indexOf('_') !== -1) {
+            html = `<table class="table table-bordered table-hover"><thead><td>Trả lời${res.answer.indexOf("đồng") !== -1 ? ': bị phạt từ ' : ''}</td><td>Tham chiếu</td></thead>`;
+            var bases = res.base.split('_');
+            for (var i = 0; i < bases.length; i++) {
+                html += '<tr>';
+                if (i == 0) {
+                    html += `<td rowspan="${bases.length}">${res.answer}</td>`;
+                }
+                html += `<td>${bases[i]}</td></tr>`;
+            }
+            html += '</table>';
+        } else
+            html = `Trả lời: ${res.answer.indexOf("đồng") !== -1 ? 'bị phạt từ ' : ''}${res.answer} <br>${res.base != null && res.base.length > 0 ? `Tham chiếu: <a>${res.base}</a>` : ''}`;
     }
 
     $('#answer').html(html);
@@ -171,78 +183,89 @@ function showAnswer(res) {
     $('#confirm').slideDown(300);
 }
 
-function speechRecognition(){
+function speechRecognition() {
     if (window.hasOwnProperty('webkitSpeechRecognition')) {
         var recognition = new webkitSpeechRecognition();
         recognition.continuous = false;
         recognition.interimResults = false;
         recognition.lang = "vi";
         recognition.start();
-        recognition.onresult = function(e) {
+        recognition.onresult = function (e) {
             $('#question').val(e.results[0][0].transcript);
             recognition.stop();
         };
-        recognition.onerror = function(e) {
+        recognition.onerror = function (e) {
             recognition.stop();
         }
     }
 }
 
+function sendQuestion() {
+    $('#base').slideUp(300);
+    $('.added-info').slideUp(300);
+
+    // $('#question').prop('disabled', true);
+
+    if ($('#question').val() === '') {
+        if (needInfo) {
+            alert('Hãy nhập thông tin thêm để tìm kiếm tiếp hoặc nhấn làm mới để bắt đầu lại từ đầu!');
+        } else
+            alert('Bạn chưa nhập câu hỏi!');
+        return;
+    }
+    $('#thanks').slideUp(300);
+
+    $("#answer").html("Đang lấy câu trả lời...");
+
+    var dat = {
+        action: 'getAnswer',
+        question: $('#question').val()
+    };
+
+    if (needInfo) {
+        dat.tags = JSON.stringify(tags);
+        needInfo = false;
+    }
+
+    $.ajax({
+        url: "Answer",
+        type: 'post',
+        dataType: 'json',
+        data: dat,
+        success: function (res) {
+            console.log(res);
+            tags = res.tags;
+            answer = res.answer;
+            query = res.query;
+
+            if (res.error === 1) {
+                alert('Hãy hỏi những câu liên quan tới giao thông!');
+                refreshPage();
+            } else if (res.has_answer === true) {
+                showAnswer(res);
+            } else
+                showAddedInfo(res.message);
+        },
+        error: function (ts) {
+            alert("Có lỗi đã xảy ra! Hãy thử lại!");
+            $("#answer").html("Có lỗi đã xảy ra! Hãy thử lại!");
+            $('#btnSubmit').text('Tìm kiếm');
+            $('#question').prop('disabled', false);
+            console.log(ts.responseText);
+        }
+    });
+}
+
 $(document).ready(function () {
     $("#btnSubmit").click(function () {
-        $('#base').slideUp(300);
-        $('.added-info').slideUp(300);
+        sendQuestion();
+    });
 
-        // $('#question').prop('disabled', true);
-
-        if ($('#question').val() === '') {
-            if (needInfo) {
-                alert('Hãy nhập thông tin thêm để tìm kiếm tiếp hoặc nhấn làm mới để bắt đầu lại từ đầu!');
-            } else
-                alert('Bạn chưa nhập câu hỏi!');
-            return;
+    $('#question').keypress(function (e) {
+        var key = e.which;
+        if (key == 13) {
+            sendQuestion();
         }
-        $('#thanks').slideUp(300);
-
-        $("#answer").html("Đang lấy câu trả lời...");
-
-        var dat = {
-            action: 'getAnswer',
-            question: $('#question').val()
-        };
-
-        if (needInfo) {
-            dat.tags = JSON.stringify(tags);
-            needInfo = false;
-        }
-
-        $.ajax({
-            url: "Answer",
-            type: 'post',
-            dataType: 'json',
-            data: dat,
-            success: function (res) {
-                console.log(res);
-                tags = res.tags;
-                answer = res.answer;
-                query = res.query;
-
-                if (res.error === 1) {
-                    alert('Hãy hỏi những câu liên quan tới giao thông!');
-                    refreshPage();
-                } else if (res.has_answer === true) {
-                    showAnswer(res);
-                } else
-                    showAddedInfo(res.message);
-            },
-            error: function (ts) {
-                alert("Có lỗi đã xảy ra! Hãy thử lại!");
-                $("#answer").html("Có lỗi đã xảy ra! Hãy thử lại!");
-                $('#btnSubmit').text('Tìm kiếm');
-                $('#question').prop('disabled', false);
-                console.log(ts.responseText);
-            }
-        });
     });
 
     $('#refresh').click(function () {

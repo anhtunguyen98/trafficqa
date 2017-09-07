@@ -13,4 +13,4 @@ xe gắn máy_xe máy
 xe lam_xe ba bánh
 xe ba gác_xe ba bánh
 
-vượt_chạy
+vượt quá tốc độ_chạy quá tốc độ

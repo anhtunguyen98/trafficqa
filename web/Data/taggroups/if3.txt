@@ -4,19 +4,13 @@
 18 tuổi
 bịt mắt lái
 bỏ cả 2 tay
-bỏ trốn sau khi gây tai nạn để trốn tránh trách nhiệm cố ý không cứu giúp người bị tai nạn giao thông
 buông cả 2 tay
-buông cả 2 tay khi đang đi
 buông cả 2 tay lái
 buông cả 2 tay lái xe
 cài quai mũ bảo hiểm không đúng cách
 chưa có bằng lái xe
 chưa có giấy phép lái xe
 có chất ma túy
-có hành vi cố tình gian dối để được đổi cấp mới cấp lại giấy phép lái xe
-có mặt tại hiện trường
-có mặt tại hiện trường vụ tai nạn
-có mặt tại nơi xảy ra vụ tai nạn giao thông
 dắt động vật
 dắt theo xúc vật
 dùng chân để điều khiển
@@ -35,7 +29,6 @@ dùng ô dù
 điều khiển bằng chân
 điều khiển vô lăng bằng chân
 đội mũ bảo hiểm
-đội mũ bảo hiểm có cài quai đúng quy cách
 đội mũ bảo hiểm không cài quai
 đu bám phương tiện khác
 đứng lên giá đèo
@@ -43,7 +36,6 @@ dùng ô dù
 đứng trên
 đứng trên yên
 gây cản trở giao thông
-giả khai báo mất hoặc tẩy xóa làm sai lệch các thông tin trên giấy phép lái xe
 không cài quai mũ bảo hiểm
 không chấp hành biển báo
 không chấp hành đèn báo hiệu
@@ -58,22 +50,19 @@ không chịu kiểm tra nồng độ cồn
 không đi đúng phần đường quy định
 không đội mũ bảo hiểm
 không đội mũ có bảo hiểm
-không đủ điều kiện để điều khiển
-không được lái xe
 không mang
 không mang bằng lái
 không quan sát khi lùi
 không thắt dây an toàn
-kinh doanh vận tải hành khách
 lái
 lái ẩu
 lái bằng chân
-lái ô tô chở người trên 30 chỗ ngồi hạng e
 lái xe 10 đến 30 chỗ hạng d
 lái xe được 1 năm và 9 000 km
 lái xe được 11 tháng và 30 000 km
 lái xe được 11 tháng và 50 000 km
 lái xe được 13 000 km
+lái xe được 13.000 km
 lái xe được 15 tháng và 13 000 km
 lái xe được 2 năm và 13 000 km
 lái xe được 2 năm và 9 000 km
@@ -96,6 +85,7 @@ lái xe được 7 tháng và 13 000 km
 lái xe được 7 tháng và 9 000 km
 lái xe được 8 tháng
 lái xe trên đường vắng mà cảm thấy buồn ngủ
+làm lại bằng lái xe
 mang theo giấy đăng ký xe
 mang theo giấy phép lái xe
 mang vác vật cồng kềnh
@@ -114,11 +104,10 @@ qua đường không đảm bảo an toàn
 qua đường không đúng nơi quy định
 quay người về sau lái
 sản xuất mua bán sử dụng biển số
-sử dụng chân
+say rượu
 sử dụng chân chống quệt xuống đường
 sử dụng điện thoại
 sử dụng điện thoại di động
-sử dụng giấy phép lái xe hoặc đổi hồ sơ lái xe giả
 sử dụng ma túy
 sử dụng ô
 sử dụng ô dù
@@ -127,8 +116,10 @@ thả rông súc vật trên đường bộ
 thắt dây an toàn
 thay người lái khi đang chạy
 thi bằng lái xe
+thiếu ý thức
 trong người có chất ma túy không mang bằng lái
 trong người có chất ma túy và không mang bằng lái
 tụ tập đông người trái phép trên đường bộ
+uống rượu say
 việc họp chợ trên đường bộ
 vượt qua giải phân cách

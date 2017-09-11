@@ -1,4 +1,4 @@
-var tags, query, answer;
+var tags, query, answer, questions = '';
 var needInfo = false;
 
 function showAddedInfo(message) {
@@ -10,6 +10,7 @@ function showAddedInfo(message) {
 
 function refreshPage() {
     $('#question').val('');
+    questions = '';
     $('#answer').html('');
     $('#base').slideUp(300);
     $('#confirm').slideUp(300);
@@ -24,7 +25,7 @@ function saveResult(confirm) {
         dataType: 'json',
         data: {
             action: 'saveTest',
-            question: $('#question').val(),
+            question: questions,
             answer: answer,
             query: query,
             'tags': JSON.stringify(tags),
@@ -237,6 +238,7 @@ function sendQuestion() {
             tags = res.tags;
             answer = res.answer;
             query = res.query;
+            questions += (questions.length != 0 ? ' _ ' : '') + $('#question').val();
 
             if (res.error === 1) {
                 alert('Hãy hỏi những câu liên quan tới giao thông!');

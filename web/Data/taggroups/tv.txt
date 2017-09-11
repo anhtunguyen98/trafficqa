@@ -2,37 +2,33 @@ máy kéo
 mô tô
 mô tô 2 bánh
 mô tô 3 bánh
+mô tô ba bánh
 ô tô
+ô tô buýt
 ô tô chở hàng
 ô tô đi trước
 ô tô đối diện
 ô tô được kéo
 ô tô tải
 xe ba gác
-xe ba gác máy
-xe bánh xích
 xe bị kéo
+xe buýt
 xe cấp cứu
 xe chữa cháy
 xe cơ giới
-xe công nông
 xe cứu thương
 xe đạp
 xe đạp điện
 xe đạp máy
 xe gắn máy
-xe hạng b2 kéo rơ moóc
-xe hạng d kéo rơ moóc fd
 xe kéo
 xe kéo rơ moóc
 xe kéo sơ mi rơ moóc
 xe khách
-xe lam
-xe lôi máy
 xe máy
 xe máy 3 bánh
 xe máy chuyên dùng
-xe máy kéo
+xe máy điện
 xe mô tô 3 bánh
 xe phía sau
 xe phía trước
@@ -43,6 +39,4 @@ xe tang
 xe thô sơ
 xe ưu tiên
 xe vận tải hàng
-xe vận tải hành khách
-xe xích lô máy
 xe xuống dốc

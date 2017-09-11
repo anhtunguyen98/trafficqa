@@ -19,6 +19,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
+import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -246,7 +247,8 @@ public class Answer extends HttpServlet {
         try {
             autoInit(request.getServerName(), false);
             Timestamp createdDate = new Timestamp(new java.util.Date().getTime());
-            String question = URLDecoder.decode(request.getParameter("question"), "UTF-8").trim().replaceAll("\\s+", " ");
+            String question = URLDecoder.decode(request.getParameter("question"), "UTF-8")
+                    .trim().replaceAll("\\s+", " ");
             String answer = URLDecoder.decode(request.getParameter("answer"), "UTF-8");
             String query = URLDecoder.decode(request.getParameter("query"), "UTF-8");
             String tags = URLDecoder.decode(request.getParameter("tags"), "UTF-8");
@@ -258,7 +260,11 @@ public class Answer extends HttpServlet {
             JSONObject jobj = new JSONObject();
             jobj.put("success", true);
             response.getWriter().write(jobj.toString());
-        } catch (Exception e) {
+        } catch (IOException e) {
+            logger.info(e.getMessage());
+        } catch (SQLException e) {
+            logger.info(e.getMessage());
+        } catch (JSONException e) {
             logger.info(e.getMessage());
         }
     }//</editor-fold>
@@ -367,7 +373,9 @@ public class Answer extends HttpServlet {
                     }
 
                     String[] tokens = line.split("_");
-                    replacer.put(tokens[0], tokens[1]);
+                    for (int i = 0; i < tokens.length - 1; i++) {
+                        replacer.put(tokens[i], tokens[tokens.length - 1]);
+                    }
                 }
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(Answer.class.getName()).log(Level.SEVERE, null, ex);
@@ -434,7 +442,7 @@ public class Answer extends HttpServlet {
 
     private String prepareQuestion(String question) {
         for (String key : replacer.keySet()) {
-            question = question.replaceAll(key, replacer.get(key));
+            question = question.replaceAll(key.toLowerCase(), replacer.get(key));
         }
 
         return question;

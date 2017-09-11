@@ -1,6 +1,3 @@
-âm lượng của còi điện
-bảo dưỡng thường xuyên
-bảo đảm trật tự an toàn giao thông đường bộ
 các đoạn đường cấm đi
 cách xử lý
 công dụng của động cơ
@@ -8,11 +5,13 @@ công dụng hệ thống lái
 công dụng hệ thống phanh
 công dụng hệ thống truyền lực
 công dụng hộp số
+công dụng li hợp
 công dụng ly hợp
 công trình đường bộ
 dải phân cách
 dải phân cách trên đường bộ
 dừng xe
+đất của đường bộ
 đỗ xe
 động cơ 2 kỳ
 động cơ 4 kỳ
@@ -20,17 +19,25 @@ dừng xe
 đường cao tốc
 đường chính
 đường đi một chiều
+đường giao nhau
+đường giao nhau cùng mức
+đường gom
+đường nhánh
 đường phố
 đường ưu tiên
 giấy tờ cần thiết
 hàng nguy hiểm
 hàng siêu trường siêu trọng
+Hành lang an toàn đường bộ
 hoạt động vận tải đường bộ
+kết cấu hạ tầng giao thông đường bộ
 khổ giới hạn của đường bộ
 làn đường
 lắp đặt báo hiệu đường bộ
 người điều khiển giao thông
-người điều khiển phương tiện tham gia giao thông
+người điều khiển phương tiện
+người lái xe
+người tham gia giao thông
 niên hạn sử dụng
 nơi cấm dừng cấm đỗ cấm quay đầu xe
 phần đường xe chạy
@@ -39,17 +46,10 @@ phương tiện giao thông đường bộ
 phương tiện giao thông thô sơ đường bộ
 phương tiện tham gia giao thông đường bộ
 quy định chở hàng
-sản xuất mua bán sử dụng biển số xe cơ giới xe máy
+sản xuất mua bán sử dụng biển số xe cơ giới xe máy chuyên dùng
 sát hạch cấp giấy phép lái xe
-sơ cứu ban đầu cho người bị tai nạn giao thông
 thời gian làm việc trong một ngày
-trách nhiệm cơ bản của các tổ chức trong việc quản lý giáo dục và nâng cao đạo đức nghề nghiệp
 vạch kẻ đường
-văn hóa giao thông
-vận tải đa phương thức
-vận tải đường bộ
+xe máy chuyên dùng
 xe quá tải trọng
-yêu cầu an toàn về kỹ thuật với dây đai an toàn lắp trên
-yêu cầu an toàn về kỹ thuật với gạt nước lắp trên
-yêu cầu của kính chắn gió
-yêu cầu về an toàn kỹ thuật đối với bánh xe lắp
+xe thô sơ

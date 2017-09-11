@@ -373,8 +373,10 @@ public class Answer extends HttpServlet {
                     }
 
                     String[] tokens = line.split("_");
-                    for (int i = 0; i < tokens.length - 1; i++) {
-                        replacer.put(tokens[i], tokens[tokens.length - 1]);
+                    String value = tokens[1];
+                    tokens = tokens[0].split(",");
+                    for (String token : tokens) {
+                        replacer.put(token, value);
                     }
                 }
             } catch (FileNotFoundException ex) {

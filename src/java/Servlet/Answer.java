@@ -24,10 +24,7 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
-import java.util.logging.FileHandler;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter;
+import org.apache.log4j.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -53,7 +50,6 @@ public class Answer extends HttpServlet {
     SaveTestDAO saveTestDAO = null;
     HashMap<String, String> replacer = null;
     Logger logger = null;
-    FileHandler fileHandler = null;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -261,11 +257,11 @@ public class Answer extends HttpServlet {
             jobj.put("success", true);
             response.getWriter().write(jobj.toString());
         } catch (IOException e) {
-            logger.info(e.getMessage());
+            logger.error(e);
         } catch (SQLException e) {
-            logger.info(e.getMessage());
+            logger.error(e);
         } catch (JSONException e) {
-            logger.info(e.getMessage());
+            logger.error(e);
         }
     }//</editor-fold>
 
@@ -305,9 +301,9 @@ public class Answer extends HttpServlet {
                 }
 
             } catch (FileNotFoundException ex) {
-                Logger.getLogger(Answer.class.getName()).log(Level.SEVERE, null, ex);
+                logger.info(ex);
             } catch (IOException ex) {
-                Logger.getLogger(Answer.class.getName()).log(Level.SEVERE, null, ex);
+                logger.info(ex);
             }
         }
     }
@@ -347,14 +343,7 @@ public class Answer extends HttpServlet {
             prepareTagsMap();
             prepareReplacer();
 
-            if (logger != null) {
-                logger.removeHandler(fileHandler);
-            }
-            logger = Logger.getLogger(Answer.class.getName());
-            fileHandler = new FileHandler(DATA_PATH + "log.txt");
-            logger.addHandler(fileHandler);
-            SimpleFormatter formatter = new SimpleFormatter();
-            fileHandler.setFormatter(formatter);
+            logger = Logger.getLogger(Answer.class);
 
             Const.Path.DATA_PATH = DATA_PATH;
         }
@@ -381,7 +370,7 @@ public class Answer extends HttpServlet {
                     }
                 }
             } catch (FileNotFoundException ex) {
-                Logger.getLogger(Answer.class.getName()).log(Level.SEVERE, null, ex);
+                logger.info(ex);
             }
         }
     }//</editor-fold>

@@ -49,7 +49,7 @@ public class Answer extends HttpServlet {
     AnswerDAO dao = null;
     boolean isLocal = true;
     TrafficCrfTagger tagger = null;
-    FindingAnswer findingAnswer = new FindingAnswer();
+    FindingAnswer findingAnswer;
     SaveTestDAO saveTestDAO = null;
     HashMap<String, String> replacer = null;
     Logger logger = null;
@@ -313,7 +313,7 @@ public class Answer extends HttpServlet {
     }
 
     private void autoInit(String domain, boolean force) throws IOException {
-        if (force || findingAnswer.dao == null) {//create DAO
+        if (force || findingAnswer == null || findingAnswer.dao == null) {//create DAO
             createAllThings(domain);
         }
     }
@@ -333,6 +333,7 @@ public class Answer extends HttpServlet {
             isLocal = false;
         }
 
+        findingAnswer = new FindingAnswer();
         findingAnswer.dao = new AnswerDAO(domain, username, password, dbName);
         saveTestDAO = new SaveTestDAO(domain, username, password, dbName);
 

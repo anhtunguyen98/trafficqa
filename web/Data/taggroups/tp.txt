@@ -1,8 +1,5 @@
-hành khách
 người đi bộ
-người điều khiển phương tiện liên quan trực tiếp đến vụ tai nạn
 người lái xe
-người liên quan trực tiếp đến vụ tai nạn
 người ngồi phía sau
 người ngồi sau
 người tập lái xe ô tô

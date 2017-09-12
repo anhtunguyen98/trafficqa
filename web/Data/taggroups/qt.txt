@@ -1,3 +1,4 @@
+bao nhiêu lâu
 bao nhiêu năm
 bao nhiêu thì bị cấm
 bao nhiêu tuổi
@@ -6,17 +7,14 @@ bị phạt bao nhiêu
 bị phạt bao nhiêu tiền
 bị phạt thế nào
 các hành vi nào bị nghiêm cấm
-cần chú ý những điểm gì
 cần có những giấy tờ gì
 cần không
 cần người lái không
-cần phải chú ý những điểm nào
-cần thực hiện thao tác nào
-cho phép là bao nhiêu
+cần những giấy tờ gì
 chuyển màu gì thì được đi
+có  phải không
 có bị cấm không
 có bị hạn chế tốc độ không
-có bị nghiêm cấm hay không
 có bị phạt không
 có bị vi phạm không
 có bị vi phạm luật giao thông không
@@ -24,9 +22,7 @@ có bị vi phạm luật không
 có các quyền gì
 có cần hay không
 có cần không
-có được di chuyển không
 có được đi không
-có được đi tiếp không
 có được đi xe không
 có được không
 có được phép đi xe không
@@ -35,48 +31,48 @@ có được tham gia giao thông không
 có được ưu tiên không
 có được vượt không
 có những loại nào
-có những nghĩa vụ nào theo quy định
-có những quyền hạn nào theo quy định
 có phải không
 cơ quan nào quy định
-có tác dụng gì
-có trách nhiệm gì
 có vi phạm luật giao thông không
 có vi phạm luật không
-duy trì khoảng cách an toàn với xe dang chạy phía trước tối thiểu là bao nhiêu
 để làm gì
 đi bên phải hay bên trái
 đi như thế nào
-đi tối đa là bao nhiêu
+điều kiện
 điều kiện là gì
 đoạn đường nào
 được chở mấy người
 được chở theo mấy người
 được đi chưa
-được đi không
 được hiểu như thế nào
 được hiểu thế nào
 được không
 được quy định là bao nhiêu
 được quy định như thế nào
-giữ khoảng cách tối thiểu bao nhiêu mét tính từ ray gần nhất
 gồm những đường nào
 gồm những loại nào
 gồm những nhóm nào ý nghĩa của từng nhóm
 hãy nêu
 hồ sơ cần những gì
+khái niệm
+khái niệm được hiểu như thế nào
+khái niệm được hiểu thế nào
+khái niệm là gì
+khái niệm là như thế nào
 khi nào
 khi nào bị vi phạm luật
+khi nào là gì
 khi nào vi phạm luật giao thông
-khoảng cách an toàn với xe đang chạy phía trước tối thiểu là bao nhiêu
-không được cấp bằng trong thời gian bao lâu
 là bao nhiêu
 là gì
-là trách nhiệm của ai
-loại xe cơ giới nào
+là như thế nào
+là những ai
+là những cái gì
+là những phương tiện gì
+làm cái gì
+làm thế nào
 loại xe gì
 loại xe nào
-nào được đi
 ngồi ở vị trí nào
 như thế nào
 như thế nào cho phù hợp
@@ -84,42 +80,31 @@ những đối tượng nào
 ở những nơi nào
 ở nơi nào
 phải có đủ các loại đèn gì
-phải dùng cách nào
-phải đảm bảo các điều kiện gì
 phải đi như thế nào
+phải đủ bao nhiêu tuổi
 phải không
 phải làm gì
 phải như thế nào
 phải nhường đường cho xe đi đến từ hướng nào
 phải nhường đường cho xe từ hướng nào
-phải thế nào
-phải thực hiện các công việc gì
-phải xin phép cơ quan nào
-phải xử lý thế nào
 phạt bao nhiêu tiền
-phương tiện nào
 sử dụng như thế nào
-thế nào
 thế nào là
+thời hạn là bao nhiêu lâu
 thứ tự ưu tiên như thế nào
-thực hiện các thao tác nào
 thực hiện như thế nào
 thực hiện ở đâu
-thực hiện thao tác như thế nào
-tốc độ cho phép là bao nhiêu
-tốc độ tối đa cho phép là bao nhiêu
 tốc độ tối đa là bao nhiêu
-tối đa là bao nhiêu
 trong những trường hợp nào
-trong trường hợp nào
 trường hợp nào
-tuổi là bao nhiêu
+tuổi tối đa bao nhiêu tuổi
+tuổi tối đa là bao nhiêu
 về phía bên nào
 vi phạm luật giao thông không
 vi phạm luật không
-vị trí nào
 vượt quá bao nhiêu thì bị cấm
 vượt về phía bên nào
 xe gì
+xe loại gì
 xe nào
 xử lý như thế nào

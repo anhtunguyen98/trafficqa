@@ -1,0 +1,119 @@
+{
+	"root": {
+		"ten": "12/2017/TT-BGTVT",
+		"d7": {
+			"tenDieu": "Điều 7. Điều kiện đối với người học lái xe\n\t",
+			"k1": {
+				"tenKhoan": "\n\t\t1. Là công dân Việt Nam, người nước ngoài được phép cư trú hoặc đang làm việc, học tập tại Việt Nam.\n\t\t"
+			},
+			"k2": {
+				"tenKhoan": "\n\t\t2. Đủ tuổi (tính đến ngày dự sát hạch lái xe), sức khỏe, trình độ văn hóa theo quy định; đối với người học để nâng hạng giấy phép lái xe, có thể học trước nhưng chỉ được dự sát hạch khi đủ tuổi theo quy định.\n\t\t"
+			},
+			"k3": {
+				"tenKhoan": "\n\t\t\t3. Người học để nâng hạng giấy phép lái xe phải có đủ thời gian lái xe hoặc hành nghề và số km lái xe an toàn như sau:\n\t\t",
+				"a": "a) Hạng B1 số tự động lên B1: thời gian lái xe từ 01 năm trở lên và 12.000 km lái xe an toàn trở lên;\n\t\t",
+				"b": "b) Hạng B1 lên B2: thời gian lái xe từ 01 năm trở lên và 12.000 km lái xe an toàn trở lên;\n\t\t",
+				"c": "c) Hạng B2 lên C, C lên D, D lên E; các hạng B2, C, D, E lên hạng F tương ứng; các hạng D, E lên FC: thời gian hành nghề từ 03 năm trở lên và 50.000 km lái xe an toàn trở lên;\n\t\t",
+				"d": "d) Hạng B2 lên D, C lên E: thời gian hành nghề từ 05 năm trở lên và 100.000 km lái xe an toàn trở lên.\n\t\t"
+			},
+			"k4": {
+				"tenKhoan": "4. Người học để nâng hạng giấy phép lái xe lên các hạng D, E phải có bằng tốt nghiệp trung học cơ sở hoặc tương đương trở lên\n\t\t"
+			}
+		},
+		"d16": {
+			"tenDieu": "Điều 16. Phân hạng giấy phép lái xe",
+			"k1": {
+				"tenKhoan": "1. Hạng A1 cấp cho:",
+				"a": "a) Người lái xe để điều khiển xe mô tô hai bánh có dung tích xy lanh từ 50 cm3 đến dưới 175 cm3;",
+				"b": "b) Người khuyết tật điều khiển xe mô tô ba bánh dùng cho người khuyết tật."
+			},
+			"k2": {
+				"tenKhoan": "2. Hạng A2 cấp cho người lái xe để điều khiển xe mô tô hai bánh có dung tích xy lanh từ 175 cm3 trở lên và các loại xe quy định cho giấy phép lái xe hạng A1.\n\t\t"
+			},
+			"k3": {
+				"tenKhoan": "3. Hạng A3 cấp cho người lái xe để điều khiển xe mô tô ba bánh, các loại xe quy định cho giấy phép lái xe hạng A1 và các xe tương tự.\n\t\t"
+			},
+			"k4": {
+				"tenKhoan": "4. Hạng A4 cấp cho người lái xe để điều khiển các loại máy kéo nhỏ có trọng tải đến 1.000 kg.\n\t\t"
+			},
+			"k5": {
+				"tenKhoan": "5. Hạng B1 số tự động cấp cho người không hành nghề lái xe để điều khiển các loại xe sau đây:\n\t\t",
+				"a": "a) Ô tô số tự động chở người đến 9 chỗ ngồi, kể cả chỗ ngồi cho người lái xe;\n\t\t\t",
+				"b": "b) Ô tô tải, kể cả ô tô tải chuyên dùng số tự động có trọng tải thiết kế dưới 3.500 kg;\n\t\t\t",
+				"c": "c) Ô tô dùng cho người khuyết tật.\n\t\t\t"
+			},
+			"k6": {
+				"tenKhoan": "6. Hạng B1 cấp cho người không hành nghề lái xe để điều khiển các loại xe sau đây:\n\t\t",
+				"a": "a) Ô tô chở người đến 9 chỗ ngồi, kể cả chỗ ngồi cho người lái xe;\n\t\t",
+				"b": "b) Ô tô tải, kể cả ô tô tải chuyên dùng có trọng tải thiết kế dưới 3.500 kg;\n\t\t",
+				"c": "c) Máy kéo kéo một rơ moóc có trọng tải thiết kế dưới 3.500 kg.\n\t\t"
+			},
+			"k7": {
+				"tenKhoan": "7. Hạng B2 cấp cho người hành nghề lái xe để điều khiển các loại xe sau đây:",
+				"a": "a) Ô tô chuyên dùng có trọng tải thiết kế dưới 3.500 kg;\n\t\t",
+				"b": "b) Các loại xe quy định cho giấy phép lái xe hạng B1.\n\t\t"
+			},
+			"k8": {
+				"tenKhoan": "8. Hạng C cấp cho người lái xe để điều khiển các loại xe sau đây:",
+				"a": "a) Ô tô tải, kể cả ô tô tải chuyên dùng, ô tô chuyên dùng có trọng tải thiết kế từ 3.500 kg trở lên;\n\t\t",
+				"b": "b) Máy kéo kéo một rơ moóc có trọng tải thiết kế từ 3.500 kg trở lên;\n\t\t",
+				"c": "c) Các loại xe quy định cho giấy phép lái xe hạng B1, B2.\n\t\t"
+			},
+			"k9": {
+				"tenKhoan": "9. Hạng D cấp cho người lái xe để điều khiển các loại xe sau đây:\n\t\t",
+				"a": "a) Ô tô chở người từ 10 đến 30 chỗ ngồi, kể cả chỗ ngồi cho người lái xe;\n\t\t",
+				"b": "b) Các loại xe quy định cho giấy phép lái xe hạng B1, B2 và C.\n\t\t"
+			},
+			"k10": {
+				"tenKhoan": "10. Hạng E cấp cho người lái xe để điều khiển các loại xe sau đây:\n\t\t",
+				"a": "a) Ô tô chở người trên 30 chỗ ngồi;\n\t\t",
+				"b": "b) Các loại xe quy định cho giấy phép lái xe hạng B1, B2, C và D.\n\t\t"
+			},
+			"k11": {
+				"tenKhoan": "11. Người có giấy phép lái xe các hạng B1, B2, C, D và E khi điều khiển các loại xe tương ứng được kéo thêm một rơ moóc có trọng tải thiết kế không quá 750 kg.\n\t\t"
+			},
+			"k12": {
+				"tenKhoan": "12. Hạng F cấp cho người đã có giấy phép lái xe các hạng B2, C, D và E để điều khiển các loại xe ô tô tương ứng kéo rơ moóc có trọng tải thiết kế lớn hơn 750 kg, sơ mi rơ moóc, ô tô khách nối toa, được quy định cụ thể như sau:\n\t\t",
+				"a": "a) Hạng FB2 cấp cho người lái xe ô tô để lái các loại xe quy định tại giấy phép lái xe hạng B2 có kéo rơ moóc và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1 và hạng B2;\n\t\t",
+				"b": "b) Hạng FC cấp cho người lái xe ô tô để lái các loại xe quy định tại giấy phép lái xe hạng C có kéo rơ moóc, ô tô đầu kéo kéo sơ mi rơ moóc và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1, B2, C và hạng FB2;\n\t\t",
+				"c": "c) Hạng FD cấp cho người lái xe ô tô để lái các loại xe quy định tại giấy phép lái xe hạng D có kéo rơ moóc và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1, B2, C, D và FB2;\n\t\t",
+				"d": "d) Hạng FE cấp cho người lái xe ô tô để lái các loại xe quy định tại giấy phép lái xe hạng E có kéo rơ moóc và được điều khiển các loại xe: ô tô chở khách nối toa và các loại xe quy định cho giấy phép lái xe hạng B1, B2, C, D, E, FB2, FD.\n\t\t"
+			},
+			"k13": {
+				"tenKhoan": "13. Hạng giấy phép lái xe sử dụng cho người lái xe ô tô khách giường nằm, ô tô khách thành phố (sử dụng để kinh doanh vận tải hành khách bằng xe buýt) thực hiện theo quy định tại khoản 9 và khoản 10 Điều này. Số chỗ ngồi trên xe được tính theo số chỗ trên xe ô tô khách cùng kiểu loại hoặc xe ô tô có kích thước giới hạn tương đương chỉ bố trí ghế ngồi.\n\t\t"
+			}
+		},
+		"d17": {
+			"tenDieu": "Điều 17. Thời hạn của giấy phép lái xe\n\t",
+			"k1": {
+				"tenKhoan": "1. Giấy phép lái xe hạng A1, A2, A3 không có thời hạn.\n\t\t"
+			},
+			"k2": {
+				"tenKhoan": "2. Giấy phép lái xe hạng B1 có thời hạn đến khi người lái xe đủ 55 tuổi đối với nữ và đủ 60 tuổi đối với nam; trường hợp người lái xe trên 45 tuổi đối với nữ và trên 50 tuổi đối với nam thì giấy phép lái xe được cấp có thời hạn 10 năm, kể từ ngày cấp.\n\t\t"
+			},
+			"k3": {
+				"tenKhoan": "3. Giấy phép lái xe hạng A4, B2 có thời hạn 10 năm, kể từ ngày cấp.\n\t\t"
+			},
+			"k4": {
+				"tenKhoan": "4. Giấy phép lái xe hạng C, D, E, FB2, FC, FD, FE có thời hạn 05 năm, kể từ ngày cấp.\n\t\t"
+			}
+		},
+		"d9": {
+			"tenDieu": "Điều 9. Hồ sơ của người học lái xe",
+			"k1": {
+				"tenKhoan": "1. Người học lái xe lần đầu lập 01 bộ hồ sơ, nộp trực tiếp tại cơ sở đào tạo. Hồ sơ bao gồm:",
+				"da": "a) Đơn đề nghị học, sát hạch để cấp giấy phép lái xe theo mẫu quy định tại Phụ lục 7 ban hành kèm theo Thông tư này;\n\t\t\t",
+				"db": "b) Bản sao giấy chứng minh nhân dân hoặc thẻ căn cước công dân hoặc hộ chiếu còn thời hạn có ghi số giấy chứng minh nhân dân hoặc thẻ căn cước công dân đối với người Việt Nam; hộ chiếu còn thời hạn đối với người Việt Nam định cư ở nước ngoài;\n\t\t\t",
+				"dc": "c) Bản sao hộ chiếu còn thời hạn trên 06 tháng và thẻ tạm trú hoặc thẻ thường trú hoặc chứng minh thư ngoại giao hoặc chứng minh thư công vụ đối với người nước ngoài;\n\t\t\t",
+				"dd": "d) Giấy khám sức khỏe của người lái xe do cơ sở y tế có thẩm quyền cấp theo quy định.\n\t\t\t"
+			},
+			"k2": {
+				"tenKhoan": "2. Người học lái xe nâng hạng lập 01 bộ hồ sơ, nộp trực tiếp tại cơ sở đào tạo. Hồ sơ bao gồm:",
+				"da": "a) Giấy tờ quy định tại khoản 1 Điều này;\n\t\t\t",
+				"db": "b) Bản khai thời gian hành nghề và số km lái xe an toàn theo mẫu quy định tại Phụ lục 8 ban hành kèm theo Thông tư này và phải chịu trách nhiệm về nội dung khai trước pháp luật;\n\t\t\t",
+				"dc": "c) Bản sao bằng tốt nghiệp trung học cơ sở hoặc bằng cấp tương đương trở lên đối với trường hợp nâng hạng giấy phép lái xe lên các hạng D, E (xuất trình bản chính khi kiểm tra hồ sơ dự sát hạch);\n\t\t\t",
+				"dd": "d) Bản sao giấy phép lái xe (xuất trình bản chính khi dự sát hạch).\nNgười học lái xe khi đến nộp hồ sơ được cơ sở đào tạo chụp ảnh trực tiếp lưu giữ trong cơ sở dữ liệu giấy phép lái xe.\n\t\t\t"
+			}
+		}
+	}
+}

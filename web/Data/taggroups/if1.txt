@@ -1,36 +1,18 @@
 10 đến 30 chỗ ngồi
-20 chỗ
-20 chỗ ngồi
-25 chỗ ngồi
-26 chỗ ngồi
 27 chỗ ngồi
-30 chỗ
-30 chỗ ngồi
-35 chỗ ngồi
-40 chỗ ngồi
-7 chỗ
-7 chỗ ngồi
 9 chỗ ngồi
-bị hỏng
 bị mất phanh
 chở người trên 9 chỗ ngồi
 chưa đăng ký biển số
-cờ đèn báo hiệu
-có đủ bộ phận giảm thanh giảm khói
-có số tự động
 có thùng cố định
 có tín hiệu báo vượt xe khác
-có tín hiệu còi cờ đèn
 dung tích xi lanh 70 cm3
-dung tích xi lanh từ 50 cm3 trở lên
-đằng sau lưng cảnh sát
+dưới 30 chỗ ngồi
 đèn chiếu sáng
 đèn chiếu sáng bị hỏng
 được kéo
 gắn các thiết bị phát tín hiệu ưu tiên trái phép
 hạng e
-hệ thống hãm của xe được kéo không còn hiệu lực
-không bảo đảm tiêu chuẩn an toàn kỹ thuật và bảo vệ môi trường
 không có báo hiệu phía trước
 không có biển báo
 không có biển báo hiệu
@@ -41,31 +23,9 @@ không có giấy phép sử dụng thiết bị ưu tiên
 không có gương chiếu hậu
 không có vật phản quang
 không gắn biển báo hiệu ở phía trước
-ở bên phải cảnh sát
-ở bên trái
-ở bên trái cảnh sát
-ở phía bên phải cảnh sát giao thông
-ở phía bên trái
-ở phía sau cảnh sát
-ở phía trước cảnh sát
-ở sau lưng cảnh sát
-phía sau lưng cảnh sát
-quá khổ giới hạn
-quá tải trọng
 trên 30 chỗ
 trên 30 chỗ ngồi
-trọng lượng 1 5 tấn
-trọng lượng 2 5 tấn
-trọng lượng 2 tấn
-trọng lượng 3 2 tấn
-trọng lượng 3 5 tấn
-trọng lượng 3 tấn
-trọng tải 3 6 tấn
-trọng tải 3 7 tấn
-trọng tải 3 8 tấn
-trọng tải 4 5 tấn
+trọng tải 2 tấn
 trọng tải 4 tấn
-trọng tải 5 tấn
-trọng tải dưới 3 5 tấn
-trọng tải trên 3 5 tấn
-trọng tải từ 3 5 tấn trở lên
+trọng tải dưới 3,5 tấn
+trọng tải trên 3,5 tấn

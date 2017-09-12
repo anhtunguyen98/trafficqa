@@ -1,0 +1,20 @@
+{
+	"root": {
+		"ten": "15/2014/TT-BCA",
+		"d6": {
+			"tenDieu": "Điều 6. Trách nhiệm của chủ xe",
+			"k1": {
+				"tenKhoan": "1. Chấp hành nghiêm chỉnh các quy định của pháp luật về đăng ký xe; có hồ sơ xe theo quy định và chịu trách nhiệm trước pháp luật về tính hợp pháp của xe và hồ sơ đăng ký xe; đưa xe đến cơ quan đăng ký xe để kiểm tra và nộp lệ phí đăng ký, cấp biển số xe theo quy định. \nTrường hợp chủ xe được cơ quan đăng ký xe trước đây giao quản lý một phần hồ sơ xe thì khi làm thủ tục cấp, đổi lại giấy chứng nhận đăng ký xe, biển số xe; sang tên, di chuyển xe; thu hồi giấy chứng nhận đăng ký, biển số xe phải nộp lại phần hồ sơ đó.\n\t\t\t"
+			},
+			"k2": {
+				"tenKhoan": "2. Ngay khi có quyết định điều chuyển, bán, cho, tặng xe, chủ xe phải thông báo bằng văn bản theo mẫu số 01 ban hành kèm theo Thông tư này đến cơ quan đã cấp Giấy chứng nhận đăng ký xe đó để theo dõi. Trường hợp chủ xe không thông báo thì tiếp tục phải chịu trách nhiệm trước pháp luật về chiếc xe đó đến khi tổ chức, cá nhân mua, được điều chuyển, cho, tặng xe làm thủ tục đăng ký sang tên, di chuyển xe.\n\t\t\t"
+			},
+			"k3": {
+				"tenKhoan": "3. Trong thời hạn 30 ngày, kể từ ngày làm chứng từ chuyển quyền sở hữu xe, tổ chức, cá nhân mua, được điều chuyển, cho, tặng xe phải đến cơ quan đăng ký xe làm thủ tục đăng ký sang tên, di chuyển xe.\n\t\t\t"
+			},
+			"k4": {
+				"tenKhoan": "\n\t\t\t4. Nghiêm cấm mọi hành vi giả mạo hồ sơ, đục xóa số máy, số khung để đăng ký xe. \n\t\t\t"
+			}
+		}
+	}
+}

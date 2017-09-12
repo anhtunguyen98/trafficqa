@@ -1,0 +1,13 @@
+ôtô,xế hộp,bốn bánh,xe bốn bánh,xe 4 bánh,xe con,xe hơi,Toyota Camry,Camry,Hyundai SantaFe,SantaFe,Kia Cerato,Cerato,Toyota Vios,Vios,Ford Ranger,Ranger,Mitsubishi Pajero,Pajero,Honda Civic,Civic,Toyota Fortuner,Fortuner,Abarth,Alfa Romeo,Aston Martin,Audi,Bentley,BMW,Bugatti ,Cadillac,Caterham,Chevrolet,Chrysler,Citroen,Dacia,Ferrari,Fiat,Ford,Honda,Hyundai,Infiniti,Jaguar,Jeep,Kia ,Lamborghini,Land Rover,Lexus,Lotus,Maserati,Mazda,Mclaren,Mercedes-Benz,MG,Mini,Mitsubishi,Morgan,Nissan,Noble,Pagani,Peugeot,Porsche,Radical,Renault,Rolls-Royce,Saab,Seat,Skoda,Smart,SsangYong,Subaru,Suzuki,Tesla,Toyota,Vauxhall,Volkswagen,Volvo ,Zenos_ô tô
+lái ô tô,điều khiển ô tô_đi ô tô
+
+môtô,mô tô,xe hai bánh,xe 2 bánh,xe gắn máy_xe máy
+lái xe máy,điều khiển xe máy_đi xe máy
+
+xe lam,xe ba gác_xe ba bánh
+lái xe ba bánh,điều khiển xe máy_đi xe ba bánh
+
+vượt quá tốc độ_chạy quá tốc độ
+tốc độ tối đa cho phép_tốc độ tối đa
+
+bắng lái xe a1,bằng lái xe a một_bằng a1

@@ -1,10 +1,32 @@
+bằng a1
+bằng a2
+bằng a3
+bằng a4
+bằng b1
+bằng b1 số tự động
+bằng b2
+bằng c
+bằng d
+bằng e
+bằng f
+bằng fb2
+bằng fc
+bằng fd
+bằng fe
+bằng lái xe b1
 bằng lái xe b1 số tự động
+bằng lái xe b2
+bằng lái xe c
+bằng lái xe d
+bằng lái xe e
 bằng lái xe hạng b1
 bằng lái xe hạng b1 số tự động
 bằng lái xe hạng b2
 bằng lái xe hạng c
 bằng lái xe hạng d
 bằng lái xe hạng e
+bằngs a2
+đổi d
 giấy phép lái xe
 giấy phép lái xe b1
 giấy phép lái xe b2
@@ -16,7 +38,13 @@ giấy phép lái xe hạng a2
 giấy phép lái xe hạng a3
 giấy phép lái xe hạng a4
 giấy phép lái xe hạng b1
+giấy phép lái xe hạng b1 số tự động
 giấy phép lái xe hạng b2
 giấy phép lái xe hạng c
 giấy phép lái xe hạng d
 giấy phép lái xe hạng e
+giấy phép lái xe hạng f
+giấy phép lái xe hạng fb2
+giấy phép lái xe hạng fc
+giấy phép lái xe hạng fd
+giấy phép lái xe hạng fe

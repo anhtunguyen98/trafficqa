@@ -1,7 +1,6 @@
 bấm còi
 bấm còi ban đêm
 bấm còi hơi
-bấm còi không trong thời gian quy định
 bấm còi liên tục
 bấm còi rú ga liên tục
 bám xe khác
@@ -17,14 +16,12 @@ chạy
 chạy chậm giữa đường
 chạy chậm hơn các xe khác cùng chiều mà không đi về bên phải
 chạy chậm hơn tốc độ tối thiểu
-chạy dàn hàng
 chạy dàn hàng 2 hàng 3
-chạy dưới tốc độ tối thiểu
 chạy ngược
 chạy ngược chiều
 chạy ngược chiều khi có biển cấm
+chạy nhanh
 chạy nhanh ra đường chính
-chạy nhanh từ ngõ ra
 chạy ở phần lề đường
 chạy quá chậm
 chạy quá chậm gây cản trở giao thông
@@ -32,17 +29,7 @@ chạy quá gần với xe đi trước
 chạy quá gần xe đi trước
 chạy quá gần xe đi trước gây ra va chạm
 chạy quá gần xe trước
-chạy quá tốc độ
-chạy quá tốc độ gây tai nạn
-chạy quá tốc độ gây tai nạn giao thông
-chạy quá tốc độ quy định
-chạy quá tốc độ quy định gây tai nạn giao thông
-chạy quá tốc độ quy định thành nhóm
-chạy quá tốc độ quy định thành nhóm gây tai nạn
-chạy quá tốc độ quy định thành nhóm không chấp hành hiệu lệnh dừng xe
-chạy tốc độ thấp gây cản trở giao thông
 chạy trong hầm
-chạy từ trong ngõ ra mà không giảm tốc độ
 chạy vào đường cấm
 chiếm một phần đường
 chở
@@ -56,30 +43,23 @@ chở hàng quá trọng tải
 chở người
 chở quá nhiều người
 chở quá số người
-chở quá số người quy định
 chở theo 2 người lớn
 chở theo 2 trẻ em 8 tuổi
 chở theo từ 3 người trở lên
 chở tối đa 2 người
+chuyển hướng
 chuyển hướng đột ngột trước đầu xe khác
 chuyển hướng không có tín hiệu
 chuyển hướng không có tín hiệu báo
-chuyển hướng không giảm tốc độ
-chuyển hướng không nhường cho người đi bộ
 chuyển hướng không nhường đường cho người đi bộ
-chuyển hướng không nhường đường cho người khuyết tật
-chuyển hướng không nhường đường cho xe đi ngược chiều
 chuyển hướng không nhường người đi bộ
 chuyển hướng nhanh
 chuyển làn đường gây tai nạn
-chuyển làn đường gây tai nạn giao thông
 chuyển làn đường không có tín hiệu
 chuyển làn đường không đúng nơi
 chuyển làn không báo trước
 chuyển làn không có tín hiệu
-chuyển làn không có tín hiệu thông báo
 chuyển làn không đúng nơi
-chuyển làn không đúng nơi cho phép
 chuyển làn không đúng nơi quy định
 chuyển làn không xi nhan
 chuyển làn sai chỗ
@@ -88,7 +68,7 @@ dàn hàng
 dàn hàng ngang
 di chuyển
 dừng
-dừng cách lề đường quá 0 25m
+dừng cách lề đường quá 0.25 m
 dùng đèn chiếu xa
 dừng đỗ không đặt biển báo
 dừng đột ngột
@@ -100,7 +80,6 @@ dừng không đặt biển báo hiệu nguy hiểm
 dừng không đúng luật
 dừng không đúng nơi quy định
 dừng không sát lề đường
-dừng lại
 dừng liên tục
 dừng ngược chiều làn đường
 dừng ngược với chiều của làn đường
@@ -120,22 +99,22 @@ dừng xe che lấp biển báo giao thông bên đường
 để mở cửa
 đi
 đi bốc đầu
+đi chuyển hướng không nhường cho người đi bộ
+đi chuyển làn không có tín hiệu thông báo
+đi chuyển làn không đúng nơi cho phép
 đi không đúng làn đường
 đi không đúng phần đường
+đi không nhường đường cho xe thô sơ khi chuyển hướng
 đi ngược
 đi ngược chiều
-đi ngược chiều khi có biển cấm
 đi quá dải phân cách
 đi quá gần với xe đằng trước
 đi quá sát xe đi trước gây tai nạn giao thông
-đi quá tốc độ
-đi qua vạch dừng
 đi sai làn
 đi sai phần đường
 đi sai phần đường của mình
 đi sang làn đường dành cho ô tô
 đi sang làn đường dành cho xe ô tô
-đi thẳng
 đi thành nhóm làm cản trở giao thông
 đi tiếp
 đi trên làn đường của ô tô
@@ -143,15 +122,53 @@ dừng xe che lấp biển báo giao thông bên đường
 đi vào đường cấm
 đi vào đường ngược chiều
 đi vào khu vực cấm
+đi xe
 đi xe trên đường
+điều khiển
+điều khiển bám xe khác
+điều khiển chạy dàn hàng
+điều khiển chạy quá chậm
+điều khiển chuyển làn đường gây tai nạn giao thông
+điều khiển đẩy các xe khác
+điều khiển đẩy xe khác
+điều khiển đi
+điều khiển đi ngược chiều
+điều khiển đi ngược chiều khi có biển cấm
+điều khiển đi vào đường cấm
+điều khiển đi vào khu vực cấm
+điều khiển gây cản trở giao thông
+điều khiển gây tai nạn giao thông mà không dừng lại
+điều khiển gây tai nạn giao thông mà không giữ nguyên hiện trường
+điều khiển gây tai nạn giao thông mà không tham gia cấp cứu người bị nạn
+điều khiển gây tai nạn giao thông rồi bỏ trốn
+điều khiển gây tai nạn không cấp cứu nạn nhân
+điều khiển kéo các xe khác
+điều khiển kéo theo xe khác
+điều khiển kéo vật khác
+điều khiển kéo xe khác
+điều khiển kéo xe rơ moóc khác
+điều khiển không chấp hành hiệu lệnh đèn giao thông
+điều khiển không đi bên phải
+điều khiển không đi đúng phần đường của mình
+điều khiển không nhường cho xe trên đường ưu tiên
+điều khiển không nhường đường khi đi từ đường nhánh ra đường chính
+điều khiển không nhường đường khi đi từ trong ngõ ra
+điều khiển không theo chỉ dẫn của người điều khiển giao thông
+điều khiển không tuân thủ các quy tắc nhường đường
+điều khiển quay đầu
+điều khiển quay đầu xe
+điều khiển sử dụng đèn chiếu xa
 điều khiển thành đoàn gây cản trở giao thông
-điều khiển xe cơ giới
+điều khiển tránh xe khác không đúng quy định
+điều khiển tránh xe ngược chiều gây mất an toàn
+điều khiển vượt
+điều khiển vượt bên phải
+điều khiển vượt bên phải khi không được phép
+điều khiển vượt nhưng không báo hiệu
+điều khiển vượt trong trường hợp cấm vượt
 đỗ
 đỗ cách lề 1m
-đỗ che khuất biển báo
-đỗ che khuất biển báo hiệu
 đỗ chiếm một phần đường
-đỗ gần đường sắt
 đỗ gây ùn tắc
 đỗ gây ùn tắc giao thông
 đỗ giữa đường
@@ -163,15 +180,22 @@ dừng xe che lấp biển báo giao thông bên đường
 đỗ không đúng nơi
 đỗ không đúng nơi quy định
 đỗ không sát lề
-đỗ ngay cạnh xe khác
 đỗ ngược chiều làn đường
 đỗ ngược với chiều của làn đường
 đỗ nhưng không báo hiệu
 đỗ sai luật
 đỗ sai nơi quy định
-đỗ song song với một xe đang đỗ
 đỗ trái quy định
 đỗ xe
+đổi lên b1
+đổi lên b2
+đổi lên c
+đổi lên d
+đổi lên e
+đổi lên fb2
+đổi lên fc
+đổi lên fd
+đổi lên fe
 đua xe
 được quyền ưu tiên đi trước
 đuổi nhau trên đường
@@ -184,14 +208,9 @@ gây cản trở cho xe xin vượt
 gây cản trở giao thông
 gây tai nạn
 gây tai nạn giao thông
-gây tai nạn giao thông bỏ trốn
 gây tai nạn giao thông không dừng lại
 gây tai nạn giao thông không giữ nguyên hiện trường
-gây tai nạn giao thông không tham gia cấp cứu nạn nhân
 gây tai nạn giao thông không tham gia cấp cứu người bị nạn
-gây tai nạn giao thông mà không dừng lại
-gây tai nạn giao thông mà không giữ nguyên hiện trường
-gây tai nạn giao thông mà không tham gia cấp cứu người bị nạn
 gây tai nạn giao thông rồi bỏ trốn
 gây tai nạn không cấp cứu nạn nhân
 gây tai nạn không cấp cứu người bị nạn
@@ -202,10 +221,6 @@ gây tai nạn mà không cấp cứu người bị nạn
 gây tai nạn mà không dừng lại
 gây tai nạn rồi bỏ trốn
 gây tai nạn và không giữ nguyên hiện trường
-giảm tốc độ
-giảm tốc độ đến mức không gây nguy hiểm
-giảm tốc độ đi xuống đường dốc dài
-giành đường
 kéo các xe khác
 kéo thêm một xe rơ moóc khác
 kéo thêm xe khác
@@ -217,17 +232,14 @@ kéo theo xe máy khác
 kéo vật khác
 kéo xe khác
 kéo xe rơ moóc
-kéo xe rơ moóc khác
 không bật đèn
 không bật đèn cốt
 không bật đèn trong thời gian quy định
-không bị hạn chế tốc độ có thể đi vào đường ngược chiều các đường khác có thể đi được và chỉ phải tuân theo chỉ dẫn của người điều khiển giao thông
 không chấp hành biển báo
 không chấp hành đèn giao thông
 không chấp hành hiệu lệnh
 không chấp hành hiệu lệnh của cảnh sát
 không chấp hành hiệu lệnh dừng xe
-không chấp hành hiệu lệnh đèn giao thông
 không chấp hành tín hiệu của đèn giao thông
 không chấp hành vạch kẻ đường
 không chú ý quan sát gây tai nạn giao thông
@@ -238,25 +250,16 @@ không dùng đèn cốt
 không đảm bảo an toàn khi bị hỏng
 không đi bên phải
 không đi bên phải đường
-không đi đúng phần đường của mình
-không được dừng đỗ
+không điều khiển nhường đường cho xe xin vượt
 không được kéo theo xe khác
 không được kéo xe khác
+không được lái
 không được lùi xe
 không được quay đầu xe
-không được vượt xe
 không gắn biển báo hiệu ở phía sau
-không giảm tốc độ chạy từ ngõ ra
-không giảm tốc độ khi chạy từ đường nhánh ra
-không giảm tốc độ khi đi từ đường nhánh
-không giảm tốc độ khi đi từ đường nhánh ra đường chính
-không giảm tốc độ khi đi từ trong ngõ ra
 không giữ đủ khoảng cách với xe đi trước
 không giữ khoảng cách an toàn
-không giữ khoảng cách an toàn gây ra va chạm
 không giữ khoảng cách an toàn gây tai nạn giao thông
-không giữ khoảng cách an toàn với xe đi trước
-không nhường cho người khuyết tật khi rẽ
 không nhường cho xe muốn vượt
 không nhường cho xe ngược chiều
 không nhường cho xe trên đường ưu tiên
@@ -267,19 +270,14 @@ không nhường đường cho xe đi trên đường chính
 không nhường đường cho xe đi trên đường ưu tiên
 không nhường đường cho xe được ưu tiên
 không nhường đường cho xe ngược chiều
-không nhường đường cho xe thô sơ khi chuyển hướng
 không nhường đường cho xe trên đường ưu tiên
 không nhường đường cho xe ưu tiên
 không nhường đường cho xe xin vượt
 không nhường đường khi đi từ đường nhánh ra
-không nhường đường khi đi từ đường nhánh ra đường chính
 không nhường đường khi đi từ trong ngõ ra
 không nhường người đi bộ khi rẽ
 không nhường người khuyết tật
 không nhường người khuyết tật khi rẽ
-không nhường quyền đi trước cho người đi bộ khi chuyển hướng
-không nhường quyền đi trước cho người khuyết tật khi chuyển hướng
-không nhường quyền đi trước cho xe thô sơ khi chuyển hướng
 không nhường xe khác
 không nhường xe muốn vượt
 không nhường xe ngược chiều
@@ -289,19 +287,56 @@ không nhường xe trên đường ưu tiên
 không nhường xe ưu tiên
 không sử dụng đèn chiếu sáng
 không sử dụng đèn chiếu sáng gần
-không sử dụng đèn gần
 không theo chỉ dẫn của cảnh sát
-không theo chỉ dẫn của người điều khiển giao thông
 không theo tín hiệu đèn
 không thực hiện biện pháp đảm bảo an toàn khi bị hỏng
 không tránh đường cho xe ưu tiên
 không tuân theo đèn giao thông
 không tuân thủ các quy định dừng đỗ xe
-không tuân thủ các quy tắc nhường đường
 không tuân thủ quy định
 không tuân thủ quy định dừng đỗ xe
 không tuân thủ quy tắc dừng đỗ xe
 không xi nhan khi chuyển làn
+lái
+lái bấm còi không trong thời gian quy định
+lái chở quá số người
+lái chở quá số người quy định
+lái chuyển hướng không nhường đường cho người đi bộ
+lái chuyển hướng không nhường đường cho người khuyết tật
+lái chuyển hướng không nhường đường cho xe đi ngược chiều
+lái đuổi nhau trên đường
+lái đuổi nhau trên đường gây tai nạn
+lái gây tai nạn
+lái gây tai nạn giao thông
+lái gây tai nạn giao thông bỏ trốn
+lái gây tai nạn giao thông không dừng lại
+lái gây tai nạn giao thông không giữ nguyên hiện trường
+lái gây tai nạn giao thông không tham gia cấp cứu nạn nhân
+lái gây tai nạn giao thông mà không dừng lại
+lái gây tai nạn giao thông mà không giữ nguyên hiện trường
+lái gây tai nạn giao thông mà không tham gia cấp cứu người bị nạn
+lái không chấp hành hiệu lệnh đèn giao thông
+lái không giữ khoảng cách an toàn
+lái không giữ khoảng cách an toàn gây ra va chạm
+lái không giữ khoảng cách an toàn với xe đi trước
+lái không nhường cho người khuyết tật khi rẽ
+lái không nhường đường
+lái không nhường đường cho xe xin vượt
+lái không nhường quyền đi trước cho người đi bộ khi chuyển hướng
+lái không nhường quyền đi trước cho người khuyết tật khi chuyển hướng
+lái không nhường quyền đi trước cho xe thô sơ khi chuyển hướng
+lái không sử dụng đèn gần
+lái không theo chỉ dẫn của người điều khiển giao thông
+lái không tuân thủ các quy tắc nhường đường
+lái không tuân thủ quy tắc dừng đỗ xe
+lái lạng lách đánh võng
+lái tránh xe ngược chiều không đúng quy định
+lái vào vùng cấm
+lái vượt
+lái vượt bên phải xe khác khi không được phép
+lái vượt khi không có báo hiệu xin vượt
+lái vượt không đúng nơi quy định
+lái vượt xe khác gây tai nạn giao thông
 lái xe hạng c kéo rơ moóc
 lạng lách
 lạng lách đánh võng
@@ -314,7 +349,6 @@ lắp đặt thiết bị phát tín hiệu của xe ưu tiên
 lắp đặt thiết bị phát tín hiệu ưu tiên không đúng quy định
 lắp thiết bị phát tín hiệu ưu tiên nhưng không có giấy phép
 lắp thiết bị phát tín hiệu ưu tiên trái phép
-lên dốc cao
 liên tục bấm còi
 liên tục nẹt pô
 liên tục rú ga
@@ -323,7 +357,6 @@ lùi không có tín hiệu báo trước
 lùi không quan sát
 lùi không xi nhan
 lùi mà không có xi nhan
-lưu hành trên đường
 mang vác vật cồng kềnh
 nâng hạng bằng
 nâng hạng lên b1
@@ -331,24 +364,25 @@ nâng hạng lên b2
 nâng hạng lên c
 nâng hạng lên d
 nâng hạng lên e
-nâng hạng lên f
+nâng hạng lên fb2
 nâng hạng lên fc
+nâng hạng lên fd
+nâng hạng lên fe
 nâng lên b1
 nâng lên b2
 nâng lên c
 nâng lên d
 nâng lên e
-nâng lên f
+nâng lên fb2
 nâng lên fc
+nâng lên fd
+nâng lên fe
 nẹt pô liên tục
 nhường đường
 nhường đường cho xe đi trên đường nhánh
 nhường đường cho xe lên dốc
 nhường đường cho xe trên đường ưu tiên
-nối kéo với xe được kéo
 phát tín hiệu ưu tiên không đúng quy định
-qua đường sắt không có rào chắn
-quá tốc độ quy định gây tai nạn giao thông
 quay đầu
 quay đầu gây ùn tắc
 quay đầu sai nơi
@@ -357,12 +391,12 @@ quay đầu xe
 quay đầu xe gây ùn tắc giao thông
 quay đầu xe trái quy định
 quệt chân chống
+rẽ
 rẽ đột ngột
 rẽ không nhường đường cho người đi bộ
 rẽ không nhường đường cho người khuyết tật
 rẽ không nhường đường cho xe đi ngược chiều
 rẽ không nhường xe đi ngược chiều
-rẽ mà không giảm tốc độ
 rẽ mà không xi nhan
 rẽ phải
 rẽ trái
@@ -376,31 +410,22 @@ sử dụng thiết bị phát tín hiệu ưu tiên không đúng quy định
 sử dụng thiết bị phát tín hiệu ưu tiên trái phép
 tập trung từ 3 trở lên
 tham gia giao thông
-tham gia giao thông đường bộ
-tới gần xe chạy ngược chiều
 tránh đường cho xe
 tránh nhau
-tránh xe khác không đúng quy định
 tránh xe khác sai quy định
 tránh xe không đúng quy định
-tránh xe ngược chiều gây mất an toàn
-tránh xe ngược chiều không đúng quy định
 tránh xe sai quy tắc
 tụ tập 5
 tụ tập từ 3
 tụ tập từ 3 trở lên
 tụ tập từ 4
 va quệt
-vẫn đi
-vào vùng cấm
 vượt
-vượt ẩu
 vượt bên phải
 vượt bên phải khi không được phép
-vượt bên phải xe khác khi không được phép
+vượt bên phải xe khác
 vượt khi bị cấm
 vượt khi bị cấm vượt
-vượt khi không có báo hiệu xin vượt
 vượt khi không được phép vượt
 vượt khi không được vượt
 vượt không đúng chỗ
@@ -412,14 +437,11 @@ vượt mà không xin vượt
 vượt nhưng không báo hiệu
 vượt nhưng không có báo hiệu
 vượt quá dải phân cách
-vượt quá lối ra của đường định rẽ
 vượt qua vạch dừng
-vượt trong trường hợp cấm vượt
 vượt về phía bên phải
 vượt xe cứu hỏa
 vượt xe cứu thương
 vượt xe khác
-vượt xe khác gây tai nạn giao thông
 vượt xe không có tín hiệu báo xin vượt
 vượt xe không đúng nơi
 vượt xe ô tô

@@ -1,2 +1,12 @@
+chạy dưới tốc độ tối thiểu
+chạy nhanh quá mức cho phép
+chạy quá tốc độ
+chạy quá tốc độ quy định
+chạy tốc độ thấp
+đi quá tốc độ
+giảm tốc độ
+không giảm tốc độ
+quá tốc độ quy định
 tốc độ
-tối đa
+tốc độ tối đa
+tốc độ tối đa cho phép

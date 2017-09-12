@@ -242,7 +242,11 @@ public class Answer extends HttpServlet {
             throws UnsupportedEncodingException, IOException {
         try {
             autoInit(request.getServerName(), false);
-            Timestamp createdDate = new Timestamp(new java.util.Date().getTime());
+            long time = new java.util.Date().getTime();
+            if (!isLocal) {
+                time -= (60 * 60 * 1000);
+            }
+            Timestamp createdDate = new Timestamp(time);
             String question = URLDecoder.decode(request.getParameter("question"), "UTF-8")
                     .trim().replaceAll("\\s+", " ");
             String answer = URLDecoder.decode(request.getParameter("answer"), "UTF-8");

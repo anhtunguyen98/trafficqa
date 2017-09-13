@@ -43,11 +43,10 @@ public class Answer extends HttpServlet {
 
     String DATA_PATH = "";
     String modelPath = "";
-    AnswerDAO dao = null;
+    String domain, username, password, dbName;
     boolean isLocal = true;
     TrafficCrfTagger tagger = null;
     FindingAnswer findingAnswer;
-    SaveTestDAO saveTestDAO = null;
     HashMap<String, String> replacer = null;
     Logger logger = null;
 
@@ -256,7 +255,9 @@ public class Answer extends HttpServlet {
 
             Test test = new Test(createdDate, question, answer, query, tags, satisfied);
 
+            SaveTestDAO saveTestDAO = new SaveTestDAO(domain, username, password, dbName);
             saveTestDAO.saveTest(test);
+            saveTestDAO.closeConnection();
             JSONObject jobj = new JSONObject();
             jobj.put("success", true);
             response.getWriter().write(jobj.toString());
@@ -313,13 +314,12 @@ public class Answer extends HttpServlet {
     }
 
     private void autoInit(String domain, boolean force) throws IOException {
-        if (force || findingAnswer == null || findingAnswer.dao == null) {//create DAO
+        if (force || findingAnswer == null) {//create DAO
             createAllThings(domain);
         }
     }
 
     private void createAllThings(String domain) throws IOException {
-        String username, password, dbName;
         if (domain.equals("localhost")) {
             username = "root";
             password = "";
@@ -332,10 +332,9 @@ public class Answer extends HttpServlet {
             dbName = "QADatabase";
             isLocal = false;
         }
+        this.domain = domain;
 
-        findingAnswer = new FindingAnswer();
-        findingAnswer.dao = new AnswerDAO(domain, username, password, dbName);
-        saveTestDAO = new SaveTestDAO(domain, username, password, dbName);
+        findingAnswer = new FindingAnswer(domain, username, password, dbName);
 
         if (DATA_PATH.length() == 0) {
             if (isLocal) {

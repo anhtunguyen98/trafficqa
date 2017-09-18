@@ -1,0 +1,733 @@
+﻿SELECT * FROM tbl_sentence WHERE sp='chạy quá tốc độ' AND tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+Sep 12, 2017 5:30:18 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 12, 2017 5:30:18 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Sep 12, 2017 5:30:18 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Sep 12, 2017 5:30:18 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/TrafficQAService] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Sep 12, 2017 5:30:18 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 12, 2017 5:30:18 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 12, 2017 5:31:03 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 12, 2017 5:31:03 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 12, 2017 5:31:04 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/rh/mysql55/root/usr/lib64:/usr/java/packages/lib/i386:/lib:/usr/lib
+Sep 12, 2017 5:31:05 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 12, 2017 5:31:06 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2810 ms
+Sep 12, 2017 5:31:06 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Sep 12, 2017 5:31:06 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Sep 12, 2017 5:31:06 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Sep 12, 2017 5:31:10 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [252] milliseconds.
+Sep 12, 2017 5:31:10 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 4,058 ms
+Sep 12, 2017 5:31:10 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war
+Sep 12, 2017 5:31:14 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war has finished in 3,987 ms
+Sep 12, 2017 5:31:14 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 12, 2017 5:31:14 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 8563 ms
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND if3='không đội mũ bảo hiểm' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+Sep 12, 2017 5:38:26 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 12, 2017 5:38:26 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Sep 12, 2017 5:38:26 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Sep 12, 2017 5:38:26 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/TrafficQAService] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Sep 12, 2017 5:38:26 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 12, 2017 5:38:26 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 12, 2017 5:39:10 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 12, 2017 5:39:10 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 12, 2017 5:39:12 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/rh/mysql55/root/usr/lib64:/usr/java/packages/lib/i386:/lib:/usr/lib
+Sep 12, 2017 5:39:12 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 12, 2017 5:39:12 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2069 ms
+Sep 12, 2017 5:39:12 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Sep 12, 2017 5:39:12 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Sep 12, 2017 5:39:13 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Sep 12, 2017 5:39:17 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [107] milliseconds.
+Sep 12, 2017 5:39:17 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 4,233 ms
+Sep 12, 2017 5:39:17 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war
+Sep 12, 2017 5:39:20 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war has finished in 3,137 ms
+Sep 12, 2017 5:39:20 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 12, 2017 5:39:20 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 7591 ms
+SELECT * FROM tbl_sentence WHERE ano='đường bộ' AND (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì') 
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE if3='Không đội mũ bảo hiểm' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND if3='Không đội mũ bảo hiểm' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tl='đèn xanh' AND a='vượt' AND tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+Sep 13, 2017 12:33:30 AM core.FindingAnswer getAnswerWithHash
+SEVERE: null
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: The last packet successfully received from the server was 45,925,499 milliseconds ago.  The last packet sent successfully to the server was 45,925,507 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3871)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2484)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:76)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:79)
+	at Servlet.Answer.getAnswers(Answer.java:195)
+	at Servlet.Answer.doPost(Answer.java:102)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Broken pipe (Write failed)
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:115)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:161)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3852)
+	... 31 more
+SELECT * FROM tbl_sentence WHERE tl='đèn xanh' AND a='vượt' AND tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+Sep 13, 2017 12:33:43 AM core.FindingAnswer getAnswerWithHash
+SEVERE: null
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1014)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:988)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:974)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1290)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1282)
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2653)
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2635)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:76)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:79)
+	at Servlet.Answer.getAnswers(Answer.java:195)
+	at Servlet.Answer.doPost(Answer.java:102)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: The last packet successfully received from the server was 45,925,499 milliseconds ago.  The last packet sent successfully to the server was 45,925,507 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3871)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2484)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	... 26 more
+Caused by: java.net.SocketException: Broken pipe (Write failed)
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:115)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:161)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3852)
+	... 31 more
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+Sep 13, 2017 5:21:35 AM core.FindingAnswer getAnswerWithHash
+SEVERE: null
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1014)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:988)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:974)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1290)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1282)
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2653)
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2635)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:76)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:79)
+	at Servlet.Answer.getAnswers(Answer.java:195)
+	at Servlet.Answer.doPost(Answer.java:102)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: The last packet successfully received from the server was 45,925,499 milliseconds ago.  The last packet sent successfully to the server was 45,925,507 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3871)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2484)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	... 26 more
+Caused by: java.net.SocketException: Broken pipe (Write failed)
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:115)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:161)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3852)
+	... 31 more
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+Sep 13, 2017 5:23:01 AM core.FindingAnswer getAnswerWithHash
+SEVERE: null
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1014)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:988)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:974)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1290)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1282)
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2653)
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2635)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:76)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:79)
+	at Servlet.Answer.getAnswers(Answer.java:195)
+	at Servlet.Answer.doPost(Answer.java:102)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: The last packet successfully received from the server was 45,925,499 milliseconds ago.  The last packet sent successfully to the server was 45,925,507 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3871)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2484)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:76)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:79)
+	at Servlet.Answer.getAnswers(Answer.java:195)
+	at Servlet.Answer.doPost(Answer.java:102)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	... 4 more
+Caused by: java.net.SocketException: Broken pipe (Write failed)
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:115)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:161)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3852)
+	... 31 more
+Sep 13, 2017 5:23:54 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 13, 2017 5:23:54 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Sep 13, 2017 5:23:54 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Sep 13, 2017 5:23:54 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/TrafficQAService] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Sep 13, 2017 5:23:55 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 13, 2017 5:23:55 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 13, 2017 5:23:57 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 13, 2017 5:23:58 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 13, 2017 5:23:59 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/rh/mysql55/root/usr/lib64:/usr/java/packages/lib/i386:/lib:/usr/lib
+Sep 13, 2017 5:23:59 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 13, 2017 5:23:59 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1718 ms
+Sep 13, 2017 5:23:59 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Sep 13, 2017 5:23:59 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Sep 13, 2017 5:23:59 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Sep 13, 2017 5:24:05 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [384] milliseconds.
+Sep 13, 2017 5:24:05 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 5,438 ms
+Sep 13, 2017 5:24:05 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war
+Sep 13, 2017 5:24:09 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war has finished in 4,120 ms
+Sep 13, 2017 5:24:09 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 13, 2017 5:24:09 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 9806 ms
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE sp='chạy quá tốc độ' AND tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE sp='chạy quá tốc độ' AND tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE sp='chạy quá tốc độ' AND tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+Sep 13, 2017 10:22:44 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 13, 2017 10:22:44 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Sep 13, 2017 10:22:45 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Sep 13, 2017 10:22:45 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/TrafficQAService] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Sep 13, 2017 10:22:45 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 13, 2017 10:22:45 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 13, 2017 10:23:33 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 13, 2017 10:23:33 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 13, 2017 10:23:34 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/rh/mysql55/root/usr/lib64:/usr/java/packages/lib/i386:/lib:/usr/lib
+Sep 13, 2017 10:23:35 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 13, 2017 10:23:35 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1758 ms
+Sep 13, 2017 10:23:35 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Sep 13, 2017 10:23:35 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Sep 13, 2017 10:23:35 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Sep 13, 2017 10:23:40 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [413] milliseconds.
+Sep 13, 2017 10:23:40 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 4,630 ms
+Sep 13, 2017 10:23:40 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war
+Sep 13, 2017 10:23:43 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war has finished in 2,791 ms
+Sep 13, 2017 10:23:43 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 13, 2017 10:23:43 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 7712 ms
+SELECT * FROM tbl_sentence WHERE sp='chạy quá tốc độ' AND tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE sp='chạy quá tốc độ' AND tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE sp='chạy quá tốc độ' AND tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND tv='ô tô' AND a='vượt' AND qt='bị phạt không' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='vượt'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='vượt' AND tl='đèn đỏ'
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND tv='ô tô' AND a='vượt' AND qt='bị phạt không' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='vượt'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='vượt' AND tl='đèn đỏ'
+SELECT * FROM tbl_sentence WHERE sp='chạy quá tốc độ' AND tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE sp='chạy quá tốc độ' AND tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE if3='không đội mũ bảo hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE if3='không đội mũ bảo hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND if3='không đội mũ bảo hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE a='đi sai làn' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe đạp' AND a='đi qua cầu' AND qt='không' 
+SELECT * FROM tbl_sentence WHERE tv='xe đạp'
+SELECT * FROM tbl_sentence WHERE tv='xe đạp' AND a='đi'
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND tv='ô tô' AND a='vượt' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND qt='có được rẽ phải' 
+SELECT * FROM tbl_sentence WHERE qt='có  phải không' 
+SELECT * FROM tbl_sentence WHERE a='chở 3 người' AND tv='xe máy' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE a='chở 3 người' AND tv='xe máy' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE sp='chạy quá tốc độ' AND tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE sp='chạy quá tốc độ' AND tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND tv='ô tô' AND qt='bị phạt không' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='vượt'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='vượt' AND tl='đèn đỏ'
+SELECT * FROM tbl_sentence WHERE sp='chạy quá tốc độ' AND tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND tv='ô tô' AND qt='bị phạt không' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='vượt'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='vượt' AND tl='đèn đỏ'
+SELECT * FROM tbl_sentence WHERE sp='chạy quá tốc độ' AND tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE sp='chạy quá tốc độ' AND tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tp='người tham gia giao thông đường bộ' AND qt='gồm những thành phần nào' 
+SELECT * FROM tbl_sentence WHERE qt='gồm những đường nào' 
+SELECT * FROM tbl_sentence WHERE a='đi bên trái hay đi bên phải' AND (qt = 'phải đi như thế nào' OR qt = 'phải làm gì' OR qt = 'phải như thế nào' OR qt = 'phải thế nào' OR qt = 'xử lý như thế nào' OR qt = 'thực hiện như thế nào' OR qt = 'đi như thế nào' OR qt = 'thực hiện các thao tác nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'phải đi như thế nào' OR qt = 'phải làm gì' OR qt = 'phải như thế nào' OR qt = 'phải thế nào' OR qt = 'xử lý như thế nào' OR qt = 'thực hiện như thế nào' OR qt = 'đi như thế nào' OR qt = 'thực hiện các thao tác nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi' AND (qt = 'phải đi như thế nào' OR qt = 'phải làm gì' OR qt = 'phải như thế nào' OR qt = 'phải thế nào' OR qt = 'xử lý như thế nào' OR qt = 'thực hiện như thế nào' OR qt = 'đi như thế nào' OR qt = 'thực hiện các thao tác nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'phải đi như thế nào' OR qt = 'phải làm gì' OR qt = 'phải như thế nào' OR qt = 'phải thế nào' OR qt = 'xử lý như thế nào' OR qt = 'thực hiện như thế nào' OR qt = 'đi như thế nào' OR qt = 'thực hiện các thao tác nào') 
+SELECT * FROM tbl_sentence WHERE a='đi sai làn' AND tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tp='người đi bộ' AND qt='khi nào mới được sang đường' 
+SELECT * FROM tbl_sentence WHERE (qt = 'trường hợp nào' OR qt = 'khi nào') 
+SELECT * FROM tbl_sentence WHERE tp='người đi bộ' AND qt='đi bộ' 
+SELECT * FROM tbl_sentence WHERE (qt = 'được đi hay không' OR qt = 'có được phép đi xe hay không' OR qt = 'có được di chuyển không' OR qt = 'được đi chưa' OR qt = 'có được đi xe không') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND if3='đội mũ bảo hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE a='chở hàng hóa phương tiện' AND tv='xe máy' AND qt='như thế nào' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND qt='như thế nào' 
+SELECT * FROM tbl_sentence WHERE ac='nồng độ cồn' AND qt='vượt quá bao nhiêu bị phạt' 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND ac='nồng độ cồn'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND ac='nồng độ cồn' AND qt='vượt quá bao nhiêu bị phạt' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND ac='nồng độ cồn'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND ac='nồng độ cồn' AND qt='vượt quá bao nhiêu bị phạt' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND ac='nồng độ cồn'
+SELECT * FROM tbl_sentence WHERE ac='nồng độ cồn' AND qt='vượt quá bao nhiêu thì bị vi phạm' 
+SELECT * FROM tbl_sentence WHERE qt='vượt quá bao nhiêu thì bị cấm' 
+SELECT * FROM tbl_sentence WHERE qt='vượt quá bao nhiêu thì bị cấm'  AND ac='nồng độ cồn'
+SELECT * FROM tbl_sentence WHERE ac='nồng độ cồn' AND qt='vượt quá bao nhiêu thì bị vi phạm' 
+SELECT * FROM tbl_sentence WHERE qt='vượt quá bao nhiêu thì bị cấm' 
+SELECT * FROM tbl_sentence WHERE qt='vượt quá bao nhiêu thì bị cấm'  AND ac='nồng độ cồn'
+SELECT * FROM tbl_sentence WHERE a='Xem các cặp vợ chồng tham gia giao thông cần' AND qt='có những điều khoản gì' 
+SELECT * FROM tbl_sentence WHERE qt='cần có những giấy tờ gì' 
+SELECT * FROM tbl_sentence WHERE a='đi' AND l='trên vỉa hè' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE if3='thi lại bằng lái A1' AND qt='Hello' 
+SELECT * FROM tbl_sentence WHERE  AND if3='thi bằng lái xe'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND if3='thi bằng lái xe'' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	at core.dao.AnswerDAO.softFind(AnswerDAO.java:191)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:81)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:91)
+	at Servlet.Answer.getAnswers(Answer.java:194)
+	at Servlet.Answer.doPost(Answer.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+SELECT * FROM tbl_sentence WHERE if3='thi lại bằng lái A1' AND qt='How are you' 
+SELECT * FROM tbl_sentence WHERE  AND if3='thi bằng lái xe'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND if3='thi bằng lái xe'' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	at core.dao.AnswerDAO.softFind(AnswerDAO.java:191)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:81)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:91)
+	at Servlet.Answer.getAnswers(Answer.java:194)
+	at Servlet.Answer.doPost(Answer.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+SELECT * FROM tbl_sentence WHERE if3='thi lại bằng lái A1' AND qt='How are you' 
+SELECT * FROM tbl_sentence WHERE  AND if3='thi bằng lái xe'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND if3='thi bằng lái xe'' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	at core.dao.AnswerDAO.softFind(AnswerDAO.java:191)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:81)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:91)
+	at Servlet.Answer.getAnswers(Answer.java:194)
+	at Servlet.Answer.doPost(Answer.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+SELECT * FROM tbl_sentence WHERE if3='thi lại bằng lái A1' AND qt='How are you' 
+SELECT * FROM tbl_sentence WHERE  AND if3='thi bằng lái xe'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND if3='thi bằng lái xe'' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	at core.dao.AnswerDAO.softFind(AnswerDAO.java:191)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:81)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:91)
+	at Servlet.Answer.getAnswers(Answer.java:194)
+	at Servlet.Answer.doPost(Answer.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+SELECT * FROM tbl_sentence WHERE a='di chuyển xe bốc đầu' AND qt='làm sao' 
+SELECT * FROM tbl_sentence WHERE qt='để làm gì' 
+SELECT * FROM tbl_sentence WHERE a='khi hai Vợ Chồng Tham gia giao thông' AND qt='cần những dụng cụ gì' 
+SELECT * FROM tbl_sentence WHERE qt='cần những giấy tờ gì' 
+SELECT * FROM tbl_sentence WHERE a='bỏ hai tay khi đi di chuyển' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi không nhường đường cho xe thô sơ khi chuyển hướng'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND if3='hình ảnh động lái xe' AND qt='phải tuân thủ điều khoản gì' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'phải đi như thế nào' OR qt = 'phải làm gì' OR qt = 'phải như thế nào' OR qt = 'phải thế nào' OR qt = 'xử lý như thế nào' OR qt = 'thực hiện như thế nào' OR qt = 'đi như thế nào' OR qt = 'thực hiện các thao tác nào') 
+SELECT * FROM tbl_sentence WHERE a='đánh võng lạng lách' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='lạng lách đánh võng'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đánh võng lạng lách' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='lạng lách đánh võng'
+SELECT * FROM tbl_sentence WHERE if3='đội mũ bảo hiểm' AND qt='không' 
+SELECT * FROM tbl_sentence WHERE qt='cần không' 
+SELECT * FROM tbl_sentence WHERE a='bằng' AND tv='xe máy' AND qt='có cần mặc áo mưa không' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE a='chi dân tham gia Hà giao thông thì yêu cầu xuất hàng hóa' AND qt='như thế nào' 
+SELECT * FROM tbl_sentence WHERE qt='như thế nào' 
+SELECT * FROM tbl_sentence WHERE a='chi dân tham gia Hà giao thông thì yêu cầu xuất hàng hóa' AND ano='phương tiện chính là xe móc kéo' AND qt='như thế nào' 
+SELECT * FROM tbl_sentence WHERE qt='như thế nào' 
+SELECT * FROM tbl_sentence WHERE a='liên buốt' AND tv='xe máy' AND qt='ở bên nào' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='dừng liên tục'
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND tv='ô tô' AND a='vượt' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE a='đi nghe nhạc tham gia giao thông' AND tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 

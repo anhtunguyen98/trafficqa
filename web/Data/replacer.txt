@@ -1,14 +1,16 @@
-ôtô,xế hộp,bốn bánh,xe bốn bánh,xe 4 bánh,xe con,xe hơi,Toyota Camry,Camry,Hyundai SantaFe,SantaFe,Kia Cerato,Cerato,Toyota Vios,Vios,Ford Ranger,Ranger,Mitsubishi Pajero,Pajero,Honda Civic,Civic,Toyota Fortuner,Fortuner,Abarth,Alfa Romeo,Aston Martin,Audi,Bentley,BMW,Bugatti ,Cadillac,Caterham,Chevrolet,Chrysler,Citroen,Dacia,Ferrari,Fiat,Ford,Honda,Hyundai,Infiniti,Jaguar,Jeep,Kia ,Lamborghini,Land Rover,Lexus,Lotus,Maserati,Mazda,Mclaren,Mercedes-Benz,MG,Mini,Mitsubishi,Morgan,Nissan,Noble,Pagani,Peugeot,Porsche,Radical,Renault,Rolls-Royce,Saab,Seat,Skoda,Smart,SsangYong,Subaru,Suzuki,Tesla,Toyota,Vauxhall,Volkswagen,Volvo ,Zenos_ô tô
+ôtô,xế hộp,bốn bánh,xe bốn bánh,xe 4 bánh,xe con,xe hơi_ô tô
 lái ô tô,điều khiển ô tô_đi ô tô
 
 môtô,mô tô,xe hai bánh,xe 2 bánh,xe gắn máy_xe máy
 lái xe máy,điều khiển xe máy_đi xe máy
 
 xe lam,xe ba gác_xe ba bánh
-lái xe ba bánh,điều khiển xe máy_đi xe ba bánh
+lái xe ba bánh,điều khiển xe ba bánh_đi xe ba bánh
 
 vượt quá tốc độ_chạy quá tốc độ
 tốc độ tối đa cho phép_tốc độ tối đa
+
+người điều khiển phương tiện giao thông_người tham gia giao thông
 
 bắng lái xe a1,bắng lái xe a 1,bằng lái xe a một,giấy phép lái xe a1,giấy phép lái xe a 1,giấy phép lái xe a một,bằng a 1,bằng a một,bắng lái xe hạng a1,bắng lái xe hạng a 1,bằng lái xe hạng a một,giấy phép lái xe hạng a1,giấy phép lái xe hạng a 1,giấy phép lái xe hạng a một,bằng hạng a 1,bằng hạng a một_bằng a1
 bắng lái xe a2,bắng lái xe a 2,bằng lái xe a hai,giấy phép lái xe a2,giấy phép lái xe a 2,giấy phép lái xe a hai,bằng a 2,bằng a hai,bắng lái xe hạng a2,bắng lái xe hạng a 2,bằng lái xe hạng a hai,giấy phép lái xe hạng a2,giấy phép lái xe hạng a 2,giấy phép lái xe hạng a hai,bằng hạng a 2,bằng hạng a hai_bằng a2

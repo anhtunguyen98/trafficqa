@@ -245,8 +245,12 @@ function sendQuestion() {
                 refreshPage();
             } else if (res.has_answer === true) {
                 showAnswer(res);
-            } else
+            } else if (res.need_info === true)
                 showAddedInfo(res.message);
+            else {
+                alert("Câu hỏi này không có câu trả lời! Hệ thống sẽ cập nhật câu hỏi này trong thời gian tới!");
+                refreshPage();
+            }
         },
         error: function (ts) {
             alert("Có lỗi đã xảy ra! Hãy thử lại!");

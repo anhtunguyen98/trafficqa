@@ -142,91 +142,38 @@ public class Answer extends HttpServlet {
                 hash = findingAnswer.CRFToHash(question);
             }
 
-            //<editor-fold defaultstate="collapsed" desc="handle for each case">
-            if (!hash.containsKey("ano")) {
-                boolean ok = true;
-                String message = "";
-
-                if (!hash.containsKey("qt")) {
-                    if (hash.size() == 1) {
-                        String tag = hash.keySet().iterator().next();
-                        ArrayList<TagContent> tagContents = SimilarityComparing.getSimiContent(hash.get(tag), tag);
-
-                        if (tagContents == null || tagContents.isEmpty()) {
-                            message = "Câu hỏi không liên quan tới giao thông đường bộ!";
-                            json.put("error", 1);
-                        } else {
-                            message = "Bạn muốn hỏi như thế nào!";
-                        }
-                    } else {
-                        message = "Bạn muốn hỏi như thế nào!";
-                    }
-                    ok = false;
-                } else if (hash.size() == 1) {
-                    ArrayList<TagContent> tagContents = SimilarityComparing.getSimiContent(hash.get("qt"), "qt");
-
-                    if (tagContents == null || tagContents.isEmpty()) {
-                        message = "Câu hỏi không liên quan tới giao thông đường bộ!";
-                        json.put("error", 1);
-                    } else {
-                        message = "Câu hỏi của bạn thiếu thông tin như là phương tiện hoặc hành động, v.v.";
-                    }
-                    ok = false;
-                } else if (hash.containsKey("tv") && !(hash.containsKey("a")
-                        || hash.containsKey("ac") || hash.containsKey("sp")
-                        || hash.containsKey("if1") || hash.containsKey("if2")
-                        || hash.containsKey("if3") || hash.containsKey("if4")
-                        || hash.containsKey("dl"))) {
-                    message = "Hãy nhập thêm hành động cho câu hỏi!";
-                    ok = false;
-                }
-
-                if (!ok) {
-                    json.put("hash_answer", false);
-                    json.put("message", message);
-                    json.put("tags", hash);
-                    response.getWriter().write(json.toString());
-                    return;
-                }
+            //<editor-fold defaultstate="collapsed" desc="check if related to traffic">
+            if (!relatedToTraffic(hash)) {
+                String message = "Câu hỏi không liên quan tới giao thông đường bộ!";
+                json.put("error", 1);
+                json.put("message", message);
+                json.put("tags", findingAnswer.jtags);
+                response.getWriter().write(json.toString());
+                return;
             }//</editor-fold>
 
             //<editor-fold defaultstate="collapsed" desc="find answers and return them">
             JSONObject jobj = findingAnswer.getAnswerWithHash(hash);
             ArrayList<core.model.Answer> answers = null;
-            boolean success = jobj.getBoolean("success");
 
-            if (success) {
-                answers = new ArrayList<core.model.Answer>();
-                JSONArray arr = (JSONArray) jobj.get("answers");
-                for (int i = 0; i < arr.length(); i++) {
-                    JSONObject obj = arr.getJSONObject(i);
-                    answers.add(new core.model.Answer(obj.getString("answer"), obj.getString("base"), obj.getJSONObject("tags")));
-                }
-            } else {
-                if (jobj.has("error")) {
-                    json.put("error", jobj.getInt("error"));
-                }
+            answers = new ArrayList<core.model.Answer>();
+            JSONArray arr = (JSONArray) jobj.get("answers");
+            for (int i = 0; i < arr.length(); i++) {
+                JSONObject obj = arr.getJSONObject(i);
+                answers.add(new core.model.Answer(obj.getString("answer"),
+                        obj.getString("base"), obj.getJSONObject("tags")));
             }
 
-            if (answers == null || answers.isEmpty()) {
-                json.put("has_answer", false);
-            } else if (answers.size() > 1) {
-                boolean has_answer = true;
-                if (hash.containsKey("ano")) {
-                    has_answer = true;
-                } else if (!hash.containsKey("qt")) {
-                    has_answer = false;
-                } else if (containsSomeTv(answers)) {
-                    json.put("error", 2);
-                    json.put("message", "Bạn muốn hỏi về phương tiện gì?");
-                    has_answer = false;
-                }
-
-                json.put("has_answer", has_answer);
-            } else {
-                json.put("has_answer", true);
+            boolean has_answer = true;
+            if (answers.isEmpty()) {
+                has_answer = false;
+            } else if (answers.size() > 1 && containsSomeTv(answers)) {
+                json.put("need_info", true);
+                json.put("message", "Bạn muốn hỏi về phương tiện gì?");
+                has_answer = false;
             }
 
+            json.put("has_answer", has_answer);
             writeResponse(request, response, answers, json);
             //</editor-fold>
         } catch (IOException e) {
@@ -271,14 +218,14 @@ public class Answer extends HttpServlet {
     }//</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc="prepare">
-    private HashMap<String, String> parseToHash(JSONObject jtags, String addedInfo) {
+    private HashMap<String, String> parseToHash(JSONObject jtags, String question) {
         HashMap<String, String> hash = new HashMap<String, String>();
 
         for (String key : jtags.keySet()) {
             hash.put(key, jtags.getString(key));
         }
 
-        HashMap<String, String> addedInfoHash = findingAnswer.CRFToHash(addedInfo);
+        HashMap<String, String> addedInfoHash = findingAnswer.CRFToHash(question);
 
         for (String key : addedInfoHash.keySet()) {
             hash.put(key, addedInfoHash.get(key));
@@ -376,6 +323,14 @@ public class Answer extends HttpServlet {
                 logger.info(ex);
             }
         }
+    }
+
+    private String prepareQuestion(String question) {
+        for (String key : replacer.keySet()) {
+            question = question.replaceAll(key.toLowerCase(), replacer.get(key));
+        }
+
+        return question;
     }//</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc="Response">
@@ -435,11 +390,15 @@ public class Answer extends HttpServlet {
         return isContain;
     }//</editor-fold>
 
-    private String prepareQuestion(String question) {
-        for (String key : replacer.keySet()) {
-            question = question.replaceAll(key.toLowerCase(), replacer.get(key));
+    private boolean relatedToTraffic(HashMap<String, String> hash) {
+        for (String key : hash.keySet()) {
+            ArrayList<TagContent> tagContents
+                    = SimilarityComparing.getSimiContent(hash.get(key), key);
+            if (tagContents != null && !tagContents.isEmpty()) {
+                return true;
+            }
         }
 
-        return question;
+        return false;
     }
 }

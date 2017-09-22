@@ -144,7 +144,8 @@ public class Answer extends HttpServlet {
 
             //<editor-fold defaultstate="collapsed" desc="check if related to traffic">
             if (!relatedToTraffic(hash)) {
-                String message = "Câu hỏi không liên quan tới giao thông đường bộ!";
+                String message = "Hệ thống không trả lời được câu hỏi này hoặc "
+                        + "do câu hỏi không liên quan tới giao thông đường bộ!";
                 json.put("error", 1);
                 json.put("message", message);
                 json.put("tags", findingAnswer.jtags);

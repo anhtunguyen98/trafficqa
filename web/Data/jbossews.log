@@ -731,3 +731,1227 @@ SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND tv='ô tô' AND a='vượt
 SELECT * FROM tbl_sentence WHERE a='đi nghe nhạc tham gia giao thông' AND tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
 SELECT * FROM tbl_sentence WHERE tv='xe máy'
 SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='phóng nhanh vượt ẩu ở đường thủy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE a='dừng bắt khách ở điểm trái quy định' AND tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE a='đi gặp cảnh sát giao thông và đèn đỏ nên nghe tín hiệu của ai' AND tv='xe máy' AND qt='nên nghe tín hiệu gì' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE a='đi' AND tv='xe máy' AND l='trên vỉa hè' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE a='hành vi buôn bán mua bán' AND l='trên vỉa hè' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND l='trên vỉa hè'
+SELECT * FROM tbl_sentence WHERE a='hành vi buôn bán mua bán' AND l='trên vỉa hè' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND l='trên vỉa hè'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='hành vi buôn bán mua bán' AND l='trên vỉa hè' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND l='trên vỉa hè'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND a='hành vi phóng nhanh vượt ẩu xe' AND qt='bị phạt bao nhiêu đối' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE a='phóng nhanh vượt ẩu sẽ' AND tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='vượt'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND if4='khi phóng nhanh vượt ẩu' AND ano='mức xử phạt' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='mức xử phạt của lạng lách đánh võng' AND (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE a='đi xe ba bánh khi uống rượu say sẽ' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi không nhường đường cho xe thô sơ khi chuyển hướng'
+SELECT * FROM tbl_sentence WHERE sp='tốc độ tối đa' AND tv='xe máy' AND a='chuyển' AND l='trong khung thành' AND (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'là bao nhiêu')  AND sp='tốc độ tối đa'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='hôn nhau đi' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE sp='chạy quá tốc độ' AND tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE a='điều khiển' AND tv='ô tô xe máy' AND qt='trái' 
+SELECT * FROM tbl_sentence WHERE  AND a='điều khiển'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND a='điều khiển'' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	at core.dao.AnswerDAO.softFind(AnswerDAO.java:191)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:81)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:91)
+	at Servlet.Answer.getAnswers(Answer.java:194)
+	at Servlet.Answer.doPost(Answer.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+SELECT * FROM tbl_sentence WHERE a='Gặp đèn đỏ' AND (qt = 'phải đi như thế nào' OR qt = 'phải làm gì' OR qt = 'phải như thế nào' OR qt = 'phải thế nào' OR qt = 'xử lý như thế nào' OR qt = 'thực hiện như thế nào' OR qt = 'đi như thế nào' OR qt = 'thực hiện các thao tác nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'phải đi như thế nào' OR qt = 'phải làm gì' OR qt = 'phải như thế nào' OR qt = 'phải thế nào' OR qt = 'xử lý như thế nào' OR qt = 'thực hiện như thế nào' OR qt = 'đi như thế nào' OR qt = 'thực hiện các thao tác nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='Gặp đèn đỏ' AND (qt = 'phải đi như thế nào' OR qt = 'phải làm gì' OR qt = 'phải như thế nào' OR qt = 'phải thế nào' OR qt = 'xử lý như thế nào' OR qt = 'thực hiện như thế nào' OR qt = 'đi như thế nào' OR qt = 'thực hiện các thao tác nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'phải đi như thế nào' OR qt = 'phải làm gì' OR qt = 'phải như thế nào' OR qt = 'phải thế nào' OR qt = 'xử lý như thế nào' OR qt = 'thực hiện như thế nào' OR qt = 'đi như thế nào' OR qt = 'thực hiện các thao tác nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi gặp đèn đỏ' AND (qt = 'phải đi như thế nào' OR qt = 'phải làm gì' OR qt = 'phải như thế nào' OR qt = 'phải thế nào' OR qt = 'xử lý như thế nào' OR qt = 'thực hiện như thế nào' OR qt = 'đi như thế nào' OR qt = 'thực hiện các thao tác nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'phải đi như thế nào' OR qt = 'phải làm gì' OR qt = 'phải như thế nào' OR qt = 'phải thế nào' OR qt = 'xử lý như thế nào' OR qt = 'thực hiện như thế nào' OR qt = 'đi như thế nào' OR qt = 'thực hiện các thao tác nào') 
+SELECT * FROM tbl_sentence WHERE a='thả chó ra đường' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE a='thả chó ra đường' AND qt='phương trình mũ' 
+SELECT * FROM tbl_sentence WHERE  AND a='chạy nhanh ra đường chính'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND a='chạy nhanh ra đường chính'' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	at core.dao.AnswerDAO.softFind(AnswerDAO.java:191)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:81)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:91)
+	at Servlet.Answer.getAnswers(Answer.java:194)
+	at Servlet.Answer.doPost(Answer.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND a='đi' AND qt='có được mua bảo hiểm không' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi' AND qt='có được bốc đầu không' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND a='đánh rắm' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE a='bị cảnh sát giao thông dừng lại Có nên đưa tiền cho gạo cho cảnh sát' AND qt='không' 
+SELECT * FROM tbl_sentence WHERE qt='cần không' 
+SELECT * FROM tbl_sentence WHERE tv='xe đạp' AND a='đi' AND qt='có được thả hai tay ra không' 
+SELECT * FROM tbl_sentence WHERE tv='xe đạp'
+SELECT * FROM tbl_sentence WHERE tv='xe đạp' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe đạp' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe đạp' AND a='đi' AND qt='có được tháo gác ba ga không' 
+SELECT * FROM tbl_sentence WHERE tv='xe đạp'
+SELECT * FROM tbl_sentence WHERE tv='xe đạp' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe đạp' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe đạp một bánh' AND a='đi' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE a='đi' AND tv='xe đạp' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND a='đi' AND qt='có được nghe nhạc' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE if3='lái xe' AND qt='có được ngủ không' 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND if3='lái xe' AND qt='có được ngủ không' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE a='chị vào ngã tư ưu tiên mình sẽ mua câu chuyện chứ còn đứng trước' AND tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE a='vượt đèn đỏ sẽ' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='vượt'
+SELECT * FROM tbl_sentence WHERE a='vượt đèn đỏ sẽ' AND ano='đường bộ' AND (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì') 
+SELECT * FROM tbl_sentence WHERE (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì') 
+SELECT * FROM tbl_sentence WHERE (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì')  AND ano='đường bộ'
+SELECT * FROM tbl_sentence WHERE ano='công trình đường bộ' AND (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì') 
+SELECT * FROM tbl_sentence WHERE ano='phần đường xe chạy' AND (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì') 
+SELECT * FROM tbl_sentence WHERE ano='đường cao tốc' AND (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì') 
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND qt='sẽ bị xử' 
+SELECT * FROM tbl_sentence WHERE  AND a='vượt'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND a='vượt'' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	at core.dao.AnswerDAO.softFind(AnswerDAO.java:191)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:81)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:91)
+	at Servlet.Answer.getAnswers(Answer.java:194)
+	at Servlet.Answer.doPost(Answer.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+SELECT * FROM tbl_sentence WHERE  AND tl='đèn đỏ'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND tl='đèn đỏ'' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	at core.dao.AnswerDAO.softFind(AnswerDAO.java:191)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:81)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:91)
+	at Servlet.Answer.getAnswers(Answer.java:194)
+	at Servlet.Answer.doPost(Answer.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND tv='xe máy' AND a='vượt' AND qt='sẽ bị chịu mức phạt bao nhiêu' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='vượt'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='vượt' AND tl='đèn đỏ'
+SELECT * FROM tbl_sentence WHERE ano='làn đường' AND (qt = 'phải đi như thế nào' OR qt = 'phải làm gì' OR qt = 'phải như thế nào' OR qt = 'phải thế nào' OR qt = 'xử lý như thế nào' OR qt = 'thực hiện như thế nào' OR qt = 'đi như thế nào' OR qt = 'thực hiện các thao tác nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'phải đi như thế nào' OR qt = 'phải làm gì' OR qt = 'phải như thế nào' OR qt = 'phải thế nào' OR qt = 'xử lý như thế nào' OR qt = 'thực hiện như thế nào' OR qt = 'đi như thế nào' OR qt = 'thực hiện các thao tác nào') 
+SELECT * FROM tbl_sentence WHERE a='và' AND tv='ô tô xe máy' AND if3='Nồng độ cồn trong phạm vi cho phép của máu và hơi thở' AND qt='là bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô xe máy' AND a='và' AND if3='Nồng độ cồn trong phạm vi cho phép của máu và hơi thở' AND qt='là bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE a='và' AND tv='ô tô xe máy' AND if3='Nồng độ cồn trong phạm vi cho phép của máu và hơi thở' AND qt='là bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE a='và' AND tv='ô tô xe máy' AND if3='Nồng độ cồn trong phạm vi cho phép của máu và hơi thở' AND qt='là bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô xe máy' AND a='và' AND if3='Nồng độ cồn trong phạm vi cho phép của máu và hơi thở' AND qt='là bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE a='và' AND tv='ô tô xe máy' AND if3='Nồng độ cồn trong phạm vi cho phép của máu và hơi thở' AND qt='là bao nhiêu?' 
+(qt = 'là bao nhiêu') 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'qt = 'là bao nhiêu')' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	at core.dao.AnswerDAO.softFind(AnswerDAO.java:191)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:81)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:91)
+	at Servlet.Answer.getAnswers(Answer.java:194)
+	at Servlet.Answer.doPost(Answer.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+SELECT * FROM tbl_sentence WHERE (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô xe máy' AND a='và' AND if3='Nồng độ cồn trong phạm vi cho phép của máu và hơi thở' AND qt='là bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE a='và' AND tv='ô tô xe máy' AND if3='Nồng độ cồn trong phạm vi cho phép của máu và hơi thở' AND qt='là bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE a='và' AND tv='ô tô xe máy' AND if3='Nồng độ cồn trong phạm vi cho phép của máu và hơi thở' AND qt='là bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE a='và' AND tv='ô tô xe máy' AND if3='Nồng độ cồn trong phạm vi cho phép của máu và hơi thở' AND qt='là bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô xe máy' AND a='và' AND if3='Nồng độ cồn trong phạm vi cho phép của máu và hơi thở' AND qt='là bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô xe máy' AND a='và' AND if3='Nồng độ cồn trong phạm vi cho phép của máu và hơi thở' AND qt='là bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE a='và' AND tv='ô tô xe máy' AND if3='Nồng độ cồn trong phạm vi cho phép của máu và hơi thở' AND qt='là bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE a='và' AND tv='ô tô xe máy' AND if3='Nồng độ cồn trong phạm vi cho phép của máu và hơi thở' AND qt='là bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE a='quy tắc làn đường' AND qt='như thế nào' 
+SELECT * FROM tbl_sentence WHERE qt='như thế nào' 
+SELECT * FROM tbl_sentence WHERE qt='như thế nào'  AND a='sử dụng làn đường'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND ac='nồng độ cồn' AND (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE a='đi vào đường' AND tv='xe máy ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi vào đường cấm'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi vào đường cấm' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE a='biển cấm' AND tv='xe máy' AND qt='như thế nào' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND qt='như thế nào' 
+SELECT * FROM tbl_sentence WHERE a='đi taxi quên không mang tiền' AND qt='bị phạt bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='không đi bên phải'
+SELECT * FROM tbl_sentence WHERE a='đi taxi quên không mang tiền' AND qt='bị phạt bao nhiêu? taxi' 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='không đi bên phải'
+SELECT * FROM tbl_sentence WHERE a='đi taxi quên không mang tiền' AND qt='bị phạt bao nhiêu? taxi' 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='không đi bên phải'
+SELECT * FROM tbl_sentence WHERE a='đi taxi quên không mang tiền' AND qt='taxi' 
+SELECT * FROM tbl_sentence WHERE  AND a='không đi bên phải'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND a='không đi bên phải'' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	at core.dao.AnswerDAO.softFind(AnswerDAO.java:191)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:81)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:91)
+	at Servlet.Answer.getAnswers(Answer.java:194)
+	at Servlet.Answer.doPost(Answer.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+SELECT * FROM tbl_sentence WHERE a='đi taxi quên không mang tiền' AND qt='taxi' 
+SELECT * FROM tbl_sentence WHERE  AND a='không đi bên phải'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND a='không đi bên phải'' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	at core.dao.AnswerDAO.softFind(AnswerDAO.java:191)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:81)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:91)
+	at Servlet.Answer.getAnswers(Answer.java:194)
+	at Servlet.Answer.doPost(Answer.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+SELECT * FROM tbl_sentence WHERE a='đi taxi quên không mang tiền' AND qt='taxi' 
+SELECT * FROM tbl_sentence WHERE  AND a='không đi bên phải'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND a='không đi bên phải'' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	at core.dao.AnswerDAO.softFind(AnswerDAO.java:191)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:81)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:91)
+	at Servlet.Answer.getAnswers(Answer.java:194)
+	at Servlet.Answer.doPost(Answer.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+SELECT * FROM tbl_sentence WHERE a='say rượu gây tai nạn' AND qt='bị phạt bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='gây tai nạn'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='say rượu gây tai nạn' AND qt='bị phạt bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='gây tai nạn'
+SELECT * FROM tbl_sentence WHERE a='vô tình gây chết người' AND if3='vô tình gây chết người' AND qt='có bị đi tù không?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='gây tai nạn không cấp cứu người bị nạn'
+SELECT * FROM tbl_sentence WHERE a='thầy Bách đẹp trai cute' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='thầy Bách đẹp trai cute đi' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE if3='chưa đủ 18 tuổi điều khiển xe gắn áy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE if3='chưa đủ 18 tuổi đi xe ba bánh' AND qt='bị phạt bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE if3='chưa đủ 18 tuổi đi xe ba bánh' AND qt='bị phạt bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE if3='chưa đủ 18 tuổi đi xe ba bánh' AND qt='bị phạt bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE if3='chưa đủ 18 tuổi đi xe ba bánh' AND qt='bị phạt bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND if3='chưa đủ 18 tuổi đi xe ba bánh' AND qt='bị phạt bao nhiêu?' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE a='đường bộ cho phép máy bay' AND qt='không' 
+SELECT * FROM tbl_sentence WHERE qt='cần không' 
+SELECT * FROM tbl_sentence WHERE a='đường bộ cho phép xe Huyền đi' AND qt='không' 
+SELECT * FROM tbl_sentence WHERE qt='cần không' 
+SELECT * FROM tbl_sentence WHERE a='đường bưu chính cho phép xe Huyền đi' AND qt='không' 
+SELECT * FROM tbl_sentence WHERE qt='cần không' 
+SELECT * FROM tbl_sentence WHERE a='bưu chính cho phép xe Huyền đi' AND qt='không' 
+SELECT * FROM tbl_sentence WHERE qt='cần không' 
+SELECT * FROM tbl_sentence WHERE a='Hà Nội cho phép xe Huyền đi' AND qt='không' 
+SELECT * FROM tbl_sentence WHERE qt='cần không' 
+SELECT * FROM tbl_sentence WHERE a='Hà Nội cho phép xe Châm đi' AND qt='không' 
+SELECT * FROM tbl_sentence WHERE qt='cần không' 
+SELECT * FROM tbl_sentence WHERE a='máy bay có được bay ở sân bay' AND qt='không' 
+SELECT * FROM tbl_sentence WHERE qt='cần không' 
+SELECT * FROM tbl_sentence WHERE a='ngực Châm có như sân bay' AND qt='không' 
+SELECT * FROM tbl_sentence WHERE qt='cần không' 
+SELECT * FROM tbl_sentence WHERE a='Huyền có 2 lưng' AND qt='không' 
+SELECT * FROM tbl_sentence WHERE qt='cần không' 
+SELECT * FROM tbl_sentence WHERE a='xe tải được phép đi trên đường cao tốc' AND qt='xe tải được phép đi trên cao tốc' 
+SELECT * FROM tbl_sentence WHERE (qt = 'được đi hay không' OR qt = 'có được phép đi xe hay không' OR qt = 'có được di chuyển không' OR qt = 'được đi chưa' OR qt = 'có được đi xe không') 
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND qt='bao nhiêu' 
+SELECT * FROM tbl_sentence WHERE qt='bao nhiêu lâu' 
+SELECT * FROM tbl_sentence WHERE a='dạy cách trên đường' AND qt='gồm những loại nào' 
+SELECT * FROM tbl_sentence WHERE qt='gồm những loại nào' 
+SELECT * FROM tbl_sentence WHERE ano='giải phân cách trên đường' AND qt='gồm những loại nào' 
+SELECT * FROM tbl_sentence WHERE qt='gồm những loại nào' 
+SELECT * FROM tbl_sentence WHERE ano='giải phân cách trên đường' AND qt='gồm những loại nào' 
+SELECT * FROM tbl_sentence WHERE qt='gồm những loại nào' 
+SELECT * FROM tbl_sentence WHERE if4='dơ tay thẳng đứng' AND l='đến ngã tư gặp' AND (qt = 'phải đi như thế nào' OR qt = 'phải làm gì' OR qt = 'phải như thế nào' OR qt = 'phải thế nào' OR qt = 'xử lý như thế nào' OR qt = 'thực hiện như thế nào' OR qt = 'đi như thế nào' OR qt = 'thực hiện các thao tác nào') AND ti='cảnh sát giao thông' 
+SELECT * FROM tbl_sentence WHERE (qt = 'phải đi như thế nào' OR qt = 'phải làm gì' OR qt = 'phải như thế nào' OR qt = 'phải thế nào' OR qt = 'xử lý như thế nào' OR qt = 'thực hiện như thế nào' OR qt = 'đi như thế nào' OR qt = 'thực hiện các thao tác nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'phải đi như thế nào' OR qt = 'phải làm gì' OR qt = 'phải như thế nào' OR qt = 'phải thế nào' OR qt = 'xử lý như thế nào' OR qt = 'thực hiện như thế nào' OR qt = 'đi như thế nào' OR qt = 'thực hiện các thao tác nào')  AND if4='giơ tay thẳng đứng'
+SELECT * FROM tbl_sentence WHERE (qt = 'phải đi như thế nào' OR qt = 'phải làm gì' OR qt = 'phải như thế nào' OR qt = 'phải thế nào' OR qt = 'xử lý như thế nào' OR qt = 'thực hiện như thế nào' OR qt = 'đi như thế nào' OR qt = 'thực hiện các thao tác nào')  AND if4='giơ tay thẳng đứng' AND ti='cảnh sát giao thông'
+SELECT * FROM tbl_sentence WHERE tv='xe máy ô tô' AND a='đi vào làn' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi sai làn'
+SELECT * FROM tbl_sentence WHERE a='đi vào làn' AND tv='ô tô xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi sai làn'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND if3='uống rượu say' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+2017-09-17 00:36:45 ERROR Answer:267 - com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'answer' at row 1
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND if3='uống rượu say' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+2017-09-17 00:37:05 ERROR Answer:267 - com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'answer' at row 1
+SELECT * FROM tbl_sentence WHERE a='không uống rượu' AND tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='không bật đèn'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND a='Dắt bò đi bảo ở đường' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi sai phần đường'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND a='Dắt bò đi vào đường' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE a='đưa tiền cho cảnh sát giao thông' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='tham gia giao thông'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND if3='Nguyễn Tuấn mũ bảo hiểm' AND l='trên đường cao tốc' AND qt='có bắt buộc không' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND l='trên đường cao tốc'
+SELECT * FROM tbl_sentence WHERE if3='mũ bảo hiểm là bắt buộc với' AND qt='thông nào' 
+SELECT * FROM tbl_sentence WHERE (qt = 'trường hợp nào' OR qt = 'khi nào') 
+SELECT * FROM tbl_sentence WHERE if3='mũ bảo hiểm là bắt buộc với' AND qt='thông nào' 
+SELECT * FROM tbl_sentence WHERE (qt = 'trường hợp nào' OR qt = 'khi nào') 
+SELECT * FROM tbl_sentence WHERE if3='mũ bảo hiểm là bắt buộc với' AND qt='thông nào' 
+SELECT * FROM tbl_sentence WHERE (qt = 'trường hợp nào' OR qt = 'khi nào') 
+SELECT * FROM tbl_sentence WHERE if3='mũ bảo hiểm là bắt buộc với' AND qt='thông nào' 
+SELECT * FROM tbl_sentence WHERE (qt = 'trường hợp nào' OR qt = 'khi nào') 
+SELECT * FROM tbl_sentence WHERE if3='mũ bảo hiểm là bắt buộc với' AND qt='thông nào' 
+SELECT * FROM tbl_sentence WHERE (qt = 'trường hợp nào' OR qt = 'khi nào') 
+SELECT * FROM tbl_sentence WHERE if3='mũ bảo hiểm là bắt buộc với' AND qt='abc xyz' 
+SELECT * FROM tbl_sentence WHERE  AND if3='đội mũ bảo hiểm'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND if3='đội mũ bảo hiểm'' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	at core.dao.AnswerDAO.softFind(AnswerDAO.java:191)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:81)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:91)
+	at Servlet.Answer.getAnswers(Answer.java:194)
+	at Servlet.Answer.doPost(Answer.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+SELECT * FROM tbl_sentence WHERE if3='mũ bảo hiểm là bắt buộc với' AND qt='abc xyz' 
+SELECT * FROM tbl_sentence WHERE  AND if3='đội mũ bảo hiểm'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND if3='đội mũ bảo hiểm'' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2788)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2738)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1617)
+	at core.dao.AnswerDAO.softFind(AnswerDAO.java:191)
+	at core.dao.AnswerDAO.getAnswers(AnswerDAO.java:81)
+	at core.FindingAnswer.getAnswerWithHash(FindingAnswer.java:91)
+	at Servlet.Answer.getAnswers(Answer.java:194)
+	at Servlet.Answer.doPost(Answer.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+SELECT * FROM tbl_sentence WHERE sp='chạy quá tốc độ' AND tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE a='làn đừơng' AND tv='xe máy' AND qt='là gì?' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE ano='đèn giao thông' AND (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì') 
+SELECT * FROM tbl_sentence WHERE (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì') 
+SELECT * FROM tbl_sentence WHERE (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì')  AND ano='người điều khiển giao thông'
+SELECT * FROM tbl_sentence WHERE ano='người điều khỉên giao thông' AND (qt = 'là những ai' OR qt = 'là ai' OR qt = 'những đối tượng nào') 
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE a='đi ngược chiều' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi ngược chiều không' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE a='lang lách đánh võng' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE a='lang lách đánh võng không xe dap' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE a='lang lách đánh võng không xe dap' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE a='lang lách đánh võng không xe dap' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi ngược chiều không' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi chở 3 người' AND qt='có vi phạm giao thông không' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE a='dàn hàng ngang dua xe' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='dàn hàng ngang dua xe không' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='dàn hàng ngang đua xe không' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh 15 tuổi' AND a='đi' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh 15 tuổi' AND a='đi' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh 15 tuổi' AND a='đi' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh 15 tuổi' AND a='đi' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh 15 tuổi' AND a='đi' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh 15 tuổi' AND a='đi' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh 15 tuổi' AND a='đi' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh 15 tuổi' AND a='đi' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh 15 tuổi' AND a='đi' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh 15 tuổi' AND a='đi' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh 15 tuổi' AND a='đi' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh 15 tuổi' AND a='đi' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh 15 tuổi' AND a='đi' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi vào làn dành cho người đi bộ không' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE a='đi xe ba bánh làm trái với tín hiệu đèn giao thông' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi xe ba bánh làm trái với tín hiệu đèn giao thông không' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi đúng phần đường làn đường dành cho' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE a='đi sai làn đường bị phạt hành chính là' AND qt='bao nhiêu tiền' 
+SELECT * FROM tbl_sentence WHERE qt='bao nhiêu lâu' 
+SELECT * FROM tbl_sentence WHERE a='vượt đèn đỏ sẽ bị phạt hành chính' AND qt='bao nhiêu tiền.' 
+SELECT * FROM tbl_sentence WHERE qt='bao nhiêu lâu' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='vượt bên phải xe đi trước đi' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh' AND a='làm trái tín hiệu đèn' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh xe máy' AND a='làm trái tín hiệu đèn không' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh xe máy' AND a='làm trái tín hiệu đèn không' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh xe máy' AND a='làm trái tín hiệu đèn không' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh xe máy' AND a='làm trái tín hiệu đèn không' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh xe máy' AND a='làm trái tín hiệu đèn không' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE a='đi sai làn bị phạt' AND qt='bao nhiêu tiền' 
+SELECT * FROM tbl_sentence WHERE qt='bao nhiêu lâu' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi dàn hàng 3' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND a='vượt đèn đỏ bị phạt' AND qt='bao nhiêu tiền' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE a='vượt đèn đỏ bị phạt' AND tv='xe máy' AND qt='bao nhiêu tiền' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh' AND a='đi' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE a='đi' AND tv='xe ba bánh' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE ano='lụât giao thông' AND qt='là gì?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì') 
+SELECT * FROM tbl_sentence WHERE (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì')  AND ano='người điều khiển giao thông'
+SELECT * FROM tbl_sentence WHERE if3='không đội mũ bảo hỉêm nộp' AND qt='bao nhiêu tìên' 
+SELECT * FROM tbl_sentence WHERE qt='bao nhiêu lâu' 
+SELECT * FROM tbl_sentence WHERE dl='giấy phép lái xe' AND qt='là gì?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì') 
+SELECT * FROM tbl_sentence WHERE ano='đừơng bộ' AND (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì') 
+SELECT * FROM tbl_sentence WHERE ano='điều 1 lụât giao thông' AND qt='là gì?' 
+SELECT * FROM tbl_sentence WHERE (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì') 
+SELECT * FROM tbl_sentence WHERE (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì')  AND ano='người điều khiển giao thông'
+SELECT * FROM tbl_sentence WHERE a='đi' AND tv='xe đạp' AND qt='có vi phạm lụât giao thông' 
+SELECT * FROM tbl_sentence WHERE tv='xe đạp'
+SELECT * FROM tbl_sentence WHERE tv='xe đạp' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe đạp' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND a='vựơt' AND qt='có cần xi nhan' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='xe ba bánh' AND a='đi' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='vượt' AND qt='có cần bật xi nhan' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='vượt'
+SELECT * FROM tbl_sentence WHERE a='lạng lách' AND qt='phạt bao nhiêu tìên' 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='lạng lách'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='lạng lách' AND qt='phạt bao nhiêu tìên' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='lạng lách'
+SELECT * FROM tbl_sentence WHERE a='đi' AND tv='ô tô' AND ac='nồng độ cồn' AND (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'là bao nhiêu')  AND ac='nồng độ cồn'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi' AND ac='nồng độ cồn' AND (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'là bao nhiêu')  AND ac='nồng độ cồn'
+SELECT * FROM tbl_sentence WHERE a='đánh võng' AND tv='ô tô' AND qt='phạt bao nhiêu tìên' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đánh võng'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi' AND ac='nồng độ cồn' AND (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'là bao nhiêu')  AND ac='nồng độ cồn'
+SELECT * FROM tbl_sentence WHERE a='đi vào đường' AND tv='xe máy ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi vào đường cấm'
+SELECT * FROM tbl_sentence WHERE a='đi' AND tv='xe máy' AND qt='có được' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE sp='tốc độ tối đa' AND tv='xe máy' AND (qt = 'là bao nhiêu') 
+SELECT * FROM tbl_sentence WHERE a='quay đầu' AND qt='đừơng nào' 
+SELECT * FROM tbl_sentence WHERE a='quay đầu' AND qt='đừơng nào' 
+SELECT * FROM tbl_sentence WHERE a='quay đầu xe' AND qt='đừơng nào' 
+SELECT * FROM tbl_sentence WHERE a='quay đầu xe' AND qt='đừơng nào' 
+SELECT * FROM tbl_sentence WHERE (qt = 'trường hợp nào' OR qt = 'khi nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'trường hợp nào' OR qt = 'khi nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'trường hợp nào' OR qt = 'khi nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'trường hợp nào' OR qt = 'khi nào') 
+SELECT * FROM tbl_sentence WHERE a='quay đầu xe' AND qt='đừơng nào' 
+SELECT * FROM tbl_sentence WHERE (qt = 'trường hợp nào' OR qt = 'khi nào') 
+SELECT * FROM tbl_sentence WHERE a='quay đầu xe' AND qt='đừơng nào' 
+SELECT * FROM tbl_sentence WHERE (qt = 'trường hợp nào' OR qt = 'khi nào') 
+SELECT * FROM tbl_sentence WHERE a='quay đầu' AND tv='xe máy' AND l='ở đừơng cao tốc' AND qt='phạt bao nhiêu' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='quay đầu'
+SELECT * FROM tbl_sentence WHERE a='đi' AND tv='xe máy' AND if3='không đội mũ bảo hỉêm' AND qt='nộp bao nhiêu tiền' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND a='đi không đội mũ' AND qt='phạt bao nhiêu tìên' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='không đi bên phải'
+SELECT * FROM tbl_sentence WHERE tv='xe máy ô tô' AND a='đi vào đường' AND if3='chở 3 không đội mũ bảo hiểm' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi vào đường cấm'
+SELECT * FROM tbl_sentence WHERE a='đi vào đường' AND tv='xe máy' AND if3='chở 3 không đội mũ bảo hiểm' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND if3='không đội mũ bảo hiểm'
+Sep 18, 2017 10:29:40 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 18, 2017 10:29:40 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Sep 18, 2017 10:29:40 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Sep 18, 2017 10:29:40 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/TrafficQAService] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Sep 18, 2017 10:29:40 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 18, 2017 10:29:40 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 18, 2017 10:30:29 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 18, 2017 10:30:29 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 18, 2017 10:30:30 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/rh/mysql55/root/usr/lib64:/usr/java/packages/lib/i386:/lib:/usr/lib
+Sep 18, 2017 10:30:31 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 18, 2017 10:30:31 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1693 ms
+Sep 18, 2017 10:30:31 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Sep 18, 2017 10:30:31 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Sep 18, 2017 10:30:31 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Sep 18, 2017 10:30:36 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [353] milliseconds.
+Sep 18, 2017 10:30:36 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 5,205 ms
+Sep 18, 2017 10:30:36 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war
+Sep 18, 2017 10:30:39 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war has finished in 3,081 ms
+Sep 18, 2017 10:30:39 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 18, 2017 10:30:39 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 8531 ms
+SELECT * FROM tbl_sentence WHERE qt='có được ăn cá không' 
+SELECT * FROM tbl_sentence WHERE (qt = 'có được không' OR qt = 'có được phép không' OR qt = 'có được hay không' OR qt = 'được hay không') 
+SELECT * FROM tbl_sentence WHERE qt='mèo ăn gì' 
+SELECT * FROM tbl_sentence WHERE (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì') 
+SELECT * FROM tbl_sentence WHERE qt='mèo ăn gì' 
+SELECT * FROM tbl_sentence WHERE (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND if3='bay trên trời' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE ac='nồng độ cồn' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND ac='nồng độ cồn' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi ngược chiều Trung' AND qt='phạm lỗi gì' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi ngược chiều' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE a='đi ngược chiều bị' AND tv='xe máy' AND qt='xử phạt bao nhiêu' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE a='đi ngược chiều' AND tv='ô tô' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tp='người đi bộ' AND if4='đi ngược chiều' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND tp='người đi bộ'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND a='Tít còi liên tục' AND l='ở nơi đô thị' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND a='bấm còi liên tục'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi ngược chiều' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi ngược chiều' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi vừa hôn nhau' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi ngược chiều' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi ngược chiều' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND a='đi' AND qt='có vui không' 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND a='đi'
+SELECT * FROM tbl_sentence WHERE ano='luật giao thông' AND (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì') 
+SELECT * FROM tbl_sentence WHERE (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì') 
+SELECT * FROM tbl_sentence WHERE (qt = 'được hiểu thế nào' OR qt = 'là gì' OR qt = 'thế nào là' OR qt = 'khái niệm được hiểu như thế nào' OR qt = 'được hiểu như thế nào' OR qt = 'khái niệm' OR qt = 'khái niệm là gì' OR qt = 'khái niệm là như thế nào' OR qt = 'là những cái gì' OR qt = 'là những gì' OR qt = 'bao gồm những gì')  AND ano='người điều khiển giao thông'
+SELECT * FROM tbl_sentence WHERE qt='thế nào' 
+SELECT * FROM tbl_sentence WHERE qt='làm thế nào' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi' AND if3='không đội mũ bảo hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi' AND if3='không đội mũ bảo hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi' AND if3='không đội mũ bao hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE sp='chạy quá tốc độ' AND tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi' AND if3='không đội mũ bảo hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND if3='không đội mũ bảo hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi' AND if3='không đội mũ bảo hiểm' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND if3='không đội mũ bảo hiểm' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi' AND if3='không đội mũ bảo hiểm' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi' AND if3='không đội mũ bảo hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào')  AND a='đi'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND if3='không đội mũ bảo hiểm' 
+Sep 19, 2017 3:38:56 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 19, 2017 3:38:56 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Sep 19, 2017 3:38:56 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Sep 19, 2017 3:38:56 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/TrafficQAService] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Sep 19, 2017 3:38:56 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 19, 2017 3:38:56 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 19, 2017 3:39:45 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 19, 2017 3:39:45 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 19, 2017 3:39:46 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/rh/mysql55/root/usr/lib64:/usr/java/packages/lib/i386:/lib:/usr/lib
+Sep 19, 2017 3:39:47 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 19, 2017 3:39:47 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2252 ms
+Sep 19, 2017 3:39:47 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Sep 19, 2017 3:39:47 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Sep 19, 2017 3:39:47 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Sep 19, 2017 3:39:52 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [301] milliseconds.
+Sep 19, 2017 3:39:52 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 4,502 ms
+Sep 19, 2017 3:39:52 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war
+Sep 19, 2017 3:39:55 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war has finished in 2,887 ms
+Sep 19, 2017 3:39:55 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 19, 2017 3:39:55 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 7904 ms
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND a='đi' AND if3='không đội mũ bảo hiểm' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND if3='không đội mũ bảo hiểm'
+SELECT * FROM tbl_sentence WHERE if3='không đội mũ bảo hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND if3='không đội mũ bảo hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE if3='không đội mũ bảo hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND if3='không đội mũ bảo hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='ô tô'
+SELECT * FROM tbl_sentence WHERE tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE if3='không đội mũ bảo hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe đạp' AND if3='không đội mũ bảo hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe đạp'
+SELECT * FROM tbl_sentence WHERE tv='xe đạp' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE if3='không đội mũ bảo hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe đạp điện' AND if3='không đội mũ bảo hiểm' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE a='vượt đèn đỏ bị phạt' AND tv='xe máy' AND qt='bao nhiêu tiền' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE a='vượt đèn đỏ' AND tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND tv='ô tô' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND tv='xe máy' AND a='vượt' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND tv='xe máy' AND (qt = 'có vi phạm luật giao thông không' OR qt = 'có bị vi phạm luật giao thông không' OR qt = 'có bị phạt không' OR qt = 'có phải không' OR qt = 'có bị vi phạm không' OR qt = 'có bị vi phạm luật không' OR qt = 'có bị cấm không' OR qt = 'có bị nghiêm cấm hay không' OR qt = 'vi phạm luật không' OR qt = 'vi phạm luật giao thông không' OR qt = 'vi phạm luật hay không' OR qt = 'có bị nghiêm cấm không' OR qt = 'có vi phạm luật không' OR qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+SELECT * FROM tbl_sentence WHERE a='vượt đèn đỏ bị phạt' AND tv='xe máy' AND qt='bao nhiêu tiền' 
+SELECT * FROM tbl_sentence WHERE tv='xe máy'
+SELECT * FROM tbl_sentence WHERE tl='đèn đỏ' AND a='vượt' AND tv='xe máy' AND (qt = 'bị phạt bao nhiêu tiền' OR qt = 'bị phạt bao nhiêu' OR qt = 'phạt bao nhiêu tiền' OR qt = 'bị phạt thế nào') 
+Sep 21, 2017 9:35:09 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 21, 2017 9:35:10 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Sep 21, 2017 9:35:10 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Sep 21, 2017 9:35:10 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/TrafficQAService] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Sep 21, 2017 9:35:10 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 21, 2017 9:35:10 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 21, 2017 9:35:13 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 21, 2017 9:35:14 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 21, 2017 9:35:14 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/rh/mysql55/root/usr/lib64:/usr/java/packages/lib/i386:/lib:/usr/lib
+Sep 21, 2017 9:35:15 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 21, 2017 9:35:15 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1723 ms
+Sep 21, 2017 9:35:15 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Sep 21, 2017 9:35:15 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Sep 21, 2017 9:35:15 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Sep 21, 2017 9:35:19 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 3,854 ms
+Sep 21, 2017 9:35:19 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war
+Sep 21, 2017 9:35:24 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war has finished in 4,351 ms
+Sep 21, 2017 9:35:24 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 21, 2017 9:35:24 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 8400 ms
+Sep 21, 2017 10:57:05 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 21, 2017 10:57:05 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Sep 21, 2017 10:57:05 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 21, 2017 10:57:05 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 21, 2017 10:57:50 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 21, 2017 10:57:50 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 21, 2017 10:57:51 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/rh/mysql55/root/usr/lib64:/usr/java/packages/lib/i386:/lib:/usr/lib
+Sep 21, 2017 10:57:51 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 21, 2017 10:57:51 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1757 ms
+Sep 21, 2017 10:57:51 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Sep 21, 2017 10:57:51 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Sep 21, 2017 10:57:52 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Sep 21, 2017 10:57:56 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [181] milliseconds.
+Sep 21, 2017 10:57:56 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 4,607 ms
+Sep 21, 2017 10:57:56 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war
+Sep 21, 2017 10:57:59 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war has finished in 3,302 ms
+Sep 21, 2017 10:57:59 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 21, 2017 10:57:59 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 8143 ms
+org.json.JSONException: JSONObject["46"] not found.
+	at org.json.JSONObject.get(JSONObject.java:471)
+	at org.json.JSONObject.getJSONObject(JSONObject.java:636)
+	at Servlet.Base.getBase(Base.java:131)
+	at Servlet.Base.doPost(Base.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1042)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Sep 22, 2017 10:34:07 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 22, 2017 10:34:07 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Sep 22, 2017 10:34:07 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Sep 22, 2017 10:34:07 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/TrafficQAService] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Sep 22, 2017 10:34:07 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 22, 2017 10:34:07 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 22, 2017 10:34:54 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 22, 2017 10:34:54 AM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFO: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+Sep 22, 2017 10:34:55 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/rh/mysql55/root/usr/lib64:/usr/java/packages/lib/i386:/lib:/usr/lib
+Sep 22, 2017 10:34:55 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 22, 2017 10:34:55 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1786 ms
+Sep 22, 2017 10:34:55 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Sep 22, 2017 10:34:55 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Sep 22, 2017 10:34:56 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war
+Sep 22, 2017 10:35:00 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [166] milliseconds.
+Sep 22, 2017 10:35:00 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/ROOT.war has finished in 4,779 ms
+Sep 22, 2017 10:35:00 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war
+Sep 22, 2017 10:35:09 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /var/lib/openshift/580a59f77628e19607000095/app-root/runtime/dependencies/jbossews/webapps/TrafficQAService.war has finished in 8,522 ms
+Sep 22, 2017 10:35:09 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-127.12.52.1-8080"]
+Sep 22, 2017 10:35:09 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 13560 ms

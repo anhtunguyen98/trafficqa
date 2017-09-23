@@ -268,18 +268,18 @@
 			},
 			"k4": {
 				"tenKhoan": "4. Khi vượt, các xe phải vượt về bên trái, trừ các trường hợp sau đây thì được phép vượt bên phải:",
-				"da": "a) Khi xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái;\n\t\t\t\t  ",
-				"db": "b) Khi xe điện đang chạy giữa đường;\n                 ",
-				"dc": "c) Khi xe chuyên dùng đang làm việc trên đường mà không thể vượt bên trái được.\n                 "
+				"a": "a) Khi xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái;\n\t\t\t\t  ",
+				"b": "b) Khi xe điện đang chạy giữa đường;\n                 ",
+				"c": "c) Khi xe chuyên dùng đang làm việc trên đường mà không thể vượt bên trái được.\n                 "
 			},
 			"k5": {
 				"tenKhoan": "5. Không được vượt xe khi có một trong các trường hợp sau đây:",
-				"da": "a) Không bảo đảm các điều kiện quy định tại khoản 2 Điều này;\n                 ",
-				"db": "b) Trên cầu hẹp có một làn xe;\n                 ",
-				"dc": "c) Đường vòng, đầu dốc và các vị trí có tầm nhìn hạn chế;\n                 ",
-				"dd": "d) Nơi đường giao nhau, đường bộ giao nhau cùng mức với đường sắt;\n                 ",
-				"dđ": "đ) Khi điều kiện thời tiết hoặc đường không bảo đảm an toàn cho việc vượt;\n                 ",
-				"de": "e) Xe được quyền ưu tiên đang phát tín hiệu ưu tiên đi làm nhiệm vụ.\n                 "
+				"a": "a) Không bảo đảm các điều kiện quy định tại khoản 2 Điều này;\n                 ",
+				"b": "b) Trên cầu hẹp có một làn xe;\n                 ",
+				"c": "c) Đường vòng, đầu dốc và các vị trí có tầm nhìn hạn chế;\n                 ",
+				"d": "d) Nơi đường giao nhau, đường bộ giao nhau cùng mức với đường sắt;\n                 ",
+				"đ": "đ) Khi điều kiện thời tiết hoặc đường không bảo đảm an toàn cho việc vượt;\n                 ",
+				"e": "e) Xe được quyền ưu tiên đang phát tín hiệu ưu tiên đi làm nhiệm vụ.\n                 "
 			}
 		},
 		"d15": {
@@ -313,9 +313,9 @@
 			},
 			"k2": {
 				"tenKhoan": "2. Các trường hợp nhường đường khi tránh nhau quy định như sau:",
-				"da": "a) Nơi đường hẹp chỉ đủ cho một xe chạy và có chỗ tránh xe thì xe nào ở gần chỗ tránh hơn phải vào vị trí tránh, nhường đường cho xe kia đi;\n                 ",
-				"db": "b) Xe xuống dốc phải nhường đường cho xe đang lên dốc;\n                 ",
-				"dc": "c) Xe nào có chướng ngại vật phía trước phải nhường đường cho xe không có chướng ngại vật đi trước.\n                 "
+				"a": "a) Nơi đường hẹp chỉ đủ cho một xe chạy và có chỗ tránh xe thì xe nào ở gần chỗ tránh hơn phải vào vị trí tránh, nhường đường cho xe kia đi;\n                 ",
+				"b": "b) Xe xuống dốc phải nhường đường cho xe đang lên dốc;\n                 ",
+				"c": "c) Xe nào có chướng ngại vật phía trước phải nhường đường cho xe không có chướng ngại vật đi trước.\n                 "
 			},
 			"k3": {
 				"tenKhoan": "3. Xe cơ giới đi ngược chiều gặp nhau không được dùng đèn chiếu xa. "
@@ -331,27 +331,27 @@
 			},
 			"k3": {
 				"tenKhoan": "3. Người điều khiển phương tiện khi dừng xe, đỗ xe trên đường bộ phải thực hiện quy định sau đây: ",
-				"da": "a) Có tín hiệu báo cho người điều khiển phương tiện khác biết;\n                 ",
-				"db": "b) Cho xe dừng, đỗ ở nơi có lề đường rộng hoặc khu đất ở bên ngoài phần đường xe chạy; trường hợp lề đường hẹp hoặc không có lề đường thì phải cho xe dừng, đỗ sát mép đường phía bên phải theo chiều đi của mình;\n                 ",
-				"dc": "c) Trường hợp trên đường đã xây dựng nơi dừng xe, đỗ xe hoặc quy định các điểm dừng xe, đỗ xe thì phải dừng, đỗ xe tại các vị trí đó;\n                 ",
-				"dd": "d) Sau khi đỗ xe, chỉ được rời khỏi xe khi đã thực hiện các biện pháp an toàn; nếu xe đỗ chiếm một phần đường xe chạy phải đặt ngay biển báo hiệu nguy hiểm ở phía trước và phía sau xe để người điều khiển phương tiện khác biết;\n                 ",
-				"dđ": "đ) Không mở cửa xe, để cửa xe mở hoặc bước xuống xe khi chưa bảo đảm điều kiện an toàn;\n                 ",
-				"de": "e) Khi dừng xe, không được tắt máy và không được rời khỏi vị trí lái;\n                 ",
-				"dg": "g) Xe đỗ trên đoạn đường dốc phải được chèn bánh.\n                 "
+				"a": "a) Có tín hiệu báo cho người điều khiển phương tiện khác biết;\n                 ",
+				"b": "b) Cho xe dừng, đỗ ở nơi có lề đường rộng hoặc khu đất ở bên ngoài phần đường xe chạy; trường hợp lề đường hẹp hoặc không có lề đường thì phải cho xe dừng, đỗ sát mép đường phía bên phải theo chiều đi của mình;\n                 ",
+				"c": "c) Trường hợp trên đường đã xây dựng nơi dừng xe, đỗ xe hoặc quy định các điểm dừng xe, đỗ xe thì phải dừng, đỗ xe tại các vị trí đó;\n                 ",
+				"d": "d) Sau khi đỗ xe, chỉ được rời khỏi xe khi đã thực hiện các biện pháp an toàn; nếu xe đỗ chiếm một phần đường xe chạy phải đặt ngay biển báo hiệu nguy hiểm ở phía trước và phía sau xe để người điều khiển phương tiện khác biết;\n                 ",
+				"đ": "đ) Không mở cửa xe, để cửa xe mở hoặc bước xuống xe khi chưa bảo đảm điều kiện an toàn;\n                 ",
+				"e": "e) Khi dừng xe, không được tắt máy và không được rời khỏi vị trí lái;\n                 ",
+				"g": "g) Xe đỗ trên đoạn đường dốc phải được chèn bánh.\n                 "
 			},
 			"k4": {
 				"tenKhoan": "4. Người điều khiển phương tiện không được dừng xe, đỗ xe tại các vị trí sau đây:",
-				"da": "a) Bên trái đường một chiều;\n                 ",
-				"db": "b) Trên các đoạn đường cong và gần đầu dốc tầm nhìn bị che khuất;\n                 ",
-				"dc": "c) Trên cầu, gầm cầu vượt;\n                 ",
-				"dd": "d) Song song với một xe khác đang dừng, đỗ;\n                 ",
-				"dđ": "đ) Trên phần đường dành cho người đi bộ qua đường;\n                 ",
-				"de": "e) Nơi đường giao nhau và trong phạm vi 5 mét tính từ mép đường giao nhau;\n                 ",
-				"dg": "g) Nơi dừng của xe buýt;\n                 ",
-				"dh": "h) Trước cổng và trong phạm vi 5 mét hai bên cổng trụ sở cơ quan, tổ chức;\n                 ",
-				"di": "i) Tại nơi phần đường có bề rộng chỉ đủ cho một làn xe;\n                 ",
-				"dk": "k) Trong phạm vi an toàn của đường sắt;\n                 ",
-				"dl": "l) Che khuất biển báo hiệu đường bộ.\n                 "
+				"a": "a) Bên trái đường một chiều;\n                 ",
+				"b": "b) Trên các đoạn đường cong và gần đầu dốc tầm nhìn bị che khuất;\n                 ",
+				"c": "c) Trên cầu, gầm cầu vượt;\n                 ",
+				"d": "d) Song song với một xe khác đang dừng, đỗ;\n                 ",
+				"đ": "đ) Trên phần đường dành cho người đi bộ qua đường;\n                 ",
+				"e": "e) Nơi đường giao nhau và trong phạm vi 5 mét tính từ mép đường giao nhau;\n                 ",
+				"g": "g) Nơi dừng của xe buýt;\n                 ",
+				"h": "h) Trước cổng và trong phạm vi 5 mét hai bên cổng trụ sở cơ quan, tổ chức;\n                 ",
+				"i": "i) Tại nơi phần đường có bề rộng chỉ đủ cho một làn xe;\n                 ",
+				"k": "k) Trong phạm vi an toàn của đường sắt;\n                 ",
+				"l": "l) Che khuất biển báo hiệu đường bộ.\n                 "
 			}
 		},
 		"d19": {
@@ -367,9 +367,9 @@
 			"tenDieu": "Điều 21. Trường hợp chở người trên xe ô tô chở hàng",
 			"k1": {
 				"tenKhoan": "1. Chỉ được chở người trên xe ô tô chở hàng trong các trường hợp sau đây:",
-				"da": "a) Chở người đi làm nhiệm vụ phòng, chống thiên tai hoặc thực hiện nhiệm vụ khẩn cấp; chở cán bộ, chiến sĩ của lực lượng vũ trang nhân dân đi làm nhiệm vụ; chở người bị nạn đi cấp cứu;\n                 ",
-				"db": "b) Chở công nhân duy tu, bảo dưỡng đường bộ; chở người đi thực hành lái xe trên xe tập lái; chở người diễu hành theo đoàn;\n                 ",
-				"dc": "c) Giải tỏa người ra khỏi khu vực nguy hiểm hoặc trong trường hợp khẩn cấp khác theo quy định của pháp luật.\n                 "
+				"a": "a) Chở người đi làm nhiệm vụ phòng, chống thiên tai hoặc thực hiện nhiệm vụ khẩn cấp; chở cán bộ, chiến sĩ của lực lượng vũ trang nhân dân đi làm nhiệm vụ; chở người bị nạn đi cấp cứu;\n                 ",
+				"b": "b) Chở công nhân duy tu, bảo dưỡng đường bộ; chở người đi thực hành lái xe trên xe tập lái; chở người diễu hành theo đoàn;\n                 ",
+				"c": "c) Giải tỏa người ra khỏi khu vực nguy hiểm hoặc trong trường hợp khẩn cấp khác theo quy định của pháp luật.\n                 "
 			},
 			"k2": {
 				"tenKhoan": "2. Xe ô tô chở người trong các trường hợp quy định tại khoản 1 Điều này phải có thùng cố định, bảo đảm an toàn khi tham gia giao thông."
@@ -379,11 +379,11 @@
 			"tenDieu": "Điều 22. Quyền ưu tiên của một số loại xe",
 			"k1": {
 				"tenKhoan": "1. Những xe sau đây được quyền ưu tiên đi trước xe khác khi qua đường giao nhau từ bất kỳ hướng nào tới theo thứ tự:",
-				"da": "a) Xe chữa cháy đi làm nhiệm vụ;\n                 ",
-				"db": "b) Xe quân sự, xe công an đi làm nhiệm vụ khẩn cấp, đoàn xe có xe cảnh sát dẫn đường;\n                 ",
-				"dc": "c) Xe cứu thương đang thực hiện nhiệm vụ cấp cứu;\n                 ",
-				"dd": "d) Xe hộ đê, xe đi làm nhiệm vụ khắc phục sự cố thiên tai, dịch bệnh hoặc xe đi làm nhiệm vụ trong tình trạng khẩn cấp theo quy định của pháp luật;\n                 ",
-				"dđ": "đ) Đoàn xe tang.\n                 "
+				"a": "a) Xe chữa cháy đi làm nhiệm vụ;\n                 ",
+				"b": "b) Xe quân sự, xe công an đi làm nhiệm vụ khẩn cấp, đoàn xe có xe cảnh sát dẫn đường;\n                 ",
+				"c": "c) Xe cứu thương đang thực hiện nhiệm vụ cấp cứu;\n                 ",
+				"d": "d) Xe hộ đê, xe đi làm nhiệm vụ khắc phục sự cố thiên tai, dịch bệnh hoặc xe đi làm nhiệm vụ trong tình trạng khẩn cấp theo quy định của pháp luật;\n                 ",
+				"đ": "đ) Đoàn xe tang.\n                 "
 			},
 			"k2": {
 				"tenKhoan": "2. Xe quy định tại các điểm a, b, c và d khoản 1 Điều này khi đi làm nhiệm vụ phải có tín hiệu còi, cờ, đèn theo quy định; không bị hạn chế tốc độ; được phép đi vào đường ngược chiều, các đường khác có thể đi được, kể cả khi có tín hiệu đèn đỏ và chỉ phải tuân theo chỉ dẫn của người điều khiển giao thông. Chính phủ quy định cụ thể tín hiệu của xe được quyền ưu tiên. "
@@ -408,10 +408,10 @@
 			"tenDieu": "Điều 26. Giao thông trên đường cao tốc",
 			"k1": {
 				"tenKhoan": "1. Người lái xe, người điều khiển xe máy chuyên dùng trên đường cao tốc ngoài việc tuân thủ các quy tắc giao thông quy định tại Luật này còn phải thực hiện các quy định sau đây:",
-				"da": "a) Khi vào đường cao tốc phải có tín hiệu xin vào và phải nhường đường cho xe đang chạy trên đường, khi thấy an toàn mới cho xe nhập vào dòng xe ở làn đường sát mép ngoài, nếu có làn đường tăng tốc thì phải cho xe chạy trên làn đường đó trước khi vào làn đường của đường cao tốc;\n                 ",
-				"db": "b) Khi ra khỏi đường cao tốc phải thực hiện chuyển dần sang làn đường phía bên phải, nếu có làn đường giảm tốc thì phải cho xe chạy trên làn đường đó trước khi rời khỏi đường cao tốc;\n                 ",
-				"dc": "c) Không được cho xe chạy ở làn dừng xe khẩn cấp và phần lề đường;\n                 ",
-				"dd": "d) Không được cho xe chạy quá tốc độ tối đa và dưới tốc độ tối thiểu ghi trên biển báo hiệu, sơn kẻ trên mặt đường.\n                 "
+				"a": "a) Khi vào đường cao tốc phải có tín hiệu xin vào và phải nhường đường cho xe đang chạy trên đường, khi thấy an toàn mới cho xe nhập vào dòng xe ở làn đường sát mép ngoài, nếu có làn đường tăng tốc thì phải cho xe chạy trên làn đường đó trước khi vào làn đường của đường cao tốc;\n                 ",
+				"b": "b) Khi ra khỏi đường cao tốc phải thực hiện chuyển dần sang làn đường phía bên phải, nếu có làn đường giảm tốc thì phải cho xe chạy trên làn đường đó trước khi rời khỏi đường cao tốc;\n                 ",
+				"c": "c) Không được cho xe chạy ở làn dừng xe khẩn cấp và phần lề đường;\n                 ",
+				"d": "d) Không được cho xe chạy quá tốc độ tối đa và dưới tốc độ tối thiểu ghi trên biển báo hiệu, sơn kẻ trên mặt đường.\n                 "
 			},
 			"k2": {
 				"tenKhoan": "2. Người lái xe, người điều khiển xe máy chuyên dùng phải cho xe chạy cách nhau một khoảng cách an toàn ghi trên biển báo hiệu."
@@ -427,47 +427,47 @@
 			"tenDieu": "Điều 29. Xe kéo xe và xe kéo rơ moóc",
 			"k1": {
 				"tenKhoan": "1. Một xe ô tô chỉ được kéo theo một xe ô tô hoặc xe máy chuyên dùng khác khi xe này không tự chạy được và phải bảo đảm các quy định sau đây:",
-				"da": "a) Xe được kéo phải có người điều khiển và hệ thống lái của xe đó phải còn hiệu lực;\n                 ",
-				"db": "b) Việc nối xe kéo với xe được kéo phải bảo đảm chắc chắn, an toàn; trường hợp hệ thống hãm của xe được kéo không còn hiệu lực thì xe kéo nhau phải nối bằng thanh nối cứng;\n                 ",
-				"dc": "c) Phía trước của xe kéo và phía sau của xe được kéo phải có biển báo hiệu.\n                 "
+				"a": "a) Xe được kéo phải có người điều khiển và hệ thống lái của xe đó phải còn hiệu lực;\n                 ",
+				"b": "b) Việc nối xe kéo với xe được kéo phải bảo đảm chắc chắn, an toàn; trường hợp hệ thống hãm của xe được kéo không còn hiệu lực thì xe kéo nhau phải nối bằng thanh nối cứng;\n                 ",
+				"c": "c) Phía trước của xe kéo và phía sau của xe được kéo phải có biển báo hiệu.\n                 "
 			},
 			"k2": {
 				"tenKhoan": "2. Xe kéo rơ moóc phải có tổng trọng lượng lớn hơn tổng trọng lượng của rơ moóc hoặc phải có hệ thống hãm có hiệu lực cho rơ moóc."
 			},
 			"k3": {
 				"tenKhoan": "3. Không được thực hiện các hành vi sau đây:",
-				"da": "a) Xe kéo rơ moóc, xe kéo sơ mi rơ moóc kéo thêm rơ moóc hoặc xe khác;\n                 ",
-				"db": "b) Chở người trên xe được kéo;\n                 ",
-				"dc": "c) Kéo theo xe thô sơ, xe gắn máy, xe mô tô. \n                 "
+				"a": "a) Xe kéo rơ moóc, xe kéo sơ mi rơ moóc kéo thêm rơ moóc hoặc xe khác;\n                 ",
+				"b": "b) Chở người trên xe được kéo;\n                 ",
+				"c": "c) Kéo theo xe thô sơ, xe gắn máy, xe mô tô. \n                 "
 			}
 		},
 		"d30": {
 			"tenDieu": "Điều 30. Người điều khiển, người ngồi trên xe mô tô, xe gắn máy",
 			"k1": {
 				"tenKhoan": "1. Người điều khiển xe mô tô hai bánh, xe gắn máy chỉ được chở một người, trừ những trường hợp sau thì được chở tối đa hai người:",
-				"da": "a) Chở người bệnh đi cấp cứu;\n                 ",
-				"db": "b) Áp giải người có hành vi vi phạm pháp luật;\n                 ",
-				"dc": "c) Trẻ em dưới 14 tuổi.\n                 "
+				"a": "a) Chở người bệnh đi cấp cứu;\n                 ",
+				"b": "b) Áp giải người có hành vi vi phạm pháp luật;\n                 ",
+				"c": "c) Trẻ em dưới 14 tuổi.\n                 "
 			},
 			"k2": {
 				"tenKhoan": "2. Người điều khiển, người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy phải đội mũ bảo hiểm có cài quai đúng quy cách."
 			},
 			"k3": {
 				"tenKhoan": "3. Người điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy không được thực hiện các hành vi sau đây:",
-				"da": "a) Đi xe dàn hàng ngang;\n                 ",
-				"db": "b) Đi xe vào phần đường dành cho người đi bộ và phương tiện khác;\n                 ",
-				"dc": "c) Sử dụng ô, điện thoại di động, thiết bị âm thanh, trừ thiết bị trợ thính;\n                 ",
-				"dd": "d) Sử dụng xe để kéo, đẩy xe khác, vật khác, mang, vác và chở vật cồng kềnh;\n                 ",
-				"dđ": "đ) Buông cả hai tay hoặc đi xe bằng một bánh đối với xe hai bánh, bằng hai bánh đối với xe ba bánh;\n                 ",
-				"de": "e) Hành vi khác gây mất trật tự, an toàn giao thông.\n                 "
+				"a": "a) Đi xe dàn hàng ngang;\n                 ",
+				"b": "b) Đi xe vào phần đường dành cho người đi bộ và phương tiện khác;\n                 ",
+				"c": "c) Sử dụng ô, điện thoại di động, thiết bị âm thanh, trừ thiết bị trợ thính;\n                 ",
+				"d": "d) Sử dụng xe để kéo, đẩy xe khác, vật khác, mang, vác và chở vật cồng kềnh;\n                 ",
+				"đ": "đ) Buông cả hai tay hoặc đi xe bằng một bánh đối với xe hai bánh, bằng hai bánh đối với xe ba bánh;\n                 ",
+				"e": "e) Hành vi khác gây mất trật tự, an toàn giao thông.\n                 "
 			},
 			"k4": {
 				"tenKhoan": "4. Người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thông không được thực hiện các hành vi sau đây:",
-				"da": "a) Mang, vác vật cồng kềnh;\n                 ",
-				"db": "b) Sử dụng ô;\n                 ",
-				"dc": "c) Bám, kéo hoặc đẩy các phương tiện khác;\n                 ",
-				"dd": "d) Đứng trên yên, giá đèo hàng hoặc ngồi trên tay lái;\n                 ",
-				"dđ": "đ) Hành vi khác gây mất trật tự, an toàn giao thông.\n                 "
+				"a": "a) Mang, vác vật cồng kềnh;\n                 ",
+				"b": "b) Sử dụng ô;\n                 ",
+				"c": "c) Bám, kéo hoặc đẩy các phương tiện khác;\n                 ",
+				"d": "d) Đứng trên yên, giá đèo hàng hoặc ngồi trên tay lái;\n                 ",
+				"đ": "đ) Hành vi khác gây mất trật tự, an toàn giao thông.\n                 "
 			}
 		},
 		"d31": {
@@ -489,16 +489,16 @@
 			"tenDieu": "Điều 53. Điều kiện tham gia giao thông của xe cơ giới",
 			"k1": {
 				"tenKhoan": "1. Xe ô tô đúng kiểu loại được phép tham gia giao thông phải bảo đảm các quy định về chất lượng, an toàn kỹ thuật và bảo vệ môi trường sau đây:",
-				"da": "a) Có đủ hệ thống hãm có hiệu lực;",
-				"db": "b) Có hệ thống chuyển hướng có hiệu lực; \n                 ",
-				"dc": "c) Tay lái của xe ô tô ở bên trái của xe; trường hợp xe ô tô của người nước ngoài đăng ký tại nước ngoài có tay lái ở bên phải tham gia giao thông tại Việt Nam thực hiện theo quy định của Chính phủ;\n                 ",
-				"dd": "d) Có đủ đèn chiếu sáng gần và xa, đèn soi biển số, đèn báo hãm, đèn tín hiệu;\n                 ",
-				"dđ": "đ) Có bánh lốp đúng kích cỡ và đúng tiêu chuẩn kỹ thuật của từng loại xe;\n                 ",
-				"de": "e) Có đủ gương chiếu hậu và các trang bị, thiết bị khác bảo đảm tầm nhìn cho người điều khiển;\n                 ",
-				"dg": "g) Kính chắn gió, kính cửa là loại kính an toàn; \n                 ",
-				"dh": "h) Có còi với âm lượng đúng quy chuẩn kỹ thuật;\n                 ",
-				"di": "i) Có đủ bộ phận giảm thanh, giảm khói và các trang bị, thiết bị khác bảo đảm khí thải, tiếng ồn theo quy chuẩn môi trường;\n                 ",
-				"dk": "k) Các kết cấu phải đủ độ bền và bảo đảm tính năng vận hành ổn định.\n                 "
+				"a": "a) Có đủ hệ thống hãm có hiệu lực;",
+				"b": "b) Có hệ thống chuyển hướng có hiệu lực; \n                 ",
+				"c": "c) Tay lái của xe ô tô ở bên trái của xe; trường hợp xe ô tô của người nước ngoài đăng ký tại nước ngoài có tay lái ở bên phải tham gia giao thông tại Việt Nam thực hiện theo quy định của Chính phủ;\n                 ",
+				"d": "d) Có đủ đèn chiếu sáng gần và xa, đèn soi biển số, đèn báo hãm, đèn tín hiệu;\n                 ",
+				"đ": "đ) Có bánh lốp đúng kích cỡ và đúng tiêu chuẩn kỹ thuật của từng loại xe;\n                 ",
+				"e": "e) Có đủ gương chiếu hậu và các trang bị, thiết bị khác bảo đảm tầm nhìn cho người điều khiển;\n                 ",
+				"g": "g) Kính chắn gió, kính cửa là loại kính an toàn; \n                 ",
+				"h": "h) Có còi với âm lượng đúng quy chuẩn kỹ thuật;\n                 ",
+				"i": "i) Có đủ bộ phận giảm thanh, giảm khói và các trang bị, thiết bị khác bảo đảm khí thải, tiếng ồn theo quy chuẩn môi trường;\n                 ",
+				"k": "k) Các kết cấu phải đủ độ bền và bảo đảm tính năng vận hành ổn định.\n                 "
 			},
 			"k2": {
 				"tenKhoan": "2. Xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy đúng kiểu loại được phép tham gia giao thông phải bảo đảm các quy định về chất lượng, an toàn kỹ thuật và bảo vệ môi trường quy định tại các điểm a, b, d, đ, e, h, i và k khoản 1 Điều này. "
@@ -520,10 +520,10 @@
 			},
 			"k2": {
 				"tenKhoan": "2. Người lái xe khi điều khiển phương tiện phải mang theo các giấy tờ sau:",
-				"da": "a) Đăng ký xe;\n                 ",
-				"db": "b) Giấy phép lái xe đối với người điều khiển xe cơ giới quy định tại Điều 59 của Luật này;\n                 ",
-				"dc": "c) Giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới quy định tại Điều 55 của Luật này;\n                 ",
-				"dd": "d) Giấy chứng nhận bảo hiểm trách nhiệm dân sự của chủ xe cơ giới.\n                 "
+				"a": "a) Đăng ký xe;\n                 ",
+				"b": "b) Giấy phép lái xe đối với người điều khiển xe cơ giới quy định tại Điều 59 của Luật này;\n                 ",
+				"c": "c) Giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới quy định tại Điều 55 của Luật này;\n                 ",
+				"d": "d) Giấy chứng nhận bảo hiểm trách nhiệm dân sự của chủ xe cơ giới.\n                 "
 			}
 		}
 	}

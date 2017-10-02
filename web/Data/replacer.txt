@@ -1,4 +1,4 @@
-ôtô,xế hộp,bốn bánh,xe bốn bánh,xe 4 bánh,xe con,xe hơi_ô tô
+ôtô,xế hộp,bốn bánh,4 bánh,xe bốn bánh,xe 4 bánh,xe con,xe hơi_ô tô
 lái ô tô,điều khiển ô tô_đi ô tô
 
 môtô,mô tô,xe hai bánh,xe 2 bánh,xe gắn máy_xe máy

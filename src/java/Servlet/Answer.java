@@ -23,6 +23,7 @@ import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Scanner;
 import org.apache.log4j.Logger;
 import javax.servlet.ServletException;
@@ -268,16 +269,15 @@ public class Answer extends HttpServlet {
     }
 
     private void createAllThings(String domain) throws IOException {
+        dbName = "qaservice";
         if (domain.equals("localhost")) {
             username = "root";
             password = "";
-            dbName = "qaservice";
             isLocal = true;
         } else {
-            domain = "127.12.52.2";
-            username = "adminFf1Pbuj";
-            password = "c5h8CW-Kb-HV";
-            dbName = "QADatabase";
+            domain = "mysql";
+            username = "thien";
+            password = "thien12345";
             isLocal = false;
         }
         this.domain = domain;
@@ -285,11 +285,7 @@ public class Answer extends HttpServlet {
         findingAnswer = new FindingAnswer(domain, username, password, dbName);
 
         if (DATA_PATH.length() == 0) {
-            if (isLocal) {
-                DATA_PATH = getServletContext().getRealPath("/") + "Data/";
-            } else {
-                DATA_PATH = System.getenv("OPENSHIFT_DATA_DIR");
-            }
+            DATA_PATH = getServletContext().getRealPath("/") + "Data/";
 
             prepareTagsMap();
             prepareReplacer();
@@ -327,6 +323,7 @@ public class Answer extends HttpServlet {
     }
 
     private String prepareQuestion(String question) {
+        question = question.toLowerCase(Locale.FRANCE);
         for (String key : replacer.keySet()) {
             question = question.replaceAll(key.toLowerCase(), replacer.get(key));
         }

@@ -156,11 +156,7 @@ public class Base extends HttpServlet {
     private void prepareBase(String domain) {
         String path;
 
-        if (domain.equals("localhost")) {
-            path = getServletContext().getRealPath("/") + "Data/";
-        } else {
-            path = System.getenv("OPENSHIFT_DATA_DIR");
-        }
+        path = getServletContext().getRealPath("/") + "Data/";
 
         base = new JSONObject();
 

@@ -46,7 +46,6 @@ public class Answer extends HttpServlet {
     String modelPath = "";
     String domain, username, password, dbName;
     boolean isLocal = true;
-    TrafficCrfTagger tagger = null;
     FindingAnswer findingAnswer;
     HashMap<String, String> replacer = null;
     Logger logger = null;
